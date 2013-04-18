@@ -5,8 +5,8 @@ title: "Interactive product designer"
 ---
 
 <div class="type_section" id="begin">
-  
-  {% for weight in (1..12) %}
+
+  {% for weight in (0..12) %}
     {% for page in site.pages %}
       {% if page.weight == weight and page.category == "intro" %}
         {% capture cat_cycle %}{% cycle '00','01','02','03','04','05','06','07','08','09','10','11','12' %}{% endcapture %}
@@ -41,7 +41,7 @@ title: "Interactive product designer"
 <div class="section" id="end">
   <div class="cat end">
     <p>
-      I know the cat is fun, but you should have a look at my <a href="{{ site.root }}/work/" style="color:#000">work</a>!
+      I know the cat is fun, but you should have a look at my <a href="{{ site.root }}/work/" style="color:#000; text-decoration: underline">work</a>!
       <br/><br/><br/>
       <a href="#" class="button" id="top">
         Go backwards

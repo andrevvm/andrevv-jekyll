@@ -35,6 +35,10 @@ h1,h2,h3,h4,h5 {
   line-height: 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
 #content {
   height: 100%;
 }
@@ -713,11 +717,12 @@ footer {
 
 .video_container video {
   height: 576px;
-  -webkit-transition: height 500ms;
-  -moz-transition: height 500ms;
-  -o-transition: height 500ms;
-  -ms-transition: height 500ms;
-  transition: height 500ms;
+  width: 1024px;
+  -webkit-transition: height 500ms, width 500ms;
+  -moz-transition: height 500ms, width 500ms;
+  -o-transition: height 500ms, width 500ms;
+  -ms-transition: height 500ms, width 500ms;
+  transition: height 500ms, width 500ms;
 }
 
 @media only screen and (min-width: 480px) {
@@ -785,6 +790,11 @@ footer {
     width: 460px;
   }
 
+  section article img {
+    max-width: 460px;
+    height: auto;
+  }
+
   section article hr {
     width: 460px;
   }
@@ -795,7 +805,8 @@ footer {
   }
 
   .video_container video {
-    height: 270px;
+    width: 480px;
+    height: 270px;    
   }
 }
 
@@ -835,8 +846,12 @@ footer {
     height: auto;
   }
 
-  .browser.ui .browser.title {
+  .browser.ui, .browser.title {
     display: none;
+  }
+
+  .play {
+    display: none !important;
   }
 }
 
