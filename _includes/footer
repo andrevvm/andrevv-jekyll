@@ -1,0 +1,23 @@
+<footer>
+  <p>Crafted with love by Andrew McCarthy</p>
+  <p>
+    <a href="http://twitter.com/andrevvm/" class="button" rel="external">
+      <span class="fonticon icon-twitter">andrevvm</span>
+    </a>
+  </p>
+
+  <section class="prev">
+    {% if page.next %}
+      <a href="{{ site.root }}{{ page.next.url }}" style="color: {{ page.next.color }}; background: {{ page.next.background }}">&larr; {{ page.next.title }}</a>
+    {% else %}
+      <span class="">This is the beginning</span>
+    {% endif %}
+  </section>
+  <section class="next">
+    {% if page.previous %}
+      <a href="{{ site.root }}{{ page.previous.url }}" style="color: {{ page.previous.color }}; background: {{ page.previous.background }}">{{ page.previous.title }} &rarr;</a>
+    {% else %}
+      <span class="">This is the end</span>
+    {% endif %}
+  </section>
+</footer>

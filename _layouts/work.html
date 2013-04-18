@@ -1,0 +1,19 @@
+---
+layout: layout
+section: work
+---
+
+<section class="post" {% if page.body_bg %}style="background-color: {{ page.body_bg }}"{% endif %}>
+  <header style="color: {{ page.color }}; background-color: {{ page.background }}">
+    <h1>{{ page.title }}</h1>
+    <h2>
+      {{ page.responsibilities }}
+    </h2>
+  </header>
+  <article>
+    {{ content }}
+  </article>
+  
+  {% include footer %}
+
+</section>

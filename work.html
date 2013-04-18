@@ -1,0 +1,21 @@
+---
+layout: layout
+title: Work
+permalink: work/
+section: work
+---
+
+{% for post in site.categories.work %}
+  <div class="section work" style="color: {{ post.color }}; background-color: {{ post.background }}">
+    <div class="cat">
+      <a href="{{ site.root }}{{ post.url }}">
+        <span class="position">
+          <h1>{{ post.title }}</h1>
+          <h2>
+            {{ post.responsibilities }}
+          </h2>
+        </span>
+      </a>
+    </div>
+  </div>
+{% endfor %}

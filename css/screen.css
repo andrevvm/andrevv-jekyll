@@ -1,0 +1,847 @@
+@font-face{font-family:'Orator';src:url('../type/oratorstd-webfont.eot?') format('eot'),url('../type/oratorstd-webfont.woff') format('woff'),url('../type/oratorstd-webfont.ttf') format('truetype'),url('../type/oratorstd-webfont.svg#webfontlZlKz9CF') format('svg');font-weight:normal;font-style:normal;}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Orator';
+  font-weight: 400;
+  text-transform: lowercase;
+  -webkit-transition: font-size .2s;
+  -o-transition: font-size .2s;
+  -moz-transition: font-size .2s;
+  -ms-transition: font-size .2s;
+  transition: font-size .2s;
+  color: #000;
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Orator';
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.right {
+  float: right !important;
+}
+
+.clear {
+  clear: both;
+  float: none;
+  display: block;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+#content {
+  height: 100%;
+}
+
+#begin {
+  height: 100%;
+  -webkit-background-size: 30%;
+  -moz-background-size: 30%;
+  -o-background-size: 30%;
+  background-size: 30%;
+}
+
+#type_holder {
+  position: fixed;
+  bottom: 50%;
+  z-index: 1000;
+  width: 60%;
+  left: 20%;
+  text-align: left;
+  line-height: 1.5em;
+  letter-spacing: -0.1em;
+}
+
+.section {
+  height: 50%;
+  width: 100%;
+  min-height: 260px;
+  position: relative;
+  text-align: center;
+  background: #FFF;
+}
+
+.section h1, .section h2, .section h3, .section p {
+  margin: 0px auto;
+  position: relative;
+  font-size: 16px;
+  width: 300px;
+}
+
+.section.work a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.section.work .position {
+  position: relative;
+  display: block;
+  top: 38%;
+}
+
+.section.work a:hover {
+  text-decoration: none;
+  background: none;
+  background: rgba(255,255,255,0.1);
+}
+
+.section.work h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  top: auto;
+}
+
+.section.work h2 {
+  font-family: "Times", "Times New Roman", serif;
+  text-transform: none;
+  opacity: 0.5;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  top: auto;
+}
+
+.cat img {
+  position: relative;
+  top: 32%;
+  height: 80px;
+  width: auto;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+pre a:hover {
+  color: #000;
+}
+
+.t_cursor {
+  line-height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 1;
+  margin-top: -0.18em;
+  margin-left: 0.15em;
+  width: 0.119em;
+  height: 1.05em;
+  background: #0099FF;
+}
+
+.t_cursor.blink {
+  opacity: 0;
+}
+
+#intro {
+  position: relative;
+}
+
+.button {
+  color: #FFF;
+  background: black;
+  border-radius: 6px;
+  padding: .7em 1.2em;
+  text-decoration: none;
+  font-family: "Orator";
+  text-transform: lowercase;
+  font-size: 16px;
+}
+
+.button:hover, a.button:hover {
+  background: #555;
+  background: rgba(0,0,0,0.65);
+}
+
+.button:active {
+  background: #333;
+  background: rgba(0,0,0,0.85);
+}
+
+.cat {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: 50%;
+  -moz-background-size: 50%;
+  -o-background-size: 50%;
+  background-size: 50%;
+}
+
+.section#end {
+  display: none;
+}
+
+.cat.f00 {
+  background-image: url(../img/catz/catz00.gif);
+  background-color: #1CF9D4;
+}
+
+.cat.f01 {
+  background-image: url(../img/catz/catz01.gif);
+  background-color: #1DE4DB;
+}
+
+.cat.f02 {
+  background-image: url(../img/catz/catz02.gif);
+  background-color: #1FD0E2;
+}
+
+.cat.f03 {
+  background-image: url(../img/catz/catz03.gif);
+  background-color: #20BBE9;
+}
+
+.cat.f04 {
+  background-image: url(../img/catz/catz04.gif);
+  background-color: #22A7F0;
+}
+
+.cat.f05 {
+  background-image: url(../img/catz/catz05.gif);
+  background-color: #2392F7;
+}
+
+.cat.f06 {
+  background-image: url(../img/catz/catz06.gif);
+  background-color: #4F87DC;
+}
+
+.cat.f07 {
+  background-image: url(../img/catz/catz07.gif);
+  background-color: #727EC7;
+}
+
+.cat.f08 {
+  background-image: url(../img/catz/catz08.gif);
+  background-color: #9575B2;
+}
+
+.cat.f09 {
+  background-image: url(../img/catz/catz09.gif);
+  background-color: #DC6387;
+}
+
+.cat.f10 {
+  background-image: url(../img/catz/catz10.gif);
+  background-color: #FF5A72;
+}
+
+.cat.f11 {
+  background-image: url(../img/catz/catz11.gif);
+  background-color: #FF6A62;
+}
+
+.cat.f12 {
+  background-image: url(../img/catz/catz12.gif);
+  background-color: #FF7755;
+}
+
+nav {
+  background: #000;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 0;
+}
+
+nav a {
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #bbb;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a.selected {
+  color: #fff;
+  text-decoration: underline;
+}
+
+nav.sticky {
+  position: fixed;
+  -webkit-transition: top 300ms;
+  -o-transition: top 300ms;
+  -moz-transition: top 300ms;
+  -ms-transition: top 300ms;
+  transition: top 300ms;
+  -webkit-box-shadow: 0 1px 2px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    0 1px 2px rgba(50, 50, 50, 0.3);
+  -o-box-shadow:    0 1px 2px rgba(50, 50, 50, 0.3);
+  -ms-box-shadow:    0 1px 2px rgba(50, 50, 50, 0.3);
+  box-shadow:         0 1px 2px rgba(50, 50, 50, 0.3);
+}
+
+nav.stickyHide {
+  top: -50px;
+}
+
+nav.slideIn {
+  top: 0;
+}
+
+header {
+  height: 150px;
+  padding-top: 90px;
+  background: #00FFBF;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+header img {
+  width: auto;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+header h2 {
+  font-family: Times, "Times New Roman", serif;
+  opacity: 0.5;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 10px 0;
+}
+
+section article {
+  font-family: "Times", "Times New Roman", serif;
+  font-weight: normal;
+  margin: 0 auto;
+  line-height: 1.6em;
+  text-transform: none;
+  margin-bottom: 80px;
+}
+
+section article p {
+  font-size: 20px;
+  line-height: 1.6em;
+  margin: 1em auto;
+  width: 620px;
+}
+
+section article h2, section article h3, section article h4 {
+  margin: 1em auto;
+  width: 620px;
+  text-align: center;
+  font-weight: 400;
+}
+
+section article h2 {
+  font-size: 20px;
+  margin: 40px auto 5px;
+}
+
+section article h3 {
+  font-size: 16px;
+  font-style: italic;
+  opacity: 0.5;
+  font-family: Times, "Times New Roman", serif;
+  text-transform: none;
+  margin: 5px auto 40px;
+}
+
+section article blockquote {
+  color: #555;
+  border-left: 5px solid #00FFBF;
+  margin-left: 0;
+  padding-left: 1em;
+  font-style: italic;
+}
+
+section article a {
+  color: black;
+  text-decoration: underline;
+}
+
+section article hr {
+  width: 620px;
+  margin: 40px auto;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  background: none;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+}
+
+section footer p {
+  margin-bottom: 30px;
+}
+
+section footer a {
+  background: black;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../icons/icomoon.eot');
+    src:url('../icons/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../icons/icomoon.woff') format('woff'),
+        url('../icons/icomoon.ttf') format('truetype'),
+        url('../icons/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.fonticon:before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    padding-right: 10px;
+    position: relative;
+    font-size: 0.95em;
+}
+
+#about a:hover .fonticon:before {
+    color: #59F3CD;
+}
+
+.icon-cv:before {
+    content: "\e000";
+    top: 1px;
+}
+.icon-mail:before {
+    content: "\e001";
+}
+.icon-twitter:before {
+    content: "\e002";
+}
+
+.browser {
+  padding: 35px 1px 10px;
+  margin: 40px auto;
+  width: 640px;
+  height: 400px;
+  background: #e6e6e6;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: width 500ms, height 500ms, padding 100ms;
+  -moz-transition: width 500ms, height 500ms, padding 100ms;
+  -o-transition: width 500ms, height 500ms, padding 100ms;
+  -ms-transition: width 500ms, height 500ms, padding 100ms;
+  transition: width 500ms, height 500ms, padding 100ms;
+}
+
+.browser.minied {
+  height: 0;
+  padding-bottom: 0;
+}
+
+.browser.closed {
+  display: none;
+}
+
+.browser.maxied {
+  width: 950px;
+  height: 590px;
+}
+
+.browser.maxied video {
+  height: 590px;
+}
+
+.browser .title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 5px;
+  font-size: 14px;
+  color: #666;
+  -webkit-transition: opacity 200ms;
+  -o-transition: opacity 200ms;
+  -moz-transition: opacity 200ms;
+  -ms-transition: opacity 200ms;
+  transition: opacity 200ms;
+  margin: 0;
+}
+
+.browser .ui {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.browser .ui li {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.browser .ui div {
+  opacity: 0
+}
+
+.browser:hover .ui div {
+  opacity: 0.25;
+}
+
+.browser .ui li:hover div {
+  opacity: 0.5;
+}
+
+.cross {
+  top: 1px;
+  left: 1px;
+  background: #000;
+  width: 3px;
+  height: 9px;
+  position: relative;
+  margin-left: 3px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.cross:before {
+  background: #000;
+  content: "";
+  width: 9px;
+  height: 3px;
+  position: absolute;
+  top: 3px;
+  left: -3px;
+}
+
+.plus {
+  top: 1px;
+  left: 1px;
+  background: #000;
+  width: 3px;
+  height: 9px;
+  position: relative;
+  margin-left: 3px;
+}
+
+.plus:before{
+  background: #000;
+  content: "";
+  width: 9px;
+  height: 3px;
+  position: absolute;
+  top: 3px;
+  left: -3px;
+}
+
+.minus {
+  top: 4px;
+  left: 1px;
+  background: #000;
+  width: 9px;
+  height: 3px;
+  position: absolute;
+}
+
+.browser .ui .close {
+  background: #FF4000;
+}
+
+.browser .ui .close:active {
+  background: #CC3300;
+}
+
+.browser .ui .min {
+  background: #FFD317;
+}
+
+.browser .ui .min:active {
+  background: #CCA912;
+}
+
+.browser .ui .max {
+  background: #4EE949;
+}
+
+.browser .ui .max:active {
+  background: #3EBA3A;
+}
+
+
+.browser .window {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow-y: auto;
+  -webkit-transition: height 500ms;
+  -moz-transition: height 500ms;
+  -o-transition: height 500ms;
+  -ms-transition: height 500ms;
+  transition: height 500ms;
+}
+
+.browser img {
+  display: block;
+}
+
+video {
+  position: relative;
+}
+.play {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../img/play_btn.png) no-repeat center center;
+  z-index: 50;
+  cursor: pointer;
+}
+
+.play.playing {
+  background: none;
+}
+
+.browser video {
+  background: #000;
+  height: 400px;
+  display: block;
+  -webkit-transition: height 500ms, width 500ms;
+  -moz-transition: height 500ms, width 500ms;
+  -o-transition: height 500ms, width 500ms;
+  -ms-transition: height 500ms, width 500ms;
+  transition: height 500ms, width 500ms;
+}
+
+.browser.maxied .window {
+  height: 590px;
+}
+
+.browser img {
+  width: 100%;
+  height: auto;
+}
+
+
+footer section {
+  position: absolute;
+  width: 49.9%;
+  bottom: 0;
+  text-align: left;
+}
+
+footer section.next {
+  right: 0;
+  text-align: right;
+}
+
+footer section a, footer section span {
+  display: block;
+  padding: 30px;
+  height: 80px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+footer section span {
+  background: #999;
+  color: #fff;
+}
+
+footer section a:hover {
+  opacity: 0.8
+}
+
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 40px 0 130px;
+  position: relative;
+}
+
+.video_container {
+  width: 1024px;
+  height: 576px;
+  margin: 30px auto;
+  position: relative;
+  -webkit-transition: height 500ms, width 500ms;
+  -moz-transition: height 500ms, width 500ms;
+  -o-transition: height 500ms, width 500ms;
+  -ms-transition: height 500ms, width 500ms;
+  transition: height 500ms, width 500ms;
+}
+
+.video_container video {
+  height: 576px;
+  -webkit-transition: height 500ms;
+  -moz-transition: height 500ms;
+  -o-transition: height 500ms;
+  -ms-transition: height 500ms;
+  transition: height 500ms;
+}
+
+@media only screen and (min-width: 480px) {
+
+  .section h1, .section h2, .section h3, .section p {
+    width: auto;
+    font-size: 20px;
+    top: 45%;
+  }
+
+  .cat img {
+    top: 36%;
+  }
+}
+
+@media only screen and (min-width : 321px) and (max-width: 640px) {
+  .cat {
+    background-image: none !important;
+  }
+  .section h1, .section h2, .section h3, .section p {
+    top: 120px;
+    font-size: 16px;
+  }
+
+  .cat img {
+    top: 90px;
+  }
+
+  .browser {
+    width: 320px;
+    height: 188px;
+  }
+
+  .browser .window {
+    height: 188px;
+  }
+
+  .browser.maxied {
+    width: 480px;
+    height: 300px;
+  }
+
+  .browser.maxied .window {
+    height: 300px;
+  }
+
+  .browser video {
+    height: 188px;
+  }
+
+  .browser.maxied video {
+    height: 300px;
+  }
+
+  .browser .title {
+    opacity: 0;
+  }
+
+  section article h2, section article h3, section article h4 {
+    width: 460px;
+  }
+
+  section article p {
+    font-size: 16px;
+    width: 460px;
+  }
+
+  section article hr {
+    width: 460px;
+  }
+
+  .video_container {
+    width: 480px;
+    height: 270px;
+  }
+
+  .video_container video {
+    height: 270px;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  .cat {
+    background-image: none !important;
+  }
+  .section h1, .section h2, .section h3, .section p {
+    top: 110px;
+  }
+
+  .cat img {
+    top: 0px;
+  }
+
+  .browser {
+    width: 280px;
+  }
+
+}
+
+
+/* iPhone landscape */
+@media screen and (max-device-width: 480px) { 
+  nav {
+    position: absolute !important;
+    top: 0 !important;
+  }
+  .browser, .browser.maxied, .browser.minied {
+    width: 460px;
+    height: auto;
+    padding: 0;
+  }
+
+  .browser .window {
+    width: 460;
+    height: auto;
+  }
+
+  .browser.ui .browser.title {
+    display: none;
+  }
+}
+
+/* iPhone portrait */
+
+@media screen and (max-device-width: 320px) { 
+
+}
