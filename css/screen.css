@@ -953,4 +953,16 @@ footer {
     max-width: 460px;
   }
 
+  section article p, section article h2, section article h3, section article hr {
+    width: 460px;
+  }
+
+  section article p img {
+    max-width: 460px;
+  }
+
+  section article p {
+    font-size: 16px;
+  }
+
 }
