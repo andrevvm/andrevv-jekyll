@@ -167,9 +167,10 @@ pre a:hover {
 .button:hover, a.button:hover {
   background: #555;
   background: rgba(0,0,0,0.65);
+  text-decoration: none;
 }
 
-.button:active {
+.button:active, a.button:active {
   background: #333;
   background: rgba(0,0,0,0.85);
 }
@@ -402,6 +403,24 @@ section footer p {
 
 section footer a {
   background: black;
+}
+
+section article p a.button {
+  background: none;
+  color: black;
+  border: 1px solid black;
+}
+
+section article p a.button:hover {
+  background: black;
+  color: white;
+}
+
+
+section article p a.button:active {
+  background: #555;
+  border-color: #555;
+  color: white;
 }
 
 @font-face {
@@ -694,6 +713,10 @@ footer section span {
 
 footer section a:hover {
   opacity: 0.8
+}
+
+footer section a:active {
+  opacity: 0.9
 }
 
 footer {
