@@ -162,6 +162,7 @@ pre a:hover {
   font-family: "Orator";
   text-transform: lowercase;
   font-size: 16px;
+  display: inline-block;
 }
 
 .button:hover, a.button:hover {
@@ -871,7 +872,9 @@ footer {
     display: none !important;
   }
 
-}/* iPhone portrait */
+}
+
+/* iPhone portrait */
 
 @media screen and (max-device-width: 320px) { 
   .browser, .browser.maxied, .browser.minied {
