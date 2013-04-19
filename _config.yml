@@ -1,6 +1,6 @@
 auto: true
 markdown: rdiscount
 permalink: /:categories/:title/
-root: 'http://test.andrevv.com'
+root: 'http://andrevv.com'
 url: '/'
 # root: '/andrevv-jekyll'
