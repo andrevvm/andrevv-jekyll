@@ -501,11 +501,11 @@ you can use the generic selector below, but it's slower:
 
 .browser.maxied {
   width: 950px;
-  height: 590px;
+  height: 594px;
 }
 
 .browser.maxied video {
-  height: 590px;
+  height: 594px;
   width: 950px;
 }
 
@@ -683,7 +683,7 @@ video {
 }
 
 .browser.maxied .window {
-  height: 590px;
+  height: 594px;
 }
 
 .browser img {
