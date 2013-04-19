@@ -869,8 +869,13 @@ footer {
   }
 
   .browser .window {
-    width: 460;
+    width: 460px;
     height: auto;
+  }
+
+  .browser .window video {
+    width: 460px;
+    height: 300px;
   }
 
   .browser.ui, .browser.title {
