@@ -764,6 +764,80 @@ footer {
   }
 }
 
+@media only screen and (min-width : 321px) and (max-width: 640px) {
+  .cat {
+    background-image: none !important;
+  }
+  .section h1, .section h2, .section h3, .section p {
+    top: 120px;
+    font-size: 16px;
+  }
+
+  .cat img {
+    top: 90px;
+  }
+
+  .browser {
+    width: 320px;
+    height: 188px;
+  }
+
+  .browser .window {
+    height: 188px;
+  }
+
+  .browser.maxied {
+    width: 480px;
+    height: 300px;
+  }
+
+  .browser.maxied .window {
+    height: 300px;
+  }
+
+  .browser video {
+    height: 188px;
+    width: 320px;
+  }
+
+  .browser.maxied video {
+    height: 300px;
+    width: 480px;
+  }
+
+  .browser .title {
+    opacity: 0;
+  }
+
+  section article h2, section article h3, section article h4 {
+    width: 460px;
+  }
+
+  section article p {
+    font-size: 16px;
+    width: 460px;
+  }
+
+  section article img {
+    max-width: 460px;
+    height: auto;
+  }
+
+  section article hr {
+    width: 460px;
+  }
+
+  .video_container {
+    width: 480px;
+    height: 270px;
+  }
+
+  .video_container video {
+    width: 480px;
+    height: 270px;    
+  }
+}
+
 @media only screen and (max-width : 320px) {
   .cat {
     background-image: none !important;
@@ -781,6 +855,7 @@ footer {
   }
 
 }
+
 
 /* all iPhone */
 @media screen and (max-device-width: 480px), screen and (max-device-width: 320px) { 
@@ -866,78 +941,4 @@ footer {
     max-width: 460px;
   }
 
-}
-
-@media only screen and (min-width : 321px) and (max-width: 640px) {
-  .cat {
-    background-image: none !important;
-  }
-  .section h1, .section h2, .section h3, .section p {
-    top: 120px;
-    font-size: 16px;
-  }
-
-  .cat img {
-    top: 90px;
-  }
-
-  .browser {
-    width: 320px;
-    height: 188px;
-  }
-
-  .browser .window {
-    height: 188px;
-  }
-
-  .browser.maxied {
-    width: 480px;
-    height: 300px;
-  }
-
-  .browser.maxied .window {
-    height: 300px;
-  }
-
-  .browser video {
-    height: 188px;
-    width: 320px;
-  }
-
-  .browser.maxied video {
-    height: 300px;
-    width: 480px;
-  }
-
-  .browser .title {
-    opacity: 0;
-  }
-
-  section article h2, section article h3, section article h4 {
-    width: 460px;
-  }
-
-  section article p {
-    font-size: 16px;
-    width: 460px;
-  }
-
-  section article img {
-    max-width: 460px;
-    height: auto;
-  }
-
-  section article hr {
-    width: 460px;
-  }
-
-  .video_container {
-    width: 480px;
-    height: 270px;
-  }
-
-  .video_container video {
-    width: 480px;
-    height: 270px;    
-  }
 }
