@@ -895,6 +895,11 @@ footer {
     width: 320px;
     height: 188px;
   }
+
+  section article p img {
+    max-width: 460px;
+  }
+
 }
 
 /* iPhone portrait */
@@ -928,6 +933,10 @@ footer {
 
   section article p, section article h2, section article h3, section article hr {
     width: 300px;
+  }
+
+  section article p img {
+    max-width: 300px;
   }
 
   section article p {
