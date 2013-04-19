@@ -856,12 +856,30 @@ footer {
 }
 
 
-/* iPhone landscape */
-@media screen and (max-device-width: 480px) { 
+/* all iPhone */
+@media screen and (max-device-width: 480px), screen and (max-device-width: 320px) { 
   nav {
     position: absolute !important;
     top: 0 !important;
   }
+
+  .browser .ui, .browser .title {
+    display: none;
+  }
+
+
+  
+
+  .play {
+    display: none !important;
+  }
+
+}
+
+/* iPhone horizontal */
+
+@media screen and (max-device-width: 480px)  {
+
   .browser, .browser.maxied, .browser.minied {
     width: 320px;
     height: auto;
@@ -877,18 +895,43 @@ footer {
     width: 320px;
     height: 188px;
   }
-
-  .browser .ui, .browser .title {
-    display: none;
-  }
-
-  .play {
-    display: none !important;
-  }
 }
 
 /* iPhone portrait */
 
 @media screen and (max-device-width: 320px) { 
+  .browser, .browser.maxied, .browser.minied {
+    width: 320px;
+    height: auto;
+    padding: 0;
+  }
+
+  .browser .window {
+    width: 320px;
+    height: auto;
+  }
+
+  .browser .window video {
+    width: 320px;
+    height: 188px;
+  }
+  
+  .video_container {
+    width: 320px;
+    height: 180px;
+  }
+
+  .video_container video {
+    height: 320px;
+    width: 180px;
+  }
+
+  section article p, section article h2, section article h3, section article hr {
+    width: 300px;
+  }
+
+  section article p {
+    font-size: 14px;
+  }
 
 }
