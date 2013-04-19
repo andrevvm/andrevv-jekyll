@@ -888,7 +888,7 @@ footer {
 
 /* iPhone horizontal */
 
-@media screen and (max-device-width: 480px)  {
+@media screen and (min-width: 479px) and (max-device-width: 480px)  {
 
   .browser, .browser.maxied, .browser.minied {
     width: 320px;
