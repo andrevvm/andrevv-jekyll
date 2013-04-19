@@ -878,7 +878,7 @@ footer {
     height: 300px;
   }
 
-  .browser.ui, .browser.title {
+  .browser .ui, .browser .title {
     display: none;
   }
 
