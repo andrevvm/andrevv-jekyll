@@ -863,19 +863,19 @@ footer {
     top: 0 !important;
   }
   .browser, .browser.maxied, .browser.minied {
-    width: 460px;
+    width: 320px;
     height: auto;
     padding: 0;
   }
 
   .browser .window {
-    width: 460px;
+    width: 320px;
     height: auto;
   }
 
   .browser .window video {
-    width: 460px;
-    height: 300px;
+    width: 320px;
+    height: 188px;
   }
 
   .browser .ui, .browser .title {
