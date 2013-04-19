@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5 {
 .section.work .position {
   position: relative;
   display: block;
-  top: 38%;
+  top: 30%;
 }
 
 .section.work a:hover {
@@ -98,7 +98,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .section.work h1 {
-  font-size: 26px;
+  font-size: 20px;
   margin-bottom: 10px;
   top: auto;
 }
@@ -109,7 +109,7 @@ h1,h2,h3,h4,h5 {
   opacity: 0.5;
   font-style: italic;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   top: auto;
 }
 
@@ -760,19 +760,19 @@ footer {
   }
 
   .cat img {
-    top: 36%;
+    top: 45%;
   }
 
   .section.work .position {
-    top: 30%;
+    top: 38%;
   }
 
   .section.work h1 {
-    font-size: 20px;
+    font-size: 26px;
   }
 
   .section.work h2 {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
