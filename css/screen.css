@@ -867,42 +867,11 @@ footer {
     display: none;
   }
 
-
-  
-
   .play {
     display: none !important;
   }
 
-}
-
-/* iPhone horizontal */
-
-@media screen and (max-device-width: 480px)  {
-
-  .browser, .browser.maxied, .browser.minied {
-    width: 320px;
-    height: auto;
-    padding: 0;
-  }
-
-  .browser .window {
-    width: 320px;
-    height: auto;
-  }
-
-  .browser .window video {
-    width: 320px;
-    height: 188px;
-  }
-
-  section article p img {
-    max-width: 460px;
-  }
-
-}
-
-/* iPhone portrait */
+}/* iPhone portrait */
 
 @media screen and (max-device-width: 320px) { 
   .browser, .browser.maxied, .browser.minied {
@@ -941,6 +910,32 @@ footer {
 
   section article p {
     font-size: 14px;
+  }
+
+}
+
+/* iPhone horizontal */
+
+@media screen and (max-device-width: 480px)  {
+
+  .browser, .browser.maxied, .browser.minied {
+    width: 320px;
+    height: auto;
+    padding: 0;
+  }
+
+  .browser .window {
+    width: 320px;
+    height: auto;
+  }
+
+  .browser .window video {
+    width: 320px;
+    height: 188px;
+  }
+
+  section article p img {
+    max-width: 460px;
   }
 
 }
