@@ -888,7 +888,7 @@ footer {
 
 /* iPhone horizontal */
 
-@media screen and (min-width: 479px) and (max-device-width: 480px)  {
+@media screen and (min-device-width: 321px)  {
 
   .browser, .browser.maxied, .browser.minied {
     width: 320px;
@@ -928,29 +928,29 @@ footer {
 
 @media screen and (max-device-width: 320px) { 
   .browser, .browser.maxied, .browser.minied {
-    width: 320px;
+    width: 300px;
     height: auto;
     padding: 0;
   }
 
   .browser .window {
-    width: 320px;
+    width: 300px;
     height: auto;
   }
 
   .browser .window video {
-    width: 320px;
+    width: 300px;
     height: 188px;
   }
   
   .video_container {
-    width: 320px;
-    height: 180px;
+    width: 300px;
+    height: 169px;
   }
 
   .video_container video {
-    height: 320px;
-    width: 180px;
+    height: 300px;
+    width: 169px;
   }
 
   section article p, section article h2, section article h3, section article hr {
