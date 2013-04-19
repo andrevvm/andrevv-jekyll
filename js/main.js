@@ -179,7 +179,7 @@ function initVideo() {
     var video = $(this).next("video").get(0);
     if(video.paused === true) {
       $(this).closest(".browser").addClass('maxied');
-      setTimeout(function() {video.play();}, 500);
+      video.play();
     } else {
       video.pause();
       $(this).closest(".browser").removeClass('maxied');
