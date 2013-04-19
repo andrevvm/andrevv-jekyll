@@ -764,6 +764,110 @@ footer {
   }
 }
 
+@media only screen and (max-width : 320px) {
+  .cat {
+    background-image: none !important;
+  }
+  .section h1, .section h2, .section h3, .section p {
+    top: 110px;
+  }
+
+  .cat img {
+    top: 0px;
+  }
+
+  .browser {
+    width: 280px;
+  }
+
+}
+
+/* all iPhone */
+@media screen and (max-device-width: 480px), screen and (max-device-width: 320px) { 
+  nav {
+    position: absolute !important;
+    top: 0 !important;
+  }
+
+  .browser .ui, .browser .title {
+    display: none;
+  }
+
+  .play {
+    display: none !important;
+  }
+
+}
+
+/* iPhone portrait */
+
+@media screen and (max-device-width: 320px) { 
+  .browser, .browser.maxied, .browser.minied {
+    width: 320px;
+    height: auto;
+    padding: 0;
+  }
+
+  .browser .window {
+    width: 320px;
+    height: auto;
+  }
+
+  .browser .window video {
+    width: 320px;
+    height: 188px;
+  }
+  
+  .video_container {
+    width: 320px;
+    height: 180px;
+  }
+
+  .video_container video {
+    height: 320px;
+    width: 180px;
+  }
+
+  section article p, section article h2, section article h3, section article hr {
+    width: 300px;
+  }
+
+  section article p img {
+    max-width: 300px;
+  }
+
+  section article p {
+    font-size: 14px;
+  }
+
+}
+
+/* iPhone horizontal */
+
+@media screen (min-width: 321px) and (max-device-width: 480px)  {
+
+  .browser, .browser.maxied, .browser.minied {
+    width: 320px;
+    height: auto;
+    padding: 0;
+  }
+
+  .browser .window {
+    width: 320px;
+    height: auto;
+  }
+
+  .browser .window video {
+    width: 320px;
+    height: 188px;
+  }
+
+  section article p img {
+    max-width: 460px;
+  }
+
+}
+
 @media only screen and (min-width : 321px) and (max-width: 640px) {
   .cat {
     background-image: none !important;
@@ -836,109 +940,4 @@ footer {
     width: 480px;
     height: 270px;    
   }
-}
-
-@media only screen and (max-width : 320px) {
-  .cat {
-    background-image: none !important;
-  }
-  .section h1, .section h2, .section h3, .section p {
-    top: 110px;
-  }
-
-  .cat img {
-    top: 0px;
-  }
-
-  .browser {
-    width: 280px;
-  }
-
-}
-
-
-/* all iPhone */
-@media screen and (max-device-width: 480px), screen and (max-device-width: 320px) { 
-  nav {
-    position: absolute !important;
-    top: 0 !important;
-  }
-
-  .browser .ui, .browser .title {
-    display: none;
-  }
-
-  .play {
-    display: none !important;
-  }
-
-}
-
-/* iPhone portrait */
-
-@media screen and (max-device-width: 320px) { 
-  .browser, .browser.maxied, .browser.minied {
-    width: 320px;
-    height: auto;
-    padding: 0;
-  }
-
-  .browser .window {
-    width: 320px;
-    height: auto;
-  }
-
-  .browser .window video {
-    width: 320px;
-    height: 188px;
-  }
-  
-  .video_container {
-    width: 320px;
-    height: 180px;
-  }
-
-  .video_container video {
-    height: 320px;
-    width: 180px;
-  }
-
-  section article p, section article h2, section article h3, section article hr {
-    width: 300px;
-  }
-
-  section article p img {
-    max-width: 300px;
-  }
-
-  section article p {
-    font-size: 14px;
-  }
-
-}
-
-/* iPhone horizontal */
-
-@media screen and (max-device-width: 480px)  {
-
-  .browser, .browser.maxied, .browser.minied {
-    width: 320px;
-    height: auto;
-    padding: 0;
-  }
-
-  .browser .window {
-    width: 320px;
-    height: auto;
-  }
-
-  .browser .window video {
-    width: 320px;
-    height: 188px;
-  }
-
-  section article p img {
-    max-width: 460px;
-  }
-
 }
