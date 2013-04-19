@@ -11,7 +11,7 @@ body_bg: '#ccc'
 
 <div class="video_container">
   <video id="symbolism"
-    preload="none" width="1024" height="576" poster="{{ site.root }}/work/symbolism/symbolism.png" data-setup="{}">
+    preload="auto" width="1024" height="576" poster="{{ site.root }}/work/symbolism/symbolism.png" data-setup="{}">
     <source src="{{ site.root }}/work/symbolism/symbolism.mp4" type='video/mp4'>
     <source src="{{ site.root }}/work/symbolism/symbolism.webm" type='video/webm'>
   </video>
