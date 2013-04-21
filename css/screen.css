@@ -609,7 +609,7 @@ you can use the generic selector below, but it's slower:
 }
 
 .browser .ui .close {
-  background: #FF4000;
+  background: #FF5011;
 }
 
 .browser .ui .close:active {
