@@ -1,4 +1,4 @@
-andrevv-jekyll
+http://andrevv.com
 ==============
 
-My first Jekyll install
+My personal website, built on Jekyll, deployed with GitHub pages.
