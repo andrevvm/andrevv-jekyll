@@ -415,6 +415,7 @@ section article p a.button {
   background: none;
   color: black;
   border: 1px solid black;
+  margin: 40px 0;
 }
 
 section article p a.button:hover {
@@ -837,7 +838,7 @@ footer {
   footer em {
     display: none;
   }
-  
+
   .section {
     height: 100%;
   }
