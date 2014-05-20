@@ -714,7 +714,12 @@ footer {
   .section h1, .section h2, .section h3, .section p {
     width: auto;
     font-size: 20px;
-    top: 45%;
+    top: 48%;
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
   }
 
   .cat img {
@@ -739,7 +744,7 @@ footer {
     background-image: none !important;
   }
   .section h1, .section h2, .section h3, .section p {
-    top: 120px;
+    top: 140px;
     font-size: 16px;
   }
 
