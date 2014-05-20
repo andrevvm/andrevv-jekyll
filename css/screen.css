@@ -14,6 +14,7 @@ body, html {
   transition: font-size .2s;
   color: #000;
   height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,h2,h3,h4,h5 {
@@ -104,7 +105,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .section.work h2 {
-  font-family: "Times", "Times New Roman", serif;
+  font-family: "Hoefler Text", "Times New Roman", serif;
   text-transform: none;
   opacity: 0.5;
   font-style: italic;
@@ -311,7 +312,7 @@ header {
   padding-top: 90px;
   background: #00FFBF;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 header img {
@@ -327,7 +328,7 @@ header h1 {
 }
 
 header h2 {
-  font-family: Times, "Times New Roman", serif;
+  font-family: "Hoefler Text", "Times New Roman", serif;
   opacity: 0.5;
   font-size: 20px;
   font-style: italic;
@@ -338,12 +339,12 @@ header h2 {
 }
 
 section article {
-  font-family: "Times", "Times New Roman", serif;
+  font-family: "Hoefler Text", "Times New Roman", serif;
   font-weight: normal;
   margin: 0 auto;
   line-height: 1.6em;
   text-transform: none;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 section article p {
@@ -369,9 +370,9 @@ section article h3 {
   font-size: 16px;
   font-style: italic;
   opacity: 0.5;
-  font-family: Times, "Times New Roman", serif;
+  font-family: "Hoefler Text", "Times New Roman", serif;
   text-transform: none;
-  margin: 5px auto 40px;
+  margin: 5px auto 80px;
 }
 
 section article blockquote {
@@ -389,7 +390,7 @@ section article a {
 
 section article hr {
   width: 620px;
-  margin: 40px auto;
+  margin: 100px auto;
   border: 0;
   border-bottom: 1px solid #ddd;
   background: none;
@@ -404,6 +405,10 @@ section footer p {
 
 section footer a {
   background: black;
+}
+
+footer em {
+  font-style: normal;
 }
 
 section article p a.button {
@@ -476,13 +481,13 @@ you can use the generic selector below, but it's slower:
   margin: 40px auto;
   width: 640px;
   height: 400px;
+  overflow: hidden;
   background: #e6e6e6;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
   position: relative;
-  overflow: hidden;
   -webkit-transition: width 500ms, height 500ms, padding 100ms;
   -moz-transition: width 500ms, height 500ms, padding 100ms;
   -o-transition: width 500ms, height 500ms, padding 100ms;
@@ -545,67 +550,12 @@ you can use the generic selector below, but it's slower:
   position: relative;
 }
 
-.browser .ui div {
-  opacity: 0
+.browser .ui {
+  opacity: 0.6
 }
 
-.browser:hover .ui div {
-  opacity: 0.25;
-}
-
-.browser .ui li:hover div {
-  opacity: 0.5;
-}
-
-.cross {
-  top: 1px;
-  left: 1px;
-  background: #000;
-  width: 3px;
-  height: 9px;
-  position: relative;
-  margin-left: 3px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.cross:before {
-  background: #000;
-  content: "";
-  width: 9px;
-  height: 3px;
-  position: absolute;
-  top: 3px;
-  left: -3px;
-}
-
-.plus {
-  top: 1px;
-  left: 1px;
-  background: #000;
-  width: 3px;
-  height: 9px;
-  position: relative;
-  margin-left: 3px;
-}
-
-.plus:before{
-  background: #000;
-  content: "";
-  width: 9px;
-  height: 3px;
-  position: absolute;
-  top: 3px;
-  left: -3px;
-}
-
-.minus {
-  top: 4px;
-  left: 1px;
-  background: #000;
-  width: 9px;
-  height: 3px;
-  position: absolute;
+.browser:hover .ui {
+  opacity: 1;
 }
 
 .browser .ui .close {
@@ -617,11 +567,19 @@ you can use the generic selector below, but it's slower:
 }
 
 .browser .ui .min {
-  background: #FFD317;
+  background: #ffc000;
 }
 
-.browser .ui .min:active {
-  background: #CCA912;
+.browser .ui li:hover:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 4px;
+  background: white;
+  opacity: 0.4;
+  position: absolute;
+  top: 2px;
+  left: 2px;
 }
 
 .browser .ui .max {
@@ -636,7 +594,7 @@ you can use the generic selector below, but it's slower:
 .browser .window {
   position: relative;
   height: 400px;
-  width: 100%;
+  width: auto;
   overflow-y: auto;
   -webkit-transition: height 500ms;
   -moz-transition: height 500ms;
@@ -882,6 +840,10 @@ footer {
 
   .play {
     display: none !important;
+  }
+
+  footer em {
+    display: none;
   }
 
 }

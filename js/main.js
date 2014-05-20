@@ -132,9 +132,9 @@ function initBrowser() {
         before_html +=    title;
         before_html +=  '</h4>';
         before_html +=  '<ul class="ui">';
-        before_html +=    '<li class="close"><div class="cross"></div></li>';
-        before_html +=    '<li class="min"><div class="minus"></div></li>';
-        before_html +=    '<li class="max"><div class="plus"></div></li>';
+        before_html +=    '<li class="close"></li>';
+        before_html +=    '<li class="min"></li>';
+        before_html +=    '<li class="max"></li>';
         before_html +=  '</ul>';
         before_html +=  '<div class="window"></div></div>';
 
