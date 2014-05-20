@@ -744,7 +744,7 @@ footer {
     background-image: none !important;
   }
   .section h1, .section h2, .section h3, .section p {
-    top: 140px;
+    top: 150px;
     font-size: 16px;
   }
 
@@ -813,25 +813,6 @@ footer {
   }
 }
 
-@media only screen and (max-width : 320px) {
-  .cat {
-    background-image: none !important;
-  }
-  .section h1, .section h2, .section h3, .section p {
-    top: 110px;
-  }
-
-  .cat img {
-    top: 0px;
-  }
-
-  .browser {
-    width: 280px;
-  }
-
-}
-
-
 /* all iPhone */
 @media screen and (max-device-width: 480px), screen and (max-device-width: 320px) { 
   nav {
@@ -847,8 +828,22 @@ footer {
     display: none !important;
   }
 
+  footer {
+    font-size: 56px;
+    line-height: 20px;
+    text-align: center;
+  }
+
   footer em {
     display: none;
+  }
+  
+  .section {
+    height: 100%;
+  }
+
+  .section.work .position {
+    top: 40%;
   }
 
 }
@@ -894,5 +889,8 @@ footer {
     font-size: 14px;
   }
 
-}
+  .section h1, .section h2, .section h3, .section p {
+    top: 195px;
+  }
 
+}

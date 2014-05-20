@@ -7,14 +7,14 @@
 
   <section class="prev">
     {% if page.next %}
-      <a href="{{ site.root }}{{ page.next.url }}" style="color: {{ page.next.color }}; background: {{ page.next.background }}"><em>&larr; {{ page.next.title }}</em></a>
+      <a href="{{ site.root }}{{ page.next.url }}" style="color: {{ page.next.color }}; background: {{ page.next.background }}">&larr;<em> {{ page.next.title }}</em></a>
     {% else %}
       <span class=""><em>This is the beginning</em></span>
     {% endif %}
   </section>
   <section class="next">
     {% if page.previous %}
-      <a href="{{ site.root }}{{ page.previous.url }}" style="color: {{ page.previous.color }}; background: {{ page.previous.background }}"><em>{{ page.previous.title }}</em> &rarr;</a>
+      <a href="{{ site.root }}{{ page.previous.url }}" style="color: {{ page.previous.color }}; background: {{ page.previous.background }}"><em>{{ page.previous.title }} </em>&rarr;</a>
     {% else %}
       <span class=""><em>This is the end</em></span>
     {% endif %}
