@@ -368,7 +368,7 @@ section article blockquote {
 section article blockquote aside {
   position: absolute;
   right: 60px;
-  
+
 }
 
 section article h2, section article h3, section article h4 {
@@ -885,8 +885,8 @@ footer {
   }
 
   .video_container video {
-    height: 300px;
-    width: 169px;
+    width: 300px;
+    height: 169px;
   }
 
   section article p, section article h2, section article h3, section article hr {
