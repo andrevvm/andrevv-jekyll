@@ -358,9 +358,9 @@ section article blockquote {
 section article blockquote { 
   font-style: italic;
   color: #888;
-  border-left: 4px solid #ccc;
+  border-left: 1px solid black;
   padding-left: 20px;
-  width: 580px;
+  width: 590px;
   position: relative;
   margin-bottom: 100px;
 }
