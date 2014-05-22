@@ -704,6 +704,7 @@ footer {
   height: 576px;
   margin: 30px auto;
   position: relative;
+  border: 1px solid black;
   -webkit-transition: height 500ms, width 500ms;
   -moz-transition: height 500ms, width 500ms;
   -o-transition: height 500ms, width 500ms;
