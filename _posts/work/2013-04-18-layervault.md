@@ -19,7 +19,7 @@ color: '#fff'
   </video>
 </div>
 
-LayerVault is a tool that automatically syncs designers' files in realtime, making backup, versioning, and collaboration a breeze. The video above shows the sign up and onboarding flow that I designed to introduce new users to the interface.
+LayerVault is a tool that automatically syncs designers' files in realtime, making backup, versioning, and collaboration a breeze. The video above shows the sign up and onboarding flow that I designed to introduce new users to the product.
 
 <a href="http://layervault.com" class="button" rel="external">View website</a>
 
