@@ -6,7 +6,6 @@ categories: work
 responsibilities: Motion Graphics, Animation
 background: '#222'
 color: '#FFF'
-body_bg: '#ccc'
 ---
 
 <div class="video_container">
