@@ -308,7 +308,7 @@ nav.slideIn {
 }
 
 header {
-  height: 150px;
+  height: 200px;
   padding-top: 90px;
   background: #00FFBF;
   text-align: center;
@@ -323,8 +323,8 @@ header img {
 }
 
 header h1 {
-  font-size: 24px;
-  margin: 10px 0;
+  font-size: 28px;
+  margin: 20px 0;
 }
 
 header h2 {
@@ -335,7 +335,7 @@ header h2 {
   font-weight: 400;
   text-transform: none;
   letter-spacing: 0;
-  margin: 10px 0;
+  margin: 10px 0 20px;
 }
 
 section article {
@@ -347,11 +347,27 @@ section article {
   margin-bottom: 120px;
 }
 
-section article p {
+section article p,
+section article blockquote {
   font-size: 20px;
   line-height: 1.6em;
   margin: 1em auto;
   width: 620px;
+}
+
+section article blockquote { 
+  font-style: italic;
+  color: #888;
+  border-left: 4px solid #ccc;
+  padding-left: 20px;
+  width: 580px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+section article blockquote aside {
+  position: absolute;
+  right: 60px;
 }
 
 section article h2, section article h3, section article h4 {
@@ -363,7 +379,7 @@ section article h2, section article h3, section article h4 {
 
 section article h2 {
   font-size: 20px;
-  margin: 40px auto 5px;
+  margin: 40px auto 15px;
 }
 
 section article h3 {
@@ -375,14 +391,6 @@ section article h3 {
   margin: 5px auto 80px;
 }
 
-section article blockquote {
-  color: #555;
-  border-left: 5px solid #00FFBF;
-  margin-left: 0;
-  padding-left: 1em;
-  font-style: italic;
-}
-
 section article a {
   color: black;
   text-decoration: underline;
@@ -390,7 +398,7 @@ section article a {
 
 section article hr {
   width: 620px;
-  margin: 100px auto;
+  margin: 80px auto;
   border: 0;
   border-bottom: 1px solid #ddd;
   background: none;
@@ -409,13 +417,18 @@ section footer a {
 
 footer em {
   font-style: normal;
+  position: relative;
+  top: -1px;
 }
 
 section article p a.button {
   background: none;
   color: black;
   border: 1px solid black;
-  margin: 40px 0;
+  width: 140px;
+  text-align: center;
+  display: block;
+  margin: 40px auto;
 }
 
 section article p a.button:hover {
@@ -676,14 +689,6 @@ footer section a, footer section span {
 footer section span {
   background: #999;
   color: #fff;
-}
-
-footer section a:hover {
-  opacity: 0.8
-}
-
-footer section a:active {
-  opacity: 0.9
 }
 
 footer {

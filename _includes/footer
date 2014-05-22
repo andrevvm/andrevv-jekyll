@@ -3,6 +3,8 @@
     <a href="http://twitter.com/andrevvm/" class="button" rel="external">
       <span class="fonticon icon-twitter">andrevvm</span>
     </a>
+
+    <a href="mailto:hi@andrevv.com" class="button"><span class="fonticon icon-mail">email me</span></a>
   </p>
 
   <section class="prev">
