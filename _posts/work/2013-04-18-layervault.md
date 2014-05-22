@@ -4,7 +4,7 @@ title: LayerVault
 description: "LayerVault Product Design"
 categories: work
 responsibilities: Product Design, Web Development
-background: '#20cea3'
+background: '#1be1a2'
 color: '#fff'
 ---
 
