@@ -28,7 +28,7 @@ $(function() {
   $("#content").hide();
   $("#content").fadeIn(600);
   
-  $(window).scroll(scroll);
+  setTimeout(scroll,50);
 
   $("#top").click(function(e){
     $nav.css("top",'');
