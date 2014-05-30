@@ -63,7 +63,7 @@ function scroll() {
     var docheight = $(document).height();
     if(scrollTop > docheight - section_h * 3) {
       count++;
-      if(count >= 10) {
+      if(count >= 10 && $('#begin').find('#end').length != 0) {
         $("#end").appendTo('#begin').css("display","block");
         return false;
       }
