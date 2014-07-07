@@ -9,11 +9,12 @@ var $nav,
     section_count,
     count,
     scrollVal,
-    scrollTop;
+    scrollTop,
+    navBool;
 
 
 $(function() {
-
+  navBool = false;
   $section = $('.section').eq(0);
   $window = $(window);
   $doc = $(document);
@@ -28,7 +29,7 @@ $(function() {
   $("#content").hide();
   $("#content").fadeIn(600);
   
-  setInterval(scroll,50);
+  $(window).scroll(scroll);
 
   $("#top").click(function(e){
     $nav.css("top",'');
@@ -45,49 +46,51 @@ $(function() {
 
 function scroll() {
   var section_h = $section.height();
-    scrollTop = $(this).scrollTop();
-    var scrollDif = scrollTop - scrollVal;
-    var inProgress = true;
-    if(scrollDif < 0 && scrollTop > 0) {
-      showNav();
-    } else {
-      hideNav();
-    }
+  scrollTop = $(this).scrollTop();
+  var scrollDif = scrollTop - scrollVal;
+  var inProgress = true;
+  console.log(navBool);
+  if(scrollDif < 0 && scrollTop > 0) {
+    showNav();
+  } else {
+    hideNav();
+  }
 
-    if (scrollTop <= 0) {
-      $nav.css('top',0);
-    }
+  if (scrollTop <= 0) {
+    $nav.css('top',0);
+  }
 
-    
+  
 
-    var docheight = $(document).height();
-    if(scrollTop > docheight - section_h * 3) {
-      count++;
-      if(count >= 10) {
-        if($('#begin').find('#end').length == 0) {
-          $("#end").appendTo('#begin').css("display","block");
-        }
-        return false;
+  var docheight = $(document).height();
+  if(scrollTop > docheight - section_h * 3) {
+    count++;
+    if(count >= 10) {
+      if($('#begin').find('#end').length == 0) {
+        $("#end").appendTo('#begin').css("display","block");
       }
-      var new_sections = sections.clone();
-      new_sections.each(function() {
-        if(section_count < 12) {
-          section_count ++;
-        } else {
-          section_count = 0;
-        }
-        var $cat = $(".cat",this);
-        $cat.removeClass("f00 f01 f02 f03 f04 f05 f06 f07 f08 f09 f10 f11 f12");
-        var new_class = zeroPad(section_count, 2);
-        $cat.addClass("f"+new_class);
-        $("#begin").append(new_sections);
-      });
+      return false;
     }
-    scrollVal = scrollTop;
+    var new_sections = sections.clone();
+    new_sections.each(function() {
+      if(section_count < 12) {
+        section_count ++;
+      } else {
+        section_count = 0;
+      }
+      var $cat = $(".cat",this);
+      $cat.removeClass("f00 f01 f02 f03 f04 f05 f06 f07 f08 f09 f10 f11 f12");
+      var new_class = zeroPad(section_count, 2);
+      $cat.addClass("f"+new_class);
+      $("#begin").append(new_sections);
+    });
+  }
+  scrollVal = scrollTop;
 }
 
 function showNav() {
   if(!$nav.hasClass('sticky')) {
+    navBool = true;
     $nav.css('top', -50);
     setTimeout(function(){
       $nav.addClass('sticky');
@@ -99,6 +102,7 @@ function showNav() {
 
 function hideNav() {
   if($nav.hasClass('sticky')) {
+    navBool = false;
     var currentPos = $nav.offset().top;
     $nav.removeClass('sticky');
     $nav.css("top",currentPos);
