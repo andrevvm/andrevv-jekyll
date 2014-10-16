@@ -14,6 +14,7 @@ body, html {
   transition: font-size .2s;
   color: #000;
   height: 100%;
+  background: white;
 }
 
 @media 
@@ -86,6 +87,10 @@ h1,h2,h3,h4,h5 {
   width: 300px;
 }
 
+.section.work:first-child {
+  padding-top: 40px;
+}
+
 .section.work a {
   position: relative;
   display: block;
@@ -102,7 +107,7 @@ h1,h2,h3,h4,h5 {
 .section.work a:hover {
   text-decoration: none;
   background: none;
-  background: rgba(0,0,0,0.03);
+  background: rgba(255,255,255,0.065);
 }
 
 .section.work h1 {
@@ -114,7 +119,6 @@ h1,h2,h3,h4,h5 {
 .section.work h2 {
   font-family: "Hoefler Text", "Times New Roman", serif;
   text-transform: none;
-  opacity: 0.8;
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
@@ -274,12 +278,14 @@ nav {
   width: 100%;
   z-index: 1000;
   font-size: 0;
+
 }
 
 nav a {
   font-size: 16px;
+  line-height: 16px;
   display: inline-block;
-  padding: 10px 15px;
+  margin: 15px;
   color: #bbb;
 }
 
@@ -289,7 +295,7 @@ nav a:hover {
 
 nav a.selected {
   color: #fff;
-  text-decoration: underline;
+  border-bottom: 1px solid white;
 }
 
 nav.sticky {
@@ -316,7 +322,7 @@ nav.slideIn {
 
 header {
   height: 200px;
-  padding-top: 90px;
+  padding-top: 110px;
   background: #00FFBF;
   text-align: center;
   margin-bottom: 80px;
@@ -330,19 +336,18 @@ header img {
 }
 
 header h1 {
-  font-size: 28px;
-  margin: 20px 0;
+  font-size: 24px;
+  margin: 20px 0 10px;
 }
 
 header h2 {
   font-family: "Hoefler Text", "Times New Roman", serif;
-  opacity: 0.5;
-  font-size: 20px;
+  font-size: 16px;
   font-style: italic;
   font-weight: 400;
   text-transform: none;
   letter-spacing: 0;
-  margin: 10px 0 20px;
+  margin: 15px 0 20px;
 }
 
 section article {
@@ -356,7 +361,7 @@ section article {
 
 section article p,
 section article blockquote {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6em;
   margin: 1em auto;
   width: 620px;
@@ -364,7 +369,7 @@ section article blockquote {
 
 section article blockquote { 
   font-style: italic;
-  color: #888;
+  color: #555;
   border-left: 1px solid black;
   padding-left: 20px;
   width: 590px;
@@ -375,6 +380,7 @@ section article blockquote {
 section article blockquote aside {
   position: absolute;
   right: 60px;
+  margin-top: 10px;
 
 }
 
@@ -702,7 +708,7 @@ footer section a:hover:after {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.03);
+  background: rgba(255,255,255,0.1);
 }
 
 footer section span {
@@ -713,7 +719,7 @@ footer section span {
 footer {
   background: #f3f3f3;
   text-align: center;
-  padding: 40px 0 110px;
+  padding: 20px 0 90px;
   position: relative;
 }
 
@@ -762,11 +768,11 @@ footer {
   }
 
   .section.work h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .section.work h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 

@@ -3,7 +3,7 @@ layout: work
 title: symbolism
 description: "In Symbolism, a playful, tragic, romantic and humorous narrative is told through animated pictograms."
 categories: work
-responsibilities: Motion Graphics, Animation
+responsibilities: Motion Graphics &amp; Animation
 background: '#222'
 color: '#FFF'
 ---

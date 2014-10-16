@@ -56,7 +56,7 @@ function scroll() {
     hideNav();
   }
 
-  if (scrollTop <= 0) {
+  if (scrollTop <= 0 ) {
     $nav.css('top',0);
   }
 
@@ -130,10 +130,11 @@ function initBrowser() {
       $(this).closest(".browser").toggleClass('maxied');
     });
     var title = $this.attr('title');
+    var style = $this.attr('style');
     if(typeof title === 'undefined') {
       title = "";
     }
-    var before_html = '<div class="browser">';
+    var before_html = '<div class="browser" style="'+style+'">';
         before_html +=  '<h4 class="title">';
         before_html +=    title;
         before_html +=  '</h4>';
@@ -142,7 +143,7 @@ function initBrowser() {
         before_html +=    '<li class="min"></li>';
         before_html +=    '<li class="max"></li>';
         before_html +=  '</ul>';
-        before_html +=  '<div class="window"></div></div>';
+        before_html +=  '<div class="window" style="'+style+'"></div></div>';
 
     var after_html = "</div></div>";
 

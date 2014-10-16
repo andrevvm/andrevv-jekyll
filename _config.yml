@@ -1,6 +1,6 @@
 auto: true
 markdown: rdiscount
 permalink: /:categories/:title/
-#root: 'http://localhost:4000'
-root: 'http://andrevv.com'
+# root: 'http://localhost:4000'
+root: ''
 url: '/'
