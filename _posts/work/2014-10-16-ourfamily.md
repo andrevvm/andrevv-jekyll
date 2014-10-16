@@ -16,6 +16,6 @@ color: '#fff'
   </video>
 </div>
 
-Our Family needed a one-page shop for their new brand, so I designed and built a custom Shopify theme for them. Bold colors and the photography of chinese activist artist Ren Hang emphasises Our Family's message of anti-censorship.
+Our Family needed a one-page shop for their new brand, so I designed and built a custom Shopify theme with them. Bold colors and the photography of chinese activist artist Ren Hang emphasises Our Family's message of anti-censorship.
 
 <a href="http://ourfamilyshoes.com" class="button" rel="external">View website</a>
