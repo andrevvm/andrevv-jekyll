@@ -897,10 +897,21 @@ footer {
     height: 100%;
   }
 
-  .section.work .position,
+  .section.work .position {
+    top: 40%;
+  }
+
   header h1,
   header h2 {
-    top: 40%;
+    top: 48%;
+  }
+
+  footer {
+    padding-top: 1px;
+  }
+
+  footer .button {
+    margin: 0 10px 20px;
   }
 
 }
