@@ -336,7 +336,7 @@ header img {
 }
 
 header h1 {
-  font-size: 24px;
+  font-size: 20px;
   margin: 20px 0 10px;
 }
 
@@ -768,7 +768,7 @@ footer {
   }
 
   .section.work h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .section.work h2 {
