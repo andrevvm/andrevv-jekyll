@@ -873,7 +873,7 @@ footer {
 /* all iPhone */
 @media screen and (max-device-width: 480px), screen and (max-device-width: 320px) { 
   nav {
-    position: absolute !important;
+    position: fixed !important;
     top: 0 !important;
   }
 
