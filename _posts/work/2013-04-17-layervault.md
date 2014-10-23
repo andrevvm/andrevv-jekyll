@@ -19,7 +19,7 @@ color: '#000'
   </video>
 </div>
 
-LayerVault is a tool that automatically syncs designers' files in realtime, making backup, versioning, and collaboration a breeze. The video above shows the sign up and onboarding flow that I designed to introduce new users to the product.
+<em>LayerVault</em> is a tool that automatically syncs designers' files in realtime, making backup, versioning, and collaboration a breeze. The video above shows the sign up and onboarding flow that I designed to introduce new users to the product.
 
 <a href="http://layervault.com" class="button" rel="external">View website</a>
 
@@ -35,6 +35,6 @@ LayerVault is a tool that automatically syncs designers' files in realtime, maki
     <source src="{{ site.root }}/work/layervault/delivery.webm" type='video/webm'>
   </video>
 </div>
-Delivery is an external tool of LayerVault which enables designers to make quick &amp; easy presentations of their work.
+<em>Delivery</em> is an external tool of <em>LayerVault</em> which enables designers to make quick &amp; easy presentations of their work.
 
 <a href="http://delivery.layervault.com" class="button" rel="external">Launch project</a>
