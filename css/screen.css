@@ -762,6 +762,12 @@ footer {
   width: 1024px;
 }
 
+img.standalone {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 480px) {
 
   .section h1, .section h2, .section h3, .section p {
