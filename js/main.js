@@ -42,6 +42,25 @@ $(function() {
 
   $("a[rel=external]").attr("target","_blank");
 
+  var frame = 1;
+  var up = true;
+  setInterval(function(){
+    if(frame < 8 && up == true) {
+      frame ++;
+      up = true;
+    } else {
+      frame --;
+      up = false;
+    }
+
+    if(frame == 0) {
+      frame = 1;
+      up = true;
+    }
+
+    $('#favicon').attr('href','/img/humans/0'+frame+'.png');
+  },100);
+
 });
 
 function scroll() {
@@ -73,13 +92,13 @@ function scroll() {
     }
     var new_sections = sections.clone();
     new_sections.each(function() {
-      if(section_count < 12) {
+      if(section_count < 13) {
         section_count ++;
       } else {
         section_count = 0;
       }
       var $cat = $(".cat",this);
-      $cat.removeClass("f00 f01 f02 f03 f04 f05 f06 f07 f08 f09 f10 f11 f12");
+      $cat.removeClass("f00 f01 f02 f03 f04 f05 f06 f07 f08 f09 f10 f11 f12 f13");
       var new_class = zeroPad(section_count, 2);
       $cat.addClass("f"+new_class);
       $("#begin").append(new_sections);

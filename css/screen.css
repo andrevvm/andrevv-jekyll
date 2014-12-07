@@ -144,12 +144,13 @@ h1,h2,h3,h4,h5 {
 }
 
 a {
-  color: #FFFFFF;
+  color: #000;
   text-decoration: none;
+  border-bottom: 1px solid white;
 }
 
 .section a:hover {
-  text-decoration: underline;
+  background: white;
 }
 
 pre a:hover {
@@ -186,6 +187,7 @@ pre a:hover {
   text-transform: lowercase;
   font-size: 16px;
   display: inline-block;
+  border: 0;
 }
 
 .button:hover, a.button:hover {
@@ -203,82 +205,98 @@ pre a:hover {
   width: 100%;
   height: 100%;
   min-height: 260px;
-  background-position: center bottom;
+  background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  -webkit-background-size: 50%;
-  -moz-background-size: 50%;
-  -o-background-size: 50%;
-  background-size: 50%;
+  -webkit-background-size: auto 50%;
+  -moz-background-size: auto 50%;
+  -o-background-size: auto 50%;
+  background-size: auto 50%;
 }
 
 .section#end {
   display: none;
+  background: black;
+  color: white;
+}
+
+.section#end a {
+  color: white;
+  text-decoration: none;
+}
+
+.section#end a:hover {
+  color: black;
 }
 
 .cat.f00 {
-  background-image: url(../img/catz/catz00.gif);
-  background-color: #1CF9D4;
+  background-image: url(../img/humans/01.png);
+  background-color: #FF4D4D;
 }
 
 .cat.f01 {
-  background-image: url(../img/catz/catz01.gif);
-  background-color: #1DE4DB;
+  background-image: url(../img/humans/02.png);
+  background-color: #FF6A4D;
 }
 
 .cat.f02 {
-  background-image: url(../img/catz/catz02.gif);
-  background-color: #1FD0E2;
+  background-image: url(../img/humans/03.png);
+  background-color: #FF894D;
 }
 
 .cat.f03 {
-  background-image: url(../img/catz/catz03.gif);
-  background-color: #20BBE9;
+  background-image: url(../img/humans/04.png);
+  background-color: #FFAD4D;
 }
 
 .cat.f04 {
-  background-image: url(../img/catz/catz04.gif);
-  background-color: #22A7F0;
+  background-image: url(../img/humans/05.png);
+  background-color: #FFD34D;
 }
 
 .cat.f05 {
-  background-image: url(../img/catz/catz05.gif);
-  background-color: #2392F7;
+  background-image: url(../img/humans/06.png);
+  background-color: #FFF14D;
 }
 
 .cat.f06 {
-  background-image: url(../img/catz/catz06.gif);
-  background-color: #4F87DC;
+  background-image: url(../img/humans/07.png);
+  background-color: #4DFFCD;
 }
 
 .cat.f07 {
-  background-image: url(../img/catz/catz07.gif);
-  background-color: #727EC7;
+  background-image: url(../img/humans/08.png);
+  background-color: #4DE9FF;
 }
 
 .cat.f08 {
-  background-image: url(../img/catz/catz08.gif);
-  background-color: #9575B2;
+  background-image: url(../img/humans/07.png);
+  background-color: #4DADFF;
 }
 
 .cat.f09 {
-  background-image: url(../img/catz/catz09.gif);
-  background-color: #DC6387;
+  background-image: url(../img/humans/06.png);
+  background-color: #4D80FF;
 }
 
 .cat.f10 {
-  background-image: url(../img/catz/catz10.gif);
-  background-color: #FF5A72;
+  background-image: url(../img/humans/05.png);
+  background-color: #465BFF;
 }
 
 .cat.f11 {
-  background-image: url(../img/catz/catz11.gif);
-  background-color: #FF6A62;
+  background-image: url(../img/humans/04.png);
+  background-color: #8959FD;
 }
 
 .cat.f12 {
-  background-image: url(../img/catz/catz12.gif);
-  background-color: #FF7755;
+  background-image: url(../img/humans/03.png);
+  background-color: #B259FD;
+}
+
+.cat.f13 {
+  background-image: url(../img/humans/02.png);
+  background-color: #DE59FD;
 }
 
 nav {
@@ -289,7 +307,6 @@ nav {
   width: 100%;
   z-index: 1000;
   font-size: 0;
-
 }
 
 nav a {
@@ -298,6 +315,7 @@ nav a {
   display: inline-block;
   margin: 15px;
   color: #bbb;
+  border: 0;
 }
 
 nav a:hover {
@@ -877,7 +895,22 @@ img.standalone {
 }
 
 /* all iPhone */
-@media screen and (max-device-width: 480px), screen and (max-device-width: 320px) { 
+@media screen and (max-device-width: 768px), screen and (max-device-width: 320px) { 
+
+  .cat {
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: 50vw 50%;
+    background-repeat: repeat-x;
+  }
+
+  .cat p,
+  .cat h3,
+  .cat h2 {
+    width: 75%;
+    margin: 0 auto;
+  }
+
   nav {
     position: fixed !important;
     top: 0 !important;
