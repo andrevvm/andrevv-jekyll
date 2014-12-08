@@ -190,6 +190,11 @@ pre a:hover {
   border: 0;
 }
 
+.section .button {
+  color: white;
+  border: 0;
+}
+
 .button:hover, a.button:hover {
   background: #555;
   background: rgba(0,0,0,0.8);
