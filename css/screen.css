@@ -468,6 +468,10 @@ section footer a {
   background: black;
 }
 
+footer a {
+  text-decoration: none;
+}
+
 footer em {
   font-style: normal;
   position: relative;
