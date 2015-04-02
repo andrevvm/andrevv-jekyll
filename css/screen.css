@@ -180,7 +180,6 @@ pre a:hover {
 .button {
   color: #FFF;
   background: black;
-  border-radius: 6px;
   padding: .7em 1.2em;
   text-decoration: none;
   font-family: "Orator";
@@ -560,10 +559,6 @@ you can use the generic selector below, but it's slower:
   height: 400px;
   overflow: hidden;
   background: #e6e6e6;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -o-border-radius: 6px;
-  border-radius: 6px;
   position: relative;
   -webkit-transition: width 500ms, height 500ms, padding 100ms;
   -moz-transition: width 500ms, height 500ms, padding 100ms;
@@ -618,11 +613,6 @@ you can use the generic selector below, but it's slower:
   display: inline-block;
   width: 11px;
   height: 11px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  margin-right: 10px;
   cursor: pointer;
   position: relative;
 }
