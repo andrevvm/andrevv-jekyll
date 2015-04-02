@@ -613,6 +613,11 @@ you can use the generic selector below, but it's slower:
   display: inline-block;
   width: 11px;
   height: 11px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
   cursor: pointer;
   position: relative;
 }
