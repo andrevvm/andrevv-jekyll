@@ -1240,11 +1240,12 @@ footer.Work {
   }
 
   /* line 1028, ../sass/screen.scss */
-  section article p {
+  section article p,
+  section article blockquote {
     font-size: 14px;
   }
 
-  /* line 1032, ../sass/screen.scss */
+  /* line 1033, ../sass/screen.scss */
   .section h1, .section h2, .section h3, .section p {
     top: 195px;
   }

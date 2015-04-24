@@ -1025,7 +1025,8 @@ footer {
     max-width: 300px;
   }
 
-  section article p {
+  section article p,
+  section article blockquote {
     font-size: 14px;
   }
 
