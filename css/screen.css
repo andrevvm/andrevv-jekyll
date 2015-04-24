@@ -1230,7 +1230,7 @@ footer.Work {
   }
 
   /* line 1020, ../sass/screen.scss */
-  section article p, section article h2, section article h3, section article hr {
+  section article p, section article h2, section article h3, section article hr, section article blockquote {
     width: 300px;
   }
 
