@@ -1190,65 +1190,60 @@ footer.Work {
   }
 
   /* line 984, ../sass/screen.scss */
-  footer {
-    padding-top: 1px;
-  }
-
-  /* line 988, ../sass/screen.scss */
   footer .button {
-    margin: 0 10px 20px;
+    margin: 20px 10px 20px;
   }
 }
 /* iPhone portrait */
 @media screen and (max-device-width: 320px) {
-  /* line 997, ../sass/screen.scss */
+  /* line 993, ../sass/screen.scss */
   .browser, .browser.maxied, .browser.minied {
     width: 300px;
     height: auto;
     padding: 0;
   }
 
-  /* line 1003, ../sass/screen.scss */
+  /* line 999, ../sass/screen.scss */
   .browser .window {
     width: 300px;
     height: auto;
   }
 
-  /* line 1008, ../sass/screen.scss */
+  /* line 1004, ../sass/screen.scss */
   .browser .window video {
     width: 300px;
     height: auto;
   }
 
-  /* line 1013, ../sass/screen.scss */
+  /* line 1009, ../sass/screen.scss */
   .video_container {
     width: 300px;
     height: 169px;
   }
 
-  /* line 1018, ../sass/screen.scss */
+  /* line 1014, ../sass/screen.scss */
   .video_container video {
     width: 300px;
     height: auto;
   }
 
-  /* line 1023, ../sass/screen.scss */
+  /* line 1019, ../sass/screen.scss */
   section article p, section article h2, section article h3, section article hr, section article blockquote {
     width: 300px;
   }
 
-  /* line 1027, ../sass/screen.scss */
+  /* line 1023, ../sass/screen.scss */
   section article p img {
     max-width: 300px;
   }
 
-  /* line 1031, ../sass/screen.scss */
+  /* line 1027, ../sass/screen.scss */
   section article p,
   section article blockquote {
     font-size: 14px;
   }
 
-  /* line 1036, ../sass/screen.scss */
+  /* line 1032, ../sass/screen.scss */
   .section h1, .section h2, .section h3, .section p {
     top: 195px;
   }
