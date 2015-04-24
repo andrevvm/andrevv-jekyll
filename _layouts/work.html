@@ -5,10 +5,12 @@ section: work
 
 <section class="post" {% if page.body_bg %}style="background-color: {{ page.body_bg }}"{% endif %}>
   <header style="color: {{ page.color }}; background-color: {{ page.background }}">
-    <h1>{{ page.title }}</h1>
-    <h2>
-      {{ page.responsibilities }}
-    </h2>
+    <div class="PostHeader">
+      <h1>{{ page.title }}</h1>
+      <h2>
+        {{ page.responsibilities }}
+      </h2>
+    </div>
   </header>
   <article>
     {{ content }}
@@ -17,3 +19,18 @@ section: work
   {% include footer %}
 
 </section>
+
+<style>
+#{{ page.slug }} p a {
+  text-decoration: none;
+  border-bottom: 1px solid {{ page.background }};
+  border-color: {{ page.background }};
+}
+
+#{{ page.slug }} p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid {{ page.background }};
+  background: {{ page.background }};
+  color: {{ page.color }};
+}
+</style>

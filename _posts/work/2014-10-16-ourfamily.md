@@ -6,6 +6,7 @@ categories: work
 responsibilities: Web Design & Shopify Development
 background: '#ff3333'
 color: '#fff'
+slug: ourfamily
 ---
 
 <div>

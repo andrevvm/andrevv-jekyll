@@ -6,16 +6,40 @@ section: work
 ---
 
 {% for post in site.categories.work %}
-  <div class="section work" style="color: {{ post.color }}; background-color: {{ post.background }}">
-    <div class="cat">
-      <a href="{{ site.root }}{{ post.url }}">
-        <span class="position" style="color: {{ post.color }}">
-          <h1>{{ post.title }}</h1>
-          <h2>
-            {{ post.responsibilities }}
-          </h2>
-        </span>
-      </a>
+
+  <section id="{{ post.slug }}" class="post" {% if page.body_bg %}style="background-color: {{ post.body_bg }}"{% endif %}>
+  <header style="color: {{ post.color }}; background-color: {{ post.background }}">
+    
+    <div class="PostHeader">
+      <h1><a href="{{ post.id }}">{{ post.title }}</a></h1>
+      <h2>
+        {{ post.responsibilities }}
+      </h2>
     </div>
-  </div>
+
+  </header>
+  <article>
+    {{ post.content }}
+  </article>
+  
+</section>
+
+
+<style>
+#{{ post.slug }} p a {
+  text-decoration: none;
+  border-bottom: 1px solid {{ post.background }};
+  border-color: {{ post.background }};
+}
+
+#{{ post.slug }} p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid {{ post.background }};
+  background: {{ post.background }};
+  color: {{ post.color }};
+}
+</style>
+
 {% endfor %}
+
+{% include work_footer %}
