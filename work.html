@@ -26,18 +26,23 @@ section: work
 
 
 <style>
-#{{ post.slug }} p a {
+#{{ post.slug }}.post p a {
   text-decoration: none;
   border-bottom: 1px solid {{ post.background }};
   border-color: {{ post.background }};
 }
 
-#{{ post.slug }} p a:hover {
+#{{ post.slug }}.post p a:hover {
   text-decoration: none;
   border-bottom: 1px solid {{ post.background }};
   background: {{ post.background }};
   color: {{ post.color }};
 }
+
+#{{ post.slug }}.post {
+  border: 10px solid {{ post.background }};
+}
+
 </style>
 
 {% endfor %}
