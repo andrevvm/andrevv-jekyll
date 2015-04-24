@@ -432,7 +432,8 @@ section article blockquote {
   font-size: 18px;
   line-height: 1.6em;
   margin: 1em auto;
-  width: 640px;
+  width: 80%;
+  max-width: 640px;
 }
 
 section article blockquote { 
@@ -900,9 +901,11 @@ footer {
     width: 460px;
   }
 
-  section article p {
+  section article p,
+  section article blockquote {
     font-size: 16px;
-    width: 460px;
+    width: 80%;
+    max-width: 460px;
   }
 
   section article img {
