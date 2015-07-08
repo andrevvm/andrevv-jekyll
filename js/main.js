@@ -44,22 +44,22 @@ $(function() {
 
   var frame = 1;
   var up = true;
-  setInterval(function(){
-    if(frame < 8 && up == true) {
-      frame ++;
-      up = true;
-    } else {
-      frame --;
-      up = false;
-    }
+  // setInterval(function(){
+  //   if(frame < 8 && up == true) {
+  //     frame ++;
+  //     up = true;
+  //   } else {
+  //     frame --;
+  //     up = false;
+  //   }
 
-    if(frame == 0) {
-      frame = 1;
-      up = true;
-    }
+  //   if(frame == 0) {
+  //     frame = 1;
+  //     up = true;
+  //   }
 
-    $('#favicon').attr('href','/img/humans/0'+frame+'.png');
-  },100);
+  //   $('#favicon').attr('href','/img/humans/0'+frame+'.png');
+  // },100);
 
 });
 
