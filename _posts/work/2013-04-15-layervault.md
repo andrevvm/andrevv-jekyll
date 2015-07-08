@@ -14,7 +14,7 @@ slug: layervault
 
 <div>
   <video id="layervault" class="browser_img" title="LayerVault.com"
-    preload="false" width="640" height="400" poster="{{ site.root }}/work/layervault/layervault.png" data-setup="{}">
+    preload="none" width="640" height="400" poster="{{ site.root }}/work/layervault/layervault.png" data-setup="{}">
     <source src="{{ site.root }}/work/layervault/layervault.mp4" type='video/mp4'>
     <source src="{{ site.root }}/work/layervault/layervault.webm" type='video/webm'>
   </video>
@@ -29,7 +29,7 @@ slug: layervault
 
 <div>
   <video id="delivery" class="browser_img" title="Delivery - LayerVault.com"
-    preload="false" width="640" height="400" poster="{{ site.root }}/work/layervault/delivery.png" data-setup="{}">
+    preload="none" width="640" height="400" poster="{{ site.root }}/work/layervault/delivery.png" data-setup="{}">
     <source src="{{ site.root }}/work/layervault/delivery.mp4" type='video/mp4'>
     <source src="{{ site.root }}/work/layervault/delivery.webm" type='video/webm'>
   </video>
