@@ -68,7 +68,6 @@ function scroll() {
   scrollTop = $(this).scrollTop();
   var scrollDif = scrollTop - scrollVal;
   var inProgress = true;
-  console.log(navBool);
   if(scrollDif < 0 && scrollTop > 0) {
     showNav();
   } else {
