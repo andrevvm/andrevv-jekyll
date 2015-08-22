@@ -165,31 +165,17 @@ p em {
 .section a {
   color: #000;
   text-decoration: none;
-  line-height: 0em;
-  display: inline-block;
-  position: relative;
-  z-index: 100;
-
-  height: 2px;
-  background: white;
-
-  @include transition(line-height 150ms ease-in-out, height 150ms ease-in-out);
-
+  border-bottom: 0.08em solid white;
   &.button {
     line-height: 1.2em;
-    height: auto;
   }
   
 }
 
 .section a:hover {
-  height: 1em;
-  line-height: 1em;
 
-  &.button {
-    line-height: 1.2em;
-    height: auto;
-  }
+  background: white;
+
 }
 
 pre a:hover {
