@@ -1162,7 +1162,7 @@ footer.Work {
   }
 }
 /* all iPhone */
-@media screen and (max-device-width: 768px), screen and (max-device-width: 320px) {
+@media screen and (max-device-width: 760px), screen and (max-device-width: 320px) {
   /* line 972, ../sass/screen.scss */
   .cat {
     background-attachment: scroll;
