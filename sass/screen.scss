@@ -11,6 +11,9 @@
 @font-face{font-family:'GT Sectra Fine';src:url('../type/GT-Sectra-Fine-Book-Italic.eot?') format('eot'),url('../type/GT-Sectra-Fine-Book-Italic.woff') format('woff'),url('../type/GT-Sectra-Fine-Book-Italic.ttf') format('truetype'),url('../type/GT-Sectra-Fine-Book-Italic.svg#webfontlZlKz9CF') format('svg');font-weight:400;font-style:italic;}
 
 
+$h1-size: 26px;
+$h2-size: 20px;
+
 body, html {
   margin: 0;
   padding: 0;
@@ -106,6 +109,7 @@ h1,h2,h3,h4,h5 {
   margin: 0px auto;
   position: relative;
   font-size: 16px;
+  line-height: 1.4em;
   width: 300px;
 }
 
@@ -137,7 +141,7 @@ p em {
 }
 
 .section.work h1 {
-  font-size: 20px;
+  font-size: $h1-size;
   margin-bottom: 10px;
   top: auto;
 }
@@ -147,7 +151,7 @@ p em {
   text-transform: none;
   font-style: italic;
   font-weight: 400;
-  font-size: 16px;
+  font-size: $h2-size;
   top: auto;
 }
 
@@ -162,6 +166,8 @@ p em {
   color: #000;
   text-decoration: none;
   border-bottom: 1px solid white;
+  line-height: 1em;
+  display: inline-block;
 }
 
 .section a:hover {
@@ -405,6 +411,7 @@ header h1 {
 header h2 {
   font-family: "GT Sectra Fine", "GT Sectra", "Hoefler Text", "Times New Roman", serif;
   font-size: 16px;
+  line-height: 1.2em;
   font-style: italic;
   font-weight: 400;
   text-transform: none;
@@ -466,7 +473,7 @@ section article h2, section article h3, section article h4 {
 }
 
 section article h2 {
-  font-size: 20px;
+  font-size: $h2-size;
   margin: 40px auto 15px;
 }
 
@@ -843,15 +850,19 @@ footer {
 
 @media only screen and (min-width: 480px) {
 
-  .section h1, .section h2, .section h3, .section p {
+  header h1, .section h1, .section h2, .section h3, .section p {
     width: auto;
-    font-size: 20px;
+    font-size: $h1-size;
     top: 48%;
     -webkit-transform: translate(0,-50%);
     -moz-transform: translate(0,-50%);
     -o-transform: translate(0,-50%);
     -ms-transform: translate(0,-50%);
     transform: translate(0,-50%);
+  }
+
+  header h2 {
+    font-size: $h2-size;
   }
 
   .cat img {
@@ -868,11 +879,11 @@ footer {
   }
 
   .section.work h1 {
-    font-size: 20px;
+    font-size: $h1-size;
   }
 
   .section.work h2 {
-    font-size: 16px;
+    font-size: $h2-size;
   }
 }
 
