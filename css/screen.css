@@ -1271,18 +1271,18 @@ footer.Work {
 
   /* line 1061, ../sass/screen.scss */
   section article p, section article h2, section article h3, section article hr, section article blockquote {
-    width: 300px;
+    width: 280px;
   }
 
   /* line 1065, ../sass/screen.scss */
   section article p img {
-    max-width: 300px;
+    max-width: 280px;
   }
 
   /* line 1069, ../sass/screen.scss */
   section article p,
   section article blockquote {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   /* line 1074, ../sass/screen.scss */
