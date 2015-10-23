@@ -173,7 +173,7 @@ p em {
     line-height: 1.2em;
   }
 
-  @include box-shadow(inset 0 0em 0 #fff);
+  @include box-shadow(inset 0 -0.06em 0 #fff);
 
   @include transition(all 300ms ease-in-out);
   
@@ -181,7 +181,7 @@ p em {
 
 .section a:hover {
 
-  @include box-shadow(inset 0 -1em 0 #fff);
+  @include box-shadow(inset 0 -1.1em 0 #fff);
   @include transition-duration(100ms);
 
 }
