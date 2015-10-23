@@ -66,6 +66,16 @@ h1,h2,h3,h4,h5 {
   height: 100%;
 }
 
+.post p a {
+  display: inline-block;
+  line-height: 1.2em;
+  transition: all 100ms ease-in-out;
+  &.button {
+    box-shadow: none !important;
+    transition: all 0ms !important;
+  }
+}
+
 #content .post {
   min-height: 100vh;
   &:first-child {
@@ -168,7 +178,6 @@ p em {
   border-bottom: 0.08em solid white;
   display: inline-block;
   line-height: 1em;
-
   &.button {
     line-height: 1.2em;
   }

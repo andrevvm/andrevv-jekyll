@@ -30,13 +30,18 @@ section: work
   text-decoration: none;
   border-bottom: 1px solid {{ post.background }};
   border-color: {{ post.background }};
+  box-shadow: inset 0 -0.06em 0 {{ post.background }};
 }
 
 #{{ post.slug }}.post p a:hover {
   text-decoration: none;
   border-bottom: 1px solid {{ post.background }};
-  background: {{ post.background }};
   color: {{ post.color }};
+  box-shadow: inset 0 -1.2em 0 {{ post.background }};
+}
+
+#{{ post.slug }}.post p a.button:hover {
+  background: {{ post.background }};
 }
 
 </style>
