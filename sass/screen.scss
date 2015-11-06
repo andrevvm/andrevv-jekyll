@@ -235,18 +235,17 @@ a.button {
 .section .button {
   color: white;
   border: 0;
+  @include transition(none);
 }
 
 .button:hover, a.button:hover {
-  background: #555;
-  background: rgba(0,0,0,0.8);
+  background: red;
   text-decoration: none;
   @include box-shadow(none);
 }
 
 .button:active, a.button:active {
-  background: #333;
-  background: rgba(0,0,0,0.9);
+  background: red;
 }
 
 .cat {
