@@ -602,7 +602,8 @@ you can use the generic selector below, but it's slower:
   width: 640px;
   height: auto;
   overflow: hidden;
-  background: #e6e6e6;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.4);
   position: relative;
   -webkit-transition: width 500ms, height 500ms, padding 100ms;
   -moz-transition: width 500ms, height 500ms, padding 100ms;
