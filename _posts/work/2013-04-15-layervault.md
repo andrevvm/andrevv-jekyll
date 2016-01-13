@@ -7,6 +7,7 @@ responsibilities: Product Design &amp; Web Development
 background: '#2f75f6'
 color: '#FFF'
 slug: layervault
+image: /work/layervault/layervault.png
 ---
 
 <h2>LayerVault.com</h2>
@@ -14,7 +15,7 @@ slug: layervault
 
 <div>
   <video id="layervault" class="browser_img" title="LayerVault.com"
-    preload="none" width="640" height="400" poster="{{ site.root }}/work/layervault/layervault.png" data-setup="{}">
+    preload="none" width="640" height="400" poster="{{ site.root }}{{ page.image }}" data-setup="{}">
     <source src="{{ site.root }}/work/layervault/layervault.mp4" type='video/mp4'>
     <source src="{{ site.root }}/work/layervault/layervault.webm" type='video/webm'>
   </video>
