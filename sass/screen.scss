@@ -797,14 +797,9 @@ footer section a, footer section span {
   box-sizing: border-box;
 }
 
-footer section a:hover:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(255,255,255,0.1);
+footer section a:hover {
+  background: black !important;
+  color: white !important;
 }
 
 footer section span {
