@@ -1,5 +1,6 @@
 ---
 layout: work
+section: work
 title: LayerVault
 description: "LayerVault Product Design"
 categories: work

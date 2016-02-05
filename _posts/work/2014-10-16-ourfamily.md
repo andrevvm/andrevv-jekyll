@@ -1,5 +1,6 @@
 ---
 layout: work
+section: work
 title: Our Family Shoes
 description: "Website built on Shopify"
 categories: work
