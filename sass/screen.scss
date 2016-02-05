@@ -403,7 +403,7 @@ header {
   margin-bottom: 80px;
   @include display-flex;
   .PostHeader {
-    margin: auto;
+    margin: 32% auto auto;
     h2 {
       padding: 0px;
       margin: 15px;
@@ -880,6 +880,10 @@ footer {
     -o-transform: translate(0,-50%);
     -ms-transform: translate(0,-50%);
     transform: translate(0,-50%);
+  }
+
+  header .PostHeader {
+    margin: auto;
   }
 
   header h2 {
