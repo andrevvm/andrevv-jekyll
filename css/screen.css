@@ -976,8 +976,8 @@ footer section.next {
 /* line 789, ../sass/screen.scss */
 footer section a, footer section span {
   display: block;
-  padding: 30px;
-  height: 80px;
+  padding: 40px;
+  height: 90px;
   position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
