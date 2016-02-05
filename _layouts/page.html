@@ -1,0 +1,36 @@
+---
+layout: layout
+section: contact
+---
+
+<section id="{{ page.slug }}" class="post" {% if page.body_bg %}style="background-color: {{ page.body_bg }}"{% endif %}>
+  
+  <article>
+    {{ content }}
+  </article>
+  
+</section>
+
+<style>
+
+#{{ page.slug }}.post p a {
+  text-decoration: none;
+  border-bottom: 1px solid {{ page.background }};
+  border-color: {{ page.background }};
+  box-shadow: inset 0 -0.06em 0 {{ page.background }};
+}
+
+#{{ page.slug }}.post p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid {{ page.background }};
+  color: {{ page.color }};
+  box-shadow: inset 0 -1.2em 0 {{ page.background }};
+}
+
+#{{ page.slug }}.post p a.button:hover {
+  background: {{ page.background }};
+}
+
+</style>
+
+</style>

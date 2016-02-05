@@ -4,6 +4,6 @@
       <span class="fonticon icon-twitter">andrevvm</span>
     </a>
 
-    <a href="mailto:hi@andrevv.com" class="button"><span class="fonticon icon-mail">email me</span></a>
+    <a href="mailto:hi@andrevv.com" class="button"><span class="fonticon icon-mail"></span> email me</a>
   </p>
 </footer>

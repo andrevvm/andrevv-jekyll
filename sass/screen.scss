@@ -236,16 +236,29 @@ a.button {
   color: white;
   border: 0;
   @include transition(none);
+  span {
+    position: relative;
+    display: inline-block;
+    top: 1px;
+  }
 }
 
 .button:hover, a.button:hover {
-  background: red;
+  background: white;
+  color: black;
   text-decoration: none;
   @include box-shadow(none);
+  span:before {
+    color: black;
+  }
 }
 
 .button:active, a.button:active {
-  background: red;
+  background: white;
+  color: black;
+  span:before {
+    color: black;
+  }
 }
 
 .cat {
@@ -576,7 +589,7 @@ you can use the generic selector below, but it's slower:
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     color: #fff;
-    padding-right: 10px;
+    padding-right: 0px;
     position: relative;
     font-size: 0.95em;
 }
