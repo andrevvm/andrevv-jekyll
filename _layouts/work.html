@@ -36,6 +36,14 @@ section: work
   box-shadow: inset 0 -1.2em 0 {{ page.background }};
 }
 
+#{{ page.slug }}.post p a:hover span:before {
+  color: {{ page.color }};
+}
+
+#{{ page.slug }}.post p a.button {
+  border: 0;
+}
+
 #{{ page.slug }}.post p a.button:hover {
   background: {{ page.background }};
 }
