@@ -11,8 +11,8 @@
 @font-face{font-family:'GT Sectra Fine';src:url('../type/GT-Sectra-Fine-Book-Italic.eot?') format('eot'),url('../type/GT-Sectra-Fine-Book-Italic.woff') format('woff'),url('../type/GT-Sectra-Fine-Book-Italic.ttf') format('truetype'),url('../type/GT-Sectra-Fine-Book-Italic.svg#webfontlZlKz9CF') format('svg');font-weight:400;font-style:italic;}
 
 
-$h1-size: 26px;
-$h2-size: 20px;
+$h1-size: 24px;
+$h2-size: 18px;
 
 body, html {
   margin: 0;
@@ -175,14 +175,15 @@ p em {
 .section a {
   color: #000;
   text-decoration: none;
-  border-bottom: 0.03em solid white;
+  border-bottom: 0.02em solid #0000ff;
+  padding: 0 0.05em;
   display: inline-block;
   line-height: 1em;
   &.button {
     line-height: 1.2em;
   }
 
-  @include box-shadow(inset 0 -2px 0 #fff);
+  @include box-shadow(inset 0 -1px 0 #0000ff);
 
   @include transition(all 300ms ease-in-out);
   
@@ -190,7 +191,8 @@ p em {
 
 .section a:hover {
 
-  @include box-shadow(inset 0 -1.1em 0 #fff);
+  color: white;
+  @include box-shadow(inset 0 -1.1em 0 #0000ff);
   @include transition-duration(100ms);
 
 }
@@ -244,20 +246,20 @@ a.button {
 }
 
 .button:hover, a.button:hover {
-  background: white;
-  color: black;
+  background: #0000FF;
+  color: white;
   text-decoration: none;
   @include box-shadow(none);
   span:before {
-    color: black;
+    color: white;
   }
 }
 
 .button:active, a.button:active {
-  background: white;
-  color: black;
+  background: #0000FF;
+  color: white;
   span:before {
-    color: black;
+    color: white;
   }
 }
 
@@ -276,7 +278,7 @@ a.button {
 
 .section#end {
   display: none;
-  background: black;
+  background: black !important;
   color: white;
 }
 
@@ -286,61 +288,73 @@ a.button {
 }
 
 .section#end a:hover {
-  color: black;
+  color: white;
+}
+
+.section:nth-child(odd) .cat {
+  background-color: #fff !important;
+}
+
+.section:nth-child(even) .cat {
+  background-color: #f6f6f6 !important;
+}
+
+.section .cat.end {
+  background-color: black !important;
 }
 
 .cat.f00 {
-  background-image: url(../img/runner/01.png);
+  background-image: url(../img/horse/01.png);
   background-color: #FF4D4D;
 }
 
 .cat.f01 {
-  background-image: url(../img/runner/02.png);
+  background-image: url(../img/horse/02.png);
   background-color: #FF6A4D;
 }
 
 .cat.f02 {
-  background-image: url(../img/runner/03.png);
+  background-image: url(../img/horse/03.png);
   background-color: #FF894D;
 }
 
 .cat.f03 {
-  background-image: url(../img/runner/04.png);
+  background-image: url(../img/horse/04.png);
   background-color: #FFAD4D;
 }
 
 .cat.f04 {
-  background-image: url(../img/runner/05.png);
+  background-image: url(../img/horse/05.png);
   background-color: #FFD34D;
 }
 
 .cat.f05 {
-  background-image: url(../img/runner/06.png);
+  background-image: url(../img/horse/06.png);
   background-color: #FFF14D;
 }
 
 .cat.f06 {
-  background-image: url(../img/runner/07.png);
+  background-image: url(../img/horse/07.png);
   background-color: #4DFFCD;
 }
 
 .cat.f07 {
-  background-image: url(../img/runner/08.png);
+  background-image: url(../img/horse/08.png);
   background-color: #4DE9FF;
 }
 
 .cat.f08 {
-  background-image: url(../img/runner/09.png);
+  background-image: url(../img/horse/09.png);
   background-color: #4DADFF;
 }
 
 .cat.f09 {
-  background-image: url(../img/runner/10.png);
+  background-image: url(../img/horse/10.png);
   background-color: #4D80FF;
 }
 
 .cat.f10 {
-  background-image: url(../img/runner/11.png);
+  background-image: url(../img/horse/11.png);
   background-color: #465BFF;
 }
 
