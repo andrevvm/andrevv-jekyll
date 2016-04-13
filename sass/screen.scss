@@ -630,7 +630,7 @@ you can use the generic selector below, but it's slower:
   height: auto;
   overflow: hidden;
   background: #fff;
-  border: 1px solid rgba(0,0,0,0.4);
+  border: 1px solid rgba(0,0,0,0.15);
   position: relative;
   -webkit-transition: width 500ms, height 500ms, padding 100ms;
   -moz-transition: width 500ms, height 500ms, padding 100ms;
