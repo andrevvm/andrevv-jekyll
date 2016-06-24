@@ -1152,60 +1152,65 @@ footer.Work {
 @media only screen and (min-width: 321px) and (max-width: 640px) {
   /* line 947, ../sass/screen.scss */
   .section h1, .section h2, .section h3, .section p {
-    top: 150px;
+    top: 50%;
     font-size: 16px;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
   }
 
-  /* line 952, ../sass/screen.scss */
+  /* line 957, ../sass/screen.scss */
   .cat img {
     top: 90px;
   }
 
-  /* line 956, ../sass/screen.scss */
+  /* line 961, ../sass/screen.scss */
   .browser {
     width: 320px;
     height: auto;
   }
 
-  /* line 961, ../sass/screen.scss */
+  /* line 966, ../sass/screen.scss */
   .browser .window {
     height: auto;
   }
 
-  /* line 965, ../sass/screen.scss */
+  /* line 970, ../sass/screen.scss */
   .browser.maxied {
     width: 480px;
     height: auto;
   }
 
-  /* line 970, ../sass/screen.scss */
+  /* line 975, ../sass/screen.scss */
   .browser.maxied .window {
     height: auto;
   }
 
-  /* line 974, ../sass/screen.scss */
+  /* line 979, ../sass/screen.scss */
   .browser video {
     height: auto;
     width: 320px;
   }
 
-  /* line 979, ../sass/screen.scss */
+  /* line 984, ../sass/screen.scss */
   .browser.maxied video {
     height: auto;
     width: 480px;
   }
 
-  /* line 984, ../sass/screen.scss */
+  /* line 989, ../sass/screen.scss */
   .browser .title {
     opacity: 0;
   }
 
-  /* line 988, ../sass/screen.scss */
+  /* line 993, ../sass/screen.scss */
   section article h2, section article h3, section article h4 {
     width: 460px;
   }
 
-  /* line 992, ../sass/screen.scss */
+  /* line 997, ../sass/screen.scss */
   section article p,
   section article blockquote {
     font-size: 16px;
@@ -1213,24 +1218,24 @@ footer.Work {
     max-width: 460px;
   }
 
-  /* line 999, ../sass/screen.scss */
+  /* line 1004, ../sass/screen.scss */
   section article img {
     max-width: 460px;
     height: auto;
   }
 
-  /* line 1004, ../sass/screen.scss */
+  /* line 1009, ../sass/screen.scss */
   section article hr {
     width: 460px;
   }
 
-  /* line 1008, ../sass/screen.scss */
+  /* line 1013, ../sass/screen.scss */
   .video_container {
     width: 480px;
     height: 270px;
   }
 
-  /* line 1013, ../sass/screen.scss */
+  /* line 1018, ../sass/screen.scss */
   .video_container video {
     width: 480px;
     height: auto;
@@ -1238,7 +1243,7 @@ footer.Work {
 }
 /* all iPhone */
 @media screen and (max-device-width: 760px), screen and (max-device-width: 320px) {
-  /* line 1022, ../sass/screen.scss */
+  /* line 1027, ../sass/screen.scss */
   .cat {
     background-attachment: scroll;
     background-size: contain;
@@ -1246,7 +1251,7 @@ footer.Work {
     background-repeat: repeat-x;
   }
 
-  /* line 1029, ../sass/screen.scss */
+  /* line 1034, ../sass/screen.scss */
   .cat p,
   .cat h3,
   .cat h2 {
@@ -1254,56 +1259,56 @@ footer.Work {
     margin: 0 auto;
   }
 
-  /* line 1036, ../sass/screen.scss */
+  /* line 1041, ../sass/screen.scss */
   nav {
     position: fixed !important;
     top: 0 !important;
   }
 
-  /* line 1041, ../sass/screen.scss */
+  /* line 1046, ../sass/screen.scss */
   .browser .ui, .browser .title {
     display: none;
   }
 
-  /* line 1045, ../sass/screen.scss */
+  /* line 1050, ../sass/screen.scss */
   .play {
     display: none !important;
   }
 
-  /* line 1049, ../sass/screen.scss */
+  /* line 1054, ../sass/screen.scss */
   footer {
     font-size: 56px;
     line-height: 20px;
     text-align: center;
   }
 
-  /* line 1055, ../sass/screen.scss */
+  /* line 1060, ../sass/screen.scss */
   footer em {
     display: none;
   }
 
-  /* line 1059, ../sass/screen.scss */
+  /* line 1064, ../sass/screen.scss */
   .section {
     height: 100%;
   }
 
-  /* line 1063, ../sass/screen.scss */
+  /* line 1068, ../sass/screen.scss */
   .section.work .position {
     top: 40%;
   }
 
-  /* line 1067, ../sass/screen.scss */
+  /* line 1072, ../sass/screen.scss */
   header h1,
   header h2 {
     top: 48%;
   }
 
-  /* line 1072, ../sass/screen.scss */
+  /* line 1077, ../sass/screen.scss */
   footer .button {
     margin: 20px 10px 20px;
   }
 
-  /* line 1076, ../sass/screen.scss */
+  /* line 1081, ../sass/screen.scss */
   .video_container.iphone {
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -1313,54 +1318,54 @@ footer.Work {
 }
 /* iPhone portrait */
 @media screen and (max-device-width: 320px) {
-  /* line 1085, ../sass/screen.scss */
+  /* line 1090, ../sass/screen.scss */
   .browser, .browser.maxied, .browser.minied {
     width: 300px;
     height: auto;
     padding: 0;
   }
 
-  /* line 1091, ../sass/screen.scss */
+  /* line 1096, ../sass/screen.scss */
   .browser .window {
     width: 300px;
     height: auto;
   }
 
-  /* line 1096, ../sass/screen.scss */
+  /* line 1101, ../sass/screen.scss */
   .browser .window video {
     width: 300px;
     height: auto;
   }
 
-  /* line 1101, ../sass/screen.scss */
+  /* line 1106, ../sass/screen.scss */
   .video_container {
     width: 300px;
     height: 169px;
   }
 
-  /* line 1106, ../sass/screen.scss */
+  /* line 1111, ../sass/screen.scss */
   .video_container video {
     width: 300px;
     height: auto;
   }
 
-  /* line 1111, ../sass/screen.scss */
+  /* line 1116, ../sass/screen.scss */
   section article p, section article h2, section article h3, section article hr, section article blockquote {
     width: 280px;
   }
 
-  /* line 1115, ../sass/screen.scss */
+  /* line 1120, ../sass/screen.scss */
   section article p img {
     max-width: 280px;
   }
 
-  /* line 1119, ../sass/screen.scss */
+  /* line 1124, ../sass/screen.scss */
   section article p,
   section article blockquote {
     font-size: 16px;
   }
 
-  /* line 1124, ../sass/screen.scss */
+  /* line 1129, ../sass/screen.scss */
   .section h1, .section h2, .section h3, .section p {
     top: 195px;
   }
