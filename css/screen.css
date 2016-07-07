@@ -386,13 +386,13 @@ a.button {
   width: 100%;
   height: 100%;
   min-height: 260px;
-  background-position: 50% 52%;
+  background-position: 50% 54%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  -webkit-background-size: auto 45%;
-  -moz-background-size: auto 45%;
-  -o-background-size: auto 45%;
-  background-size: auto 45%;
+  -webkit-background-size: auto 35%;
+  -moz-background-size: auto 35%;
+  -o-background-size: auto 35%;
+  background-size: auto 35%;
 }
 
 /* line 279, ../sass/screen.scss */
@@ -430,61 +430,61 @@ a.button {
 
 /* line 306, ../sass/screen.scss */
 .cat.f00 {
-  background-image: url(../img/brain/brain07.png);
+  background-image: url(../img/circle/circle00.png);
   background-color: #FF4D4D;
 }
 
 /* line 311, ../sass/screen.scss */
 .cat.f01 {
-  background-image: url(../img/brain/brain08.png);
+  background-image: url(../img/circle/circle01.png);
   background-color: #FF6A4D;
 }
 
 /* line 316, ../sass/screen.scss */
 .cat.f02 {
-  background-image: url(../img/brain/brain09.png);
+  background-image: url(../img/circle/circle02.png);
   background-color: #FF894D;
 }
 
 /* line 321, ../sass/screen.scss */
 .cat.f03 {
-  background-image: url(../img/brain/brain10.png);
+  background-image: url(../img/circle/circle03.png);
   background-color: #FFAD4D;
 }
 
 /* line 326, ../sass/screen.scss */
 .cat.f04 {
-  background-image: url(../img/brain/brain11.png);
+  background-image: url(../img/circle/circle04.png);
   background-color: #FFD34D;
 }
 
 /* line 331, ../sass/screen.scss */
 .cat.f05 {
-  background-image: url(../img/brain/brain12.png);
+  background-image: url(../img/circle/circle05.png);
   background-color: #FFF14D;
 }
 
 /* line 336, ../sass/screen.scss */
 .cat.f06 {
-  background-image: url(../img/brain/brain13.png);
+  background-image: url(../img/circle/circle06.png);
   background-color: #4DFFCD;
 }
 
 /* line 341, ../sass/screen.scss */
 .cat.f07 {
-  background-image: url(../img/brain/brain14.png);
+  background-image: url(../img/circle/circle07.png);
   background-color: #4DE9FF;
 }
 
 /* line 346, ../sass/screen.scss */
 .cat.f08 {
-  background-image: url(../img/brain/brain00.png);
+  background-image: url(../img/circle/circle08.png);
   background-color: #4DADFF;
 }
 
 /* line 351, ../sass/screen.scss */
 .cat.f09 {
-  background-image: url(../img/brain/brain01.png);
+  background-image: url(../img/circle/brain01.png);
   background-color: #4D80FF;
 }
 
