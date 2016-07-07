@@ -757,7 +757,7 @@ video {
 }
 
 .play.playing {
-  background: none;
+  background-image: none;
 }
 
 .browser video {
@@ -858,6 +858,14 @@ footer {
     top: 10.8%;
     left: 4.5%;
     border: 1px solid #BCB7B7;
+  }
+
+  .play {
+    background-image: none;
+  }
+
+  .play.playing {
+    background-image: url(../img/play_btn.png);
   }
 }
 
