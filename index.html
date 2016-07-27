@@ -9,8 +9,13 @@ section: about
       {% if page.category == "intro" %}
         {% capture cat_cycle %}{% cycle '00','01','02','03','04','05','06','07','08' %}{% endcapture %}
       <div class="section">
-        <div class="cat f{{ cat_cycle }}">
-           {{ page.content }}
+        <div class="content-main">
+          <div class="image-fill">
+            <img src="img/circle/circle{{ cat_cycle }}.png" />
+          </div>
+          <div class="cat f{{ cat_cycle }}">
+             {{ page.content }}
+          </div>
         </div>
       </div>
       {% endif %}

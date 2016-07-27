@@ -12,6 +12,8 @@ var $nav,
     scrollTop,
     navBool;
 
+var md = new MobileDetect(window.navigator.userAgent);
+
 
 $(function() {
   navBool = false;
@@ -28,6 +30,10 @@ $(function() {
   $nav = $("nav");
   $("#content").hide();
   $("#content").fadeIn(600);
+
+  if(md.mobile()) {
+    $('body').addClass('mobile');
+  }
   
   $(window).scroll(scroll);
 
