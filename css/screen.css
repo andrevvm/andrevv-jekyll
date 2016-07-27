@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5 {
 .section {
   display: block;
   box-sizing: border-box;
-  height: 100%;
+  height: 50%;
   width: 100%;
   min-height: 260px;
   position: relative;
@@ -307,7 +307,6 @@ p em {
   text-decoration: none;
   border-bottom: 0.02em solid #0000ff;
   padding: 0 0.05em;
-  display: inline-block;
   line-height: 1em;
   -moz-box-shadow: inset 0 -1px 0 #0000ff;
   -webkit-box-shadow: inset 0 -1px 0 #0000ff;
