@@ -659,6 +659,14 @@ you can use the generic selector below, but it's slower:
     content: "\e002";
 }
 
+iframe {
+  margin: 0 auto 8vmin;
+  display: block;
+  width: 85%;
+  height: 47.81vw;
+  //max-height: 80vh;
+}
+
 .browser {
   padding: 35px 1px 1px;
   margin: 40px auto;
