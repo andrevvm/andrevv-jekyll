@@ -214,17 +214,18 @@ p em {
 }
 
 .section a {
-  color: #000;
+  color: white;
   text-decoration: none;
-  border-bottom: 0.02em solid #0000ff;
+  border-bottom: 0.02em solid white;
   padding: 0 0.05em;
   //display: inline-block;
   line-height: 1em;
   &.button {
     line-height: 1.2em;
   }
+  mix-blend-mode: difference;
 
-  @include box-shadow(inset 0 -1px 0 #0000ff);
+  @include box-shadow(inset 0 -1px 0 #fff);
 
   @include transition(all 300ms ease-in-out);
   
@@ -232,8 +233,8 @@ p em {
 
 .section a:hover {
 
-  color: white;
-  @include box-shadow(inset 0 -1.1em 0 #0000ff);
+  color: black;
+  @include box-shadow(inset 0 -1.1em 0 white);
   @include transition-duration(100ms);
 
 }
@@ -243,8 +244,8 @@ pre a:hover {
 }
 
 a.button {
-  color: #FFF;
-  background: black;
+  color: black;
+  background: white;
   padding: .7em 1.2em;
   text-decoration: none;
   font-family: "Orator";
@@ -276,7 +277,7 @@ a.button {
 }
 
 .section .button {
-  color: white;
+  color: black;
   border: 0;
   @include transition(none);
   span {
@@ -292,7 +293,7 @@ a.button {
   text-decoration: none;
   @include box-shadow(none);
   span:before {
-    color: white;
+    color: black;
   }
 }
 
@@ -300,7 +301,7 @@ a.button {
   background: #0000FF;
   color: white;
   span:before {
-    color: white;
+    color: black;
   }
 }
 
@@ -349,50 +350,92 @@ a.button {
   background-color: black !important;
 }
 
+.cat {
+  background-image: url(../img/kf/kf.gif) !important;
+  background-size: 250px auto;
+}
+
 .cat.f00 {
-  background-image: url(../img/circle/circle00.png);
+  background-image: url(../img/kf/kf00.png);
   background-color: #FF4D4D;
 }
 
 .cat.f01 {
-  background-image: url(../img/circle/circle01.png);
+  background-image: url(../img/kf/kf01.png);
   background-color: #FF6A4D;
 }
 
 .cat.f02 {
-  background-image: url(../img/circle/circle02.png);
+  background-image: url(../img/kf/kf02.png);
   background-color: #FF894D;
 }
 
 .cat.f03 {
-  background-image: url(../img/circle/circle03.png);
+  background-image: url(../img/kf/kf03.png);
   background-color: #FFAD4D;
 }
 
 .cat.f04 {
-  background-image: url(../img/circle/circle04.png);
+  background-image: url(../img/kf/kf04.png);
   background-color: #FFD34D;
 }
 
 .cat.f05 {
-  background-image: url(../img/circle/circle05.png);
+  background-image: url(../img/kf/kf05.png);
   background-color: #FFF14D;
 }
 
 .cat.f06 {
-  background-image: url(../img/circle/circle06.png);
+  background-image: url(../img/kf/kf06.png);
   background-color: #4DFFCD;
 }
 
 .cat.f07 {
-  background-image: url(../img/circle/circle07.png);
+  background-image: url(../img/kf/kf07.png);
   background-color: #4DE9FF;
 }
 
 .cat.f08 {
-  background-image: url(../img/circle/circle08.png);
+  background-image: url(../img/kf/kf08.png);
   background-color: #4DADFF;
 }
+
+.cat.f09 {
+  background-image: url(../img/kf/kf09.png);
+  background-color: #4DADFF;
+}
+
+.cat.f10 {
+  background-image: url(../img/kf/kf10.png);
+  background-color: #4DADFF;
+}
+
+.cat.f11 {
+  background-image: url(../img/kf/kf11.png);
+  background-color: #4DADFF;
+}
+
+.cat.f12 {
+  background-image: url(../img/kf/kf12.png);
+  background-color: #4DADFF;
+}
+
+.cat.f13 {
+  background-image: url(../img/kf/kf13.png);
+  background-color: #4DADFF;
+}
+
+.cat.f14 {
+  background-image: url(../img/kf/kf14.png);
+  background-color: #4DADFF;
+}
+
+.cat.f15 {
+  background-image: url(../img/kf/kf15.png);
+  background-color: #4DADFF;
+}
+
+
 
 nav {
   background: #000;
@@ -638,7 +681,7 @@ you can use the generic selector below, but it's slower:
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    color: #fff;
+    color: black;
     padding-right: 0px;
     position: relative;
     font-size: 0.95em;
@@ -947,6 +990,8 @@ footer {
     -o-transform: translate(0,-50%);
     -ms-transform: translate(0,-50%);
     transform: translate(0,-50%);
+    mix-blend-mode: difference;
+    color: white;
   }
 
   .section h1, .section h2, .section h3, .section p {

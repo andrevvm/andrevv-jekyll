@@ -97,13 +97,13 @@ function scroll() {
     }
     var new_sections = sections.clone();
     new_sections.each(function() {
-      if(section_count < 8) {
+      if(section_count < 15) {
         section_count ++;
       } else {
         section_count = 0;
       }
       var $cat = $(".cat",this);
-      $cat.removeClass("f00 f01 f02 f03 f04 f05 f06 f07 f08");
+      $cat.removeClass("f00 f01 f02 f03 f04 f05 f06 f07 f08 f09 f10 f11 f12 f13 f14 f15");
       var new_class = zeroPad(section_count, 2);
       $cat.addClass("f"+new_class);
       $("#begin").append(new_sections);

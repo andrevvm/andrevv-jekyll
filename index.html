@@ -7,11 +7,11 @@ section: about
 
     {% for page in site.pages %}
       {% if page.category == "intro" %}
-        {% capture cat_cycle %}{% cycle '00','01','02','03','04','05','06','07','08' %}{% endcapture %}
+        {% capture cat_cycle %}{% cycle '00','01','02','03','04','05','06','07','08','09','10','11','12','13','14','15' %}{% endcapture %}
       <div class="section">
         <div class="content-main">
           <div class="image-fill">
-            <img src="img/circle/circle{{ cat_cycle }}.png" />
+            <img src="img/kf/kf{{ cat_cycle }}.png" />
           </div>
           <div class="cat f{{ cat_cycle }}">
              {{ page.content }}
