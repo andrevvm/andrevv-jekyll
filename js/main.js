@@ -269,7 +269,7 @@ function pauseVideo($this) {
   audioFadeOut(video);
   setTimeout(function() {
     video.pause();
-  }, 1000);
+  }, 500);
 }
 
 function audioFadeIn(vid) {
@@ -290,7 +290,7 @@ function audioFadeOut(vid) {
   
   if(vid.volume > 0.1) {
 
-    vid.volume -= 0.01;
+    vid.volume -= 0.05;
 
     setTimeout(function() {
       audioFadeOut(vid);
@@ -333,6 +333,6 @@ function isElementInViewport (el) {
 
     return (
         rect.top >= -window.innerHeight / 2 &&
-        rect.bottom <= (window.innerHeight * 1.5 || document.documentElement.clientHeight * 1.5)
+        rect.bottom <= (window.innerHeight * 2 || document.documentElement.clientHeight * 2)
     );
 }
