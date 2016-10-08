@@ -268,16 +268,26 @@ function toggleVideo($this) {
 
 function playVideo(vid) {
   $(vid).prev('.play').addClass('playing');
-  audioFadeIn(vid);
   $(vid).closest(".browser").addClass('maxied');
-  vid.play();
+  setTimeout(function () {      
+    // Resume play if the element if is paused.
+    if (vid.paused) {
+      vid.play();
+      audioFadeIn(vid);
+    }
+  }, 150);
 }
 
 function pauseVideo(vid) {
   $(vid).prev('.play').removeClass('playing');
   audioFadeOut(vid);
   $(vid).closest(".browser").removeClass('maxied');
-  vid.pause();
+  setTimeout(function () {      
+    // Resume play if the element if is paused.
+    if (vid.paused === false) {
+      vid.pause();
+    }
+  }, 500);
 }
 
 function audioFadeIn(vid) {
@@ -328,8 +338,9 @@ function scrollVideo() {
 
   });
 
-
 }
+
+
 
 function isElementInViewport (el) {
 
