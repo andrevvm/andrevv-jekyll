@@ -74,7 +74,7 @@ $(function() {
 
   setInterval(function() {
     scrollVideo();
-  }, 50);
+  }, 150);
 
   $("a[rel=external]").attr("target","_blank");
 
