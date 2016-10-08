@@ -93,8 +93,6 @@ $(function() {
   //   $('#favicon').attr('href','/img/humans/0'+frame+'.png');
   // },100);
 
-  setInterval(scrollVideo, 250);
-
 });
 
 function scroll() {
@@ -137,6 +135,8 @@ function scroll() {
     });
   }
   scrollVal = scrollTop;
+
+  scrollVideo();
 
 }
 
@@ -351,7 +351,7 @@ function isElementInViewport (el) {
     var rect = el.getBoundingClientRect();
 
     return (
-        rect.top >= -window.innerHeight * 1.5 &&
+        rect.top >= -window.innerHeight / 2 &&
         rect.top <= ($(el).height() * 2)
     );
 }
