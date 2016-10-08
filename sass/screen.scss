@@ -841,11 +841,13 @@ iframe {
 .browser.maxied {
   width: 950px;
   height: auto;
+  max-width: 100%;
 }
 
 .browser.maxied video {
   height: auto;
   width: 960px;
+  max-width: 100%;
 }
 
 .browser .title {

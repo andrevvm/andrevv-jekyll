@@ -225,8 +225,8 @@ function initVideo() {
     var $this = $(this);
     var video = $this.get(0);
     $this.bind('ended', function() {
-      pauseVideo($this.prev('.play'));
       video.currentTime = 0;
+      pauseVideo($this.prev('.play'));
     });
   });
 
