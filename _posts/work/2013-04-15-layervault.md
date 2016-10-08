@@ -18,7 +18,6 @@ image: /work/layervault/layervault.png
   <video id="layervault" class="browser_img" title="LayerVault.com"
     preload="none" width="640" height="400" poster="{{ site.root }}{{ page.image }}" data-setup="{}">
     <source src="{{ site.root }}/work/layervault/layervault.mp4" type='video/mp4'>
-    <source src="{{ site.root }}/work/layervault/layervault.webm" type='video/webm'>
   </video>
 </div>
 
@@ -33,7 +32,6 @@ image: /work/layervault/layervault.png
   <video id="delivery" class="browser_img" title="Delivery - LayerVault.com"
     preload="none" width="640" height="400" poster="{{ site.root }}/work/layervault/delivery.png" data-setup="{}">
     <source src="{{ site.root }}/work/layervault/delivery.mp4" type='video/mp4'>
-    <source src="{{ site.root }}/work/layervault/delivery.webm" type='video/webm'>
   </video>
 </div>
 <em>Delivery</em> <strike>is</strike> <em>was</em> an external tool of <em>LayerVault</em> which enables designers to make quick &amp; easy presentations of their work.

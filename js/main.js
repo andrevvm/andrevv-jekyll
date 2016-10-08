@@ -93,6 +93,8 @@ $(function() {
   //   $('#favicon').attr('href','/img/humans/0'+frame+'.png');
   // },100);
 
+  setInterval(scrollVideo, 250);
+
 });
 
 function scroll() {
@@ -109,8 +111,6 @@ function scroll() {
   if (scrollTop <= 0 ) {
     $nav.css('top',0);
   }
-
-  
 
   var docheight = $(document).height();
   if(scrollTop > docheight - section_h * 10) {
@@ -137,8 +137,6 @@ function scroll() {
     });
   }
   scrollVal = scrollTop;
-
-  scrollVideo();
 
 }
 
@@ -269,6 +267,9 @@ function toggleVideo($this) {
 function playVideo(vid) {
   $(vid).prev('.play').addClass('playing');
   $(vid).closest(".browser").addClass('maxied');
+
+  audioFadeIn(vid);
+  
   const p = vid.play();
   if (p && (typeof Promise !== 'undefined') && (p instanceof Promise)) {
       p.catch((e) => {
@@ -278,15 +279,18 @@ function playVideo(vid) {
           console.log(`Caught pending play exception - continuing (${e})`);
       });
   }
-  audioFadeIn(vid);
+
 }
 
 function pauseVideo(vid) {
   $(vid).prev('.play').removeClass('playing');
   $(vid).closest(".browser").removeClass('maxied');
+  audioFadeOut(vid);
   if (vid.paused === false) {
-    audioFadeOut(vid);
-    vid.pause();
+    vid.timeout = setTimeout(function() {
+      vid.pause();
+      vid.timeout = null;
+    }, 500);
   }
 }
 
@@ -306,7 +310,15 @@ function audioFadeIn(vid) {
 
 function audioFadeOut(vid) {
   
-  vid.volume = 0;
+  if(vid.volume > 0.02) {
+
+    vid.volume -= 0.01;
+
+    setTimeout(function() {
+      audioFadeOut(vid);
+    }, 50);
+
+  }
 
 }
 
@@ -322,7 +334,7 @@ function scrollVideo() {
         playVideo(video.vid);
       }
     } else {
-      if(video.vid.paused === false) {
+      if(video.vid.paused === false && video.timeout === null) {
         pauseVideo(video.vid);
       }
       
@@ -339,7 +351,7 @@ function isElementInViewport (el) {
     var rect = el.getBoundingClientRect();
 
     return (
-        rect.top >= -window.innerHeight / 2 &&
-        rect.top <= ($(el).height() * 2)
+        rect.top >= -window.innerHeight &&
+        rect.top <= ($(el).height())
     );
 }

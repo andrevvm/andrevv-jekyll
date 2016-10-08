@@ -15,7 +15,6 @@ image: /work/ourfamily/ourfamily.jpg
   <video id="layervault" class="browser_img" title="Our Family Shoes"
     preload="none" width="640" height="400" poster="{{ site.root }}{{ page.image }}" data-setup="{}">
     <source src="{{ site.root }}/work/ourfamily/ourfamily.mp4" type='video/mp4'>
-    <source src="{{ site.root }}/work/ourfamily/ourfamily.webm" type='video/webm'>
   </video>
 </div>
 
