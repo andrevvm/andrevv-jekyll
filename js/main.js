@@ -72,10 +72,6 @@ $(function() {
   initBrowser();
   initVideo();
 
-  setInterval(function() {
-    scrollVideo();
-  }, 150);
-
   $("a[rel=external]").attr("target","_blank");
 
   var frame = 1;
@@ -141,6 +137,8 @@ function scroll() {
     });
   }
   scrollVal = scrollTop;
+
+  scrollVideo();
 
 }
 
