@@ -269,7 +269,8 @@ function toggleVideo($this) {
 function playVideo(vid) {
   $(vid).prev('.play').addClass('playing');
   $(vid).closest(".browser").addClass('maxied');
-  setTimeout(function () {      
+  clearTimeout(vid.timeout);
+  vid.timeout = setTimeout(function () {      
     // Resume play if the element if is paused.
     if (vid.paused) {
       vid.play();
