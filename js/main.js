@@ -318,7 +318,7 @@ function scrollVideo() {
     $this = video.el.prev('.play');
 
     if(isElementInViewport(video.vid)) {
-      if(video.vid.paused === true) {
+      if(video.vid.paused === true && !$this.hasClass('paused')) {
         playVideo(video.vid);
       }
     } else {
