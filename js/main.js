@@ -310,7 +310,7 @@ function audioFadeIn(vid) {
 
 function audioFadeOut(vid) {
   
-  if(vid.volume > 0.02) {
+  if(vid.volume > 0.01) {
 
     vid.volume -= 0.01;
 
