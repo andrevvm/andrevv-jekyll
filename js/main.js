@@ -14,6 +14,25 @@ var $nav,
 
 var md = new MobileDetect(window.navigator.userAgent);
 
+function msieversion() {
+
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+
+    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+    {
+        return true;
+    }
+    else  // If another browser, return 0
+    {
+        return false;
+    }
+
+    return false;
+}
+
+var ie = msieversion();
+
 
 $(function() {
   navBool = false;
@@ -35,6 +54,10 @@ $(function() {
     $('body').addClass('mobile');
   } else {
     $('body').addClass('not-mobile');
+  }
+
+  if(ie) {
+    $('body').addClass('ie');
   }
   
   $(window).scroll(scroll);

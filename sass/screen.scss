@@ -179,7 +179,8 @@ h1,h2,h3,h4,h5 {
 }
 
 
-.mobile .section {
+.mobile .section,
+.ie .section {
 
   h1, h2, h3, p {
     padding: 0 0.5em;
