@@ -230,7 +230,8 @@ function initVideo() {
     var video = {
 
       el: $this,
-      vid: $this.get(0)
+      vid: $this.get(0),
+      timeout: null
 
     }
     
@@ -315,13 +316,14 @@ function scrollVideo() {
     $this = video.el.prev('.play');
 
     if(isElementInViewport(video.vid)) {
-      if(video.vid.paused === true && !$this.hasClass('paused')) {
+      if(video.vid.paused === true) {
         playVideo(video.vid);
       }
     } else {
       if(video.vid.paused === false) {
         pauseVideo(video.vid);
       }
+      
     }
 
   });
@@ -334,7 +336,7 @@ function isElementInViewport (el) {
     var rect = el.getBoundingClientRect();
 
     return (
-        rect.top >= -window.innerHeight / 1.5 &&
-        rect.top <= (window.innerHeight * 1.5 || document.documentElement.clientHeight * 1.5)
+        rect.top >= -window.innerHeight &&
+        rect.top <= ($(el).height() / 2)
     );
 }
