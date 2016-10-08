@@ -114,7 +114,7 @@ function scroll() {
   var docheight = $(document).height();
   if(scrollTop > docheight - section_h * 10) {
     count++;
-    if(count >= 20) {
+    if(count >= 15) {
       if($('#begin').find('#end').length == 0) {
         $("#end").appendTo('#begin').css("display","block");
       }
