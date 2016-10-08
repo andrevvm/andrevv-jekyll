@@ -11,8 +11,8 @@
 @font-face{font-family:'GT Sectra Fine';src:url('../type/GT-Sectra-Fine-Book-Italic.eot?') format('eot'),url('../type/GT-Sectra-Fine-Book-Italic.woff') format('woff'),url('../type/GT-Sectra-Fine-Book-Italic.ttf') format('truetype'),url('../type/GT-Sectra-Fine-Book-Italic.svg#webfontlZlKz9CF') format('svg');font-weight:400;font-style:italic;}
 
 
-$h1-size: 24px;
-$h2-size: 18px;
+$h1-size: 5vmin;
+$h2-size: 3.09vmin;
 
 $background-size: 35%;
 
@@ -161,6 +161,16 @@ h1,h2,h3,h4,h5 {
   font-size: 16px;
   line-height: 1.4em;
   width: 300px;
+  .not-mobile & {
+    mix-blend-mode: difference;
+    color: white;
+  }
+
+  .mobile & {
+    background: white;
+  }
+  
+
 }
 
 p em {
@@ -214,28 +224,39 @@ p em {
 }
 
 .section a {
-  color: white;
+  color: black;
   text-decoration: none;
-  border-bottom: 0.02em solid white;
+  border-bottom: 0.02em solid black;
   padding: 0 0.05em;
   //display: inline-block;
   line-height: 1em;
   &.button {
     line-height: 1.2em;
   }
-  mix-blend-mode: difference;
 
-  @include box-shadow(inset 0 -1px 0 #fff);
+  
+  @include box-shadow(inset 0 -1px 0 black);
 
   @include transition(all 300ms ease-in-out);
   
+  .not-mobile & {
+    color: white;
+    border-bottom: 0.02em solid white;
+    @include box-shadow(inset 0 -1px 0 #fff);
+    mix-blend-mode: difference;
+  }
 }
 
 .section a:hover {
 
-  color: black;
-  @include box-shadow(inset 0 -1.1em 0 white);
+  color: white;
+  @include box-shadow(inset 0 -1.1em 0 black);
   @include transition-duration(100ms);
+
+  .not-mobile & {
+    color: black;
+    @include box-shadow(inset 0 -1.1em 0 white);
+  }
 
 }
 
@@ -280,20 +301,43 @@ a.button {
   color: black;
   border: 0;
   @include transition(none);
+  font-size: 3.09vmin;
+
+  .not-mobile & {
+    color: black;
+    border-bottom: 0.02em solid white;
+    //@include box-shadow(inset 0 -1px 0 #fff);
+    mix-blend-mode: difference;
+  }
+
   span {
     position: relative;
     display: inline-block;
     top: 1px;
   }
+
+  .not-mobile & {
+    color: black;
+  }
 }
 
 .button:hover, a.button:hover {
   background: #0000FF;
-  color: white;
+  color: black;
   text-decoration: none;
   @include box-shadow(none);
+  border: 0;
   span:before {
     color: black;
+  }
+
+  .not-mobile & {
+    @include box-shadow(none);
+    border: 0;
+    span:before {
+      color: white;
+    }
+    color: white;
   }
 }
 
@@ -343,16 +387,11 @@ a.button {
 }
 
 .section:nth-child(even) .cat {
-  background-color: #f9f9f9 !important;
+  background-color: #000 !important;
 }
 
 .section .cat.end {
   background-color: black !important;
-}
-
-.cat {
-  background-image: url(../img/kf/kf.gif) !important;
-  background-size: 250px auto;
 }
 
 .cat.f00 {
@@ -990,8 +1029,6 @@ footer {
     -o-transform: translate(0,-50%);
     -ms-transform: translate(0,-50%);
     transform: translate(0,-50%);
-    mix-blend-mode: difference;
-    color: white;
   }
 
   .section h1, .section h2, .section h3, .section p {

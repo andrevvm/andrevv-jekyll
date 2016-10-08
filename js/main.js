@@ -33,6 +33,8 @@ $(function() {
 
   if(md.mobile()) {
     $('body').addClass('mobile');
+  } else {
+    $('body').addClass('not-mobile');
   }
   
   $(window).scroll(scroll);
