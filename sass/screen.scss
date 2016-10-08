@@ -333,7 +333,7 @@ a.button {
 
   .not-mobile & {
     @include box-shadow(none);
-    border: 0;
+  border: 0;
     span:before {
       color: white;
     }
