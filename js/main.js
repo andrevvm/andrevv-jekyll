@@ -282,12 +282,7 @@ function pauseVideo(vid) {
   $(vid).prev('.play').removeClass('playing');
   audioFadeOut(vid);
   $(vid).closest(".browser").removeClass('maxied');
-  setTimeout(function () {      
-    // Resume play if the element if is paused.
-    if (vid.paused === false) {
-      vid.pause();
-    }
-  }, 500);
+  vid.pause();
 }
 
 function audioFadeIn(vid) {
