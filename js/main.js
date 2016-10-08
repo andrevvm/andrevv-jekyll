@@ -283,9 +283,9 @@ function playVideo(vid) {
 
 function pauseVideo(vid) {
   $(vid).prev('.play').removeClass('playing');
-  audioFadeOut(vid);
   $(vid).closest(".browser").removeClass('maxied');
   if (vid.paused === false) {
+    audioFadeOut(vid);
     vid.pause();
   }
 }
