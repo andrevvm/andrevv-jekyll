@@ -1033,11 +1033,11 @@ iframe {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   position: relative;
-  -webkit-transition: width 500ms, height 500ms, padding 100ms;
-  -moz-transition: width 500ms, height 500ms, padding 100ms;
-  -o-transition: width 500ms, height 500ms, padding 100ms;
-  -ms-transition: width 500ms, height 500ms, padding 100ms;
-  transition: width 500ms, height 500ms, padding 100ms;
+  -webkit-transition: width 800ms, height 800ms, padding 100ms;
+  -moz-transition: width 800ms, height 800ms, padding 100ms;
+  -o-transition: width 800ms, height 800ms, padding 100ms;
+  -ms-transition: width 800ms, height 800ms, padding 100ms;
+  transition: width 800ms, height 800ms, padding 100ms;
 }
 
 /* line 832, ../sass/screen.scss */
@@ -1149,11 +1149,11 @@ iframe {
   width: auto;
   overflow-x: hidden;
   overflow-y: auto;
-  -webkit-transition: height 500ms;
-  -moz-transition: height 500ms;
-  -o-transition: height 500ms;
-  -ms-transition: height 500ms;
-  transition: height 500ms;
+  -webkit-transition: height 800ms;
+  -moz-transition: height 800ms;
+  -o-transition: height 800ms;
+  -ms-transition: height 800ms;
+  transition: height 800ms;
 }
 
 /* line 935, ../sass/screen.scss */
@@ -1164,11 +1164,11 @@ iframe {
 /* line 939, ../sass/screen.scss */
 video {
   position: relative;
-  -webkit-transition: height 500ms, width 500ms;
-  -moz-transition: height 500ms, width 500ms;
-  -o-transition: height 500ms, width 500ms;
-  -ms-transition: height 500ms, width 500ms;
-  transition: height 500ms, width 500ms;
+  -webkit-transition: height 800ms, width 800ms;
+  -moz-transition: height 800ms, width 800ms;
+  -o-transition: height 800ms, width 800ms;
+  -ms-transition: height 800ms, width 800ms;
+  transition: height 800ms, width 800ms;
 }
 
 /* line 948, ../sass/screen.scss */
@@ -1192,11 +1192,11 @@ video {
   height: auto;
   width: 640px;
   display: block;
-  -webkit-transition: height 500ms, width 500ms;
-  -moz-transition: height 500ms, width 500ms;
-  -o-transition: height 500ms, width 500ms;
-  -ms-transition: height 500ms, width 500ms;
-  transition: height 500ms, width 500ms;
+  -webkit-transition: height 800ms, width 800ms;
+  -moz-transition: height 800ms, width 800ms;
+  -o-transition: height 800ms, width 800ms;
+  -ms-transition: height 800ms, width 800ms;
+  transition: height 800ms, width 800ms;
 }
 
 /* line 973, ../sass/screen.scss */
@@ -1267,11 +1267,11 @@ footer.Work {
   margin: 30px auto;
   position: relative;
   border: 1px solid black;
-  -webkit-transition: height 500ms, width 500ms;
-  -moz-transition: height 500ms, width 500ms;
-  -o-transition: height 500ms, width 500ms;
-  -ms-transition: height 500ms, width 500ms;
-  transition: height 500ms, width 500ms;
+  -webkit-transition: height 800ms, width 800ms;
+  -moz-transition: height 800ms, width 800ms;
+  -o-transition: height 800ms, width 800ms;
+  -ms-transition: height 800ms, width 800ms;
+  transition: height 800ms, width 800ms;
 }
 
 /* line 1040, ../sass/screen.scss */
