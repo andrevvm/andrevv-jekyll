@@ -20,5 +20,3 @@ image: /work/ourfamily/ourfamily.jpg
 </div>
 
 <em>Our Family</em> needed a one-page shop for their new brand, so I designed and built a custom Shopify theme with them. Bold colors and the photography of chinese activist artist Ren Hang emphasises <em>Our Family's</em> message of anti-censorship.
-
-<a href="http://ourfamilyshoes.com" class="button" rel="external">View website</a>
