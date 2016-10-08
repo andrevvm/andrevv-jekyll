@@ -1302,11 +1302,11 @@ footer.Work {
 }
 /* line 1065, ../sass/screen.scss */
 .video_container.iphone .play {
-  background-image: none;
+  background-image: url(../img/play_btn.png);
 }
 /* line 1069, ../sass/screen.scss */
 .video_container.iphone .play.playing {
-  background-image: url(../img/play_btn.png);
+  background-image: none;
 }
 
 /* line 1074, ../sass/screen.scss */

@@ -1063,11 +1063,11 @@ footer {
   }
 
   .play {
-    background-image: none;
+    background-image: url(../img/play_btn.png);
   }
 
   .play.playing {
-    background-image: url(../img/play_btn.png);
+    background-image: none;
   }
 }
 

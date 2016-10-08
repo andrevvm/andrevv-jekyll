@@ -136,6 +136,9 @@ function scroll() {
     });
   }
   scrollVal = scrollTop;
+
+  scrollVideo();
+
 }
 
 function showNav() {
@@ -222,8 +225,7 @@ function initVideo() {
     var $this = $(this);
     var video = $this.get(0);
     $this.bind('ended', function() {
-      $this.closest(".browser").removeClass('maxied');
-      $this.prev('.play').removeClass('playing');
+      pauseVideo($this.prev('.play'));
       video.currentTime = 0;
     });
   });
@@ -231,15 +233,71 @@ function initVideo() {
   $("video").before("<span class='play'></span>");
 
   $(".play").click(function() {
-    var $this = $(this);
-    $this.toggleClass('playing');
-    var video = $(this).next("video").get(0);
-    if(video.paused === true) {
-      $(this).closest(".browser").addClass('maxied');
-      video.play();
+    toggleVideo($(this));
+  });
+}
+
+function toggleVideo($this) {
+  $this.toggleClass('playing');
+  var video = $this.next("video").get(0);
+  if(video.paused === true) {
+    $this.closest(".browser").addClass('maxied');
+    $this.removeClass('paused');
+    video.play();
+  } else {
+    video.pause();
+    $this.addClass('paused');
+    $this.closest(".browser").removeClass('maxied');
+  }
+}
+
+function playVideo($this) {
+  $this.addClass('playing');
+  var video = $this.next("video").get(0);
+  $this.closest(".browser").addClass('maxied');
+  video.play();
+}
+
+function pauseVideo($this) {
+  $this.removeClass('playing');
+  var video = $this.next("video").get(0);
+  video.pause();
+  $this.closest(".browser").removeClass('maxied');
+}
+
+
+function scrollVideo() {
+
+  $(".play").each(function() {
+
+    $this = $(this);
+
+    if(isElementInViewport($this)) {
+      var video = $this.next("video").get(0);
+      if(video.paused === true && !$this.hasClass('paused')) {
+        playVideo($this);
+      }
     } else {
-      video.pause();
-      $(this).closest(".browser").removeClass('maxied');
+      var video = $this.next("video").get(0);
+      if(video.paused === false) {
+        pauseVideo($this);
+      }
     }
   });
+
+}
+
+function isElementInViewport (el) {
+
+    //special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+    }
+
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.top >= -window.innerHeight / 2 &&
+        rect.bottom <= (window.innerHeight * 1.5 || document.documentElement.clientHeight * 1.5)
+    );
 }
