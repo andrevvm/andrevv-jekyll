@@ -194,6 +194,20 @@ h1,h2,h3,h4,h5 {
   &:nth-child(odd) {
     h1, h2, h3, p {
       background: white;
+      color: black;
+
+      a {
+        color: black;
+        @include box-shadow(inset 0 -1px 0 black);
+      }
+
+      .button {
+        background: white;
+        @include box-shadow(none);
+        span:before {
+          color: black !important;
+        }
+      }
     }
     
   }
