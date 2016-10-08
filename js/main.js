@@ -269,14 +269,13 @@ function toggleVideo($this) {
 function playVideo(vid) {
   $(vid).prev('.play').addClass('playing');
   $(vid).closest(".browser").addClass('maxied');
-  clearTimeout(vid.timeout);
-  vid.timeout = setTimeout(function () {      
-    // Resume play if the element if is paused.
-    if (vid.paused) {
-      vid.play();
-      audioFadeIn(vid);
-    }
-  }, 150);
+  const p = vid.play();
+  if (p && (typeof Promise !== 'undefined') && (p instanceof Promise)) {
+      p.catch((e) => {
+          
+      });
+  }
+  audioFadeIn(vid);
 }
 
 function pauseVideo(vid) {
