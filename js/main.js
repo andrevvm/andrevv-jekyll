@@ -275,7 +275,7 @@ function playVideo(vid) {
           if (e.name === 'NotAllowedError') {
               eventBus.trigger(Events.PLAYBACK_NOT_ALLOWED);
           }
-          log(`Caught pending play exception - continuing (${e})`);
+          console.log(`Caught pending play exception - continuing (${e})`);
       });
   }
   audioFadeIn(vid);
