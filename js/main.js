@@ -269,7 +269,7 @@ function pauseVideo($this) {
   audioFadeOut(video);
   setTimeout(function() {
     video.pause();
-  }, 500);
+  }, 1000);
 }
 
 function audioFadeIn(vid) {
@@ -290,7 +290,7 @@ function audioFadeOut(vid) {
   
   if(vid.volume > 0.1) {
 
-    vid.volume -= 0.05;
+    vid.volume -= 0.01;
 
     setTimeout(function() {
       audioFadeOut(vid);
