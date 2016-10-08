@@ -235,9 +235,9 @@ function initVideo() {
     }
     
     $this.bind('ended', function() {
-      video.currentTime = 0;
-      $this.prev('.play').addClass('paused');
-      pauseVideo($this.prev('.play'));
+      video.vid.currentTime = 0;
+      video.el.prev('.play').addClass('paused');
+      pauseVideo(video.vid);
     });
 
     videos.push(video);
@@ -276,9 +276,7 @@ function pauseVideo(vid) {
   $(vid).prev('.play').removeClass('playing');
   audioFadeOut(vid);
   $(vid).closest(".browser").removeClass('maxied');
-  setTimeout(function() {
-    vid.pause();
-  }, 500);
+  vid.pause();
 }
 
 function audioFadeIn(vid) {
@@ -316,7 +314,7 @@ function scrollVideo() {
 
     $this = video.el.prev('.play');
 
-    if(isElementInViewport(video.el)) {
+    if(isElementInViewport(video.vid)) {
       if(video.vid.paused === true && !$this.hasClass('paused')) {
         playVideo(video.vid);
       }
@@ -333,15 +331,10 @@ function scrollVideo() {
 
 function isElementInViewport (el) {
 
-    //special bonus for those using jQuery
-    if (typeof jQuery === "function" && el instanceof jQuery) {
-        el = el[0];
-    }
-
     var rect = el.getBoundingClientRect();
 
     return (
         rect.top >= -window.innerHeight / 1.5 &&
-        rect.bottom <= (window.innerHeight * 2 || document.documentElement.clientHeight * 2)
+        rect.top <= (window.innerHeight * 1.5 || document.documentElement.clientHeight * 1.5)
     );
 }
