@@ -33,6 +33,7 @@ function msieversion() {
 
 var ie = msieversion();
 
+var videos = [];
 
 $(function() {
   navBool = false;
@@ -225,11 +226,21 @@ function initVideo() {
     var $this = $(this);
     var video = $this.get(0);
     video.volume = 0;
+
+    var video = {
+
+      el: $this,
+      vid: $this.get(0)
+
+    }
+    
     $this.bind('ended', function() {
       video.currentTime = 0;
       $this.prev('.play').addClass('paused');
       pauseVideo($this.prev('.play'));
     });
+
+    videos.push(video);
   });
 
   $("video").before("<span class='play'></span>");
@@ -254,21 +265,19 @@ function toggleVideo($this) {
   }
 }
 
-function playVideo($this) {
-  $this.addClass('playing');
-  var video = $this.next("video").get(0);
-  audioFadeIn(video);
-  $this.closest(".browser").addClass('maxied');
-  video.play();
+function playVideo(vid) {
+  $(vid).prev('.play').addClass('playing');
+  audioFadeIn(vid);
+  $(vid).closest(".browser").addClass('maxied');
+  vid.play();
 }
 
-function pauseVideo($this) {
-  $this.removeClass('playing');
-  var video = $this.next("video").get(0);
-  $this.closest(".browser").removeClass('maxied');
-  audioFadeOut(video);
+function pauseVideo(vid) {
+  $(vid).prev('.play').removeClass('playing');
+  audioFadeOut(vid);
+  $(vid).closest(".browser").removeClass('maxied');
   setTimeout(function() {
-    video.pause();
+    vid.pause();
   }, 500);
 }
 
@@ -303,22 +312,22 @@ function audioFadeOut(vid) {
 
 function scrollVideo() {
 
-  $(".play").each(function() {
+  $.each( videos, function( key, video ) {
 
-    $this = $(this);
+    $this = video.el.prev('.play');
 
-    if(isElementInViewport($this)) {
-      var video = $this.next("video").get(0);
-      if(video.paused === true && !$this.hasClass('paused')) {
-        playVideo($this);
+    if(isElementInViewport(video.el)) {
+      if(video.vid.paused === true && !$this.hasClass('paused')) {
+        playVideo(video.vid);
       }
     } else {
-      var video = $this.next("video").get(0);
-      if(video.paused === false) {
-        pauseVideo($this);
+      if(video.vid.paused === false) {
+        pauseVideo(video.vid);
       }
     }
+
   });
+
 
 }
 
@@ -332,7 +341,7 @@ function isElementInViewport (el) {
     var rect = el.getBoundingClientRect();
 
     return (
-        rect.top >= -window.innerHeight / 2 &&
-        rect.bottom <= (window.innerHeight * 2 || document.documentElement.clientHeight * 2)
+        rect.top >= -window.innerHeight / 1.2 &&
+        rect.bottom <= (window.innerHeight * 1.5 || document.documentElement.clientHeight * 1.5)
     );
 }
