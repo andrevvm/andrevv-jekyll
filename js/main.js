@@ -224,6 +224,7 @@ function initVideo() {
   $("video").each(function(){
     var $this = $(this);
     var video = $this.get(0);
+    video.volume = 0;
     $this.bind('ended', function() {
       video.currentTime = 0;
       $this.prev('.play').addClass('paused');
@@ -245,6 +246,7 @@ function toggleVideo($this) {
     $this.closest(".browser").addClass('maxied');
     $this.removeClass('paused');
     video.play();
+    audioFadeIn(video);
   } else {
     video.pause();
     $this.addClass('paused');
@@ -255,6 +257,7 @@ function toggleVideo($this) {
 function playVideo($this) {
   $this.addClass('playing');
   var video = $this.next("video").get(0);
+  audioFadeIn(video);
   $this.closest(".browser").addClass('maxied');
   video.play();
 }
@@ -262,8 +265,39 @@ function playVideo($this) {
 function pauseVideo($this) {
   $this.removeClass('playing');
   var video = $this.next("video").get(0);
-  video.pause();
   $this.closest(".browser").removeClass('maxied');
+  audioFadeOut(video);
+  setTimeout(function() {
+    video.pause();
+  }, 500);
+}
+
+function audioFadeIn(vid) {
+  
+  if(vid.volume < 0.9) {
+
+    vid.volume += 0.01;
+
+    setTimeout(function() {
+      audioFadeIn(vid);
+    }, 50);
+
+  }
+
+}
+
+function audioFadeOut(vid) {
+  
+  if(vid.volume > 0.1) {
+
+    vid.volume -= 0.05;
+
+    setTimeout(function() {
+      audioFadeOut(vid);
+    }, 50);
+
+  }
+
 }
 
 
