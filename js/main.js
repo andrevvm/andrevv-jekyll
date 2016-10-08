@@ -290,7 +290,7 @@ function pauseVideo(vid) {
     vid.timeout = setTimeout(function() {
       vid.pause();
       vid.timeout = null;
-    }, 500);
+    }, 1000);
   }
 }
 
