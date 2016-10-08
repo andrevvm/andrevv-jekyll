@@ -11,8 +11,8 @@
 @font-face{font-family:'GT Sectra Fine';src:url('../type/GT-Sectra-Fine-Book-Italic.eot?') format('eot'),url('../type/GT-Sectra-Fine-Book-Italic.woff') format('woff'),url('../type/GT-Sectra-Fine-Book-Italic.ttf') format('truetype'),url('../type/GT-Sectra-Fine-Book-Italic.svg#webfontlZlKz9CF') format('svg');font-weight:400;font-style:italic;}
 
 
-$h1-size: 5vmin;
-$h2-size: 3.09vmin;
+$h1-size: 3.09vmin;
+$h2-size: 2.15vmin;
 
 $background-size: 35%;
 
@@ -31,6 +31,11 @@ body, html {
   color: #000;
   height: 100%;
   background: white;
+}
+
+body:after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content: url(../img/kf/kf00.png) url(../img/kf/kf01.png) url(../img/kf/kf02.png) url(../img/kf/kf03.png) url(../img/kf/kf04.png) url(../img/kf/kf05.png) url(../img/kf/kf06.png) url(../img/kf/kf07.png) url(../img/kf/kf08.png)  url(../img/kf/kf09.png) url(../img/kf/kf09.png) url(../img/kf/kf10.png) url(../img/kf/kf11.png) url(../img/kf/kf12.png) url(../img/kf/kf13.png) url(../img/kf/kf14.png) url(../img/kf/kf15.png);
 }
 
 @media 
@@ -155,22 +160,57 @@ h1,h2,h3,h4,h5 {
 }
 
 .section h1, .section h2, .section h3, .section p {
+  display: inline-block;
   top: 48%;
   margin: 0px auto;
   position: relative;
   font-size: 16px;
   line-height: 1.4em;
-  width: 300px;
+  //width: 300px;
   .not-mobile & {
     mix-blend-mode: difference;
     color: white;
   }
 
-  .mobile & {
-    background: white;
-  }
-  
+}
 
+
+.mobile .section {
+
+  h1, h2, h3, p {
+    padding: 0 0.5em;
+
+    .button {
+      padding: 0;
+      line-height: 2.4em;
+    }
+  }
+
+  &:nth-child(odd) {
+    h1, h2, h3, p {
+      background: white;
+    }
+    
+  }
+  &:nth-child(even) {
+    h1, h2, h3, p {
+      background: black;
+      color: white;
+
+      a {
+        color: white;
+        @include box-shadow(inset 0 -1px 0 white);
+      }
+
+      .button {
+        background: black;
+        @include box-shadow(none);
+        span:before {
+          color: white !important;
+        }
+      }
+    }
+  }
 }
 
 p em {
@@ -299,13 +339,13 @@ a.button {
 
 .section .button {
   color: black;
-  border: 0;
+  border: 0 !important;
   @include transition(none);
-  font-size: 3.09vmin;
+  font-size: $h1-size;
 
   .not-mobile & {
     color: black;
-    border-bottom: 0.02em solid white;
+    //border-bottom: 0.02em solid white;
     //@include box-shadow(inset 0 -1px 0 #fff);
     mix-blend-mode: difference;
   }
@@ -326,14 +366,14 @@ a.button {
   color: black;
   text-decoration: none;
   @include box-shadow(none);
-  border: 0;
+  //border: 0;
   span:before {
     color: black;
   }
 
   .not-mobile & {
     @include box-shadow(none);
-  border: 0;
+    //border: 0;
     span:before {
       color: white;
     }
@@ -369,7 +409,7 @@ a.button {
 
 .section#end {
   display: none;
-  background: black !important;
+  background: white !important;
   color: white;
 }
 
@@ -379,7 +419,7 @@ a.button {
 }
 
 .section#end a:hover {
-  color: white;
+  color: black;
 }
 
 .section:nth-child(odd) .cat {
@@ -391,8 +431,9 @@ a.button {
 }
 
 .section .cat.end {
-  background-color: black !important;
+  background-color: white !important;
 }
+
 
 .cat.f00 {
   background-image: url(../img/kf/kf00.png);
@@ -1032,7 +1073,7 @@ footer {
   }
 
   .section h1, .section h2, .section h3, .section p {
-    font-size: $h2-size;
+    font-size: $h1-size;
   }
 
   header .PostHeader {
@@ -1158,8 +1199,9 @@ footer {
   .cat p,
   .cat h3,
   .cat h2 {
-    width: 75%;
+    //width: 75%;
     margin: 0 auto;
+    padding: 0 0.5em;
   }
 
   nav {
@@ -1173,6 +1215,10 @@ footer {
 
   .play {
     display: none !important;
+  }
+
+  .section .button {
+    font-size: 16px;
   }
 
   footer {

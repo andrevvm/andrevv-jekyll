@@ -89,7 +89,7 @@ function scroll() {
   
 
   var docheight = $(document).height();
-  if(scrollTop > docheight - section_h * 3) {
+  if(scrollTop > docheight - section_h * 10) {
     count++;
     if(count >= 20) {
       if($('#begin').find('#end').length == 0) {
@@ -99,14 +99,15 @@ function scroll() {
     }
     var new_sections = sections.clone();
     new_sections.each(function() {
-      if(section_count < 15) {
+      if(section_count < 14) {
         section_count ++;
       } else {
         section_count = 0;
       }
       var $cat = $(".cat",this);
-      $cat.removeClass("f00 f01 f02 f03 f04 f05 f06 f07 f08 f09 f10 f11 f12 f13 f14 f15");
+      $cat.removeClass("f00 f01 f02 f03 f04 f05 f06 f07 f08 f09 f10 f11 f12 f13 f14");
       var new_class = zeroPad(section_count, 2);
+      $cat.prev(".image-fill").find('img').attr('src', 'img/kf/kf'+new_class+'.png');
       $cat.addClass("f"+new_class);
       $("#begin").append(new_sections);
     });
