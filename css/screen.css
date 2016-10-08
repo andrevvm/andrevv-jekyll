@@ -167,10 +167,6 @@ h1, h2, h3, h4, h5 {
 #content .post {
   min-height: 100vh;
 }
-/* line 88, ../sass/screen.scss */
-#content .post:first-child {
-  padding-top: 30px;
-}
 
 /* line 93, ../sass/screen.scss */
 #begin {
