@@ -282,7 +282,9 @@ function pauseVideo(vid) {
   $(vid).prev('.play').removeClass('playing');
   audioFadeOut(vid);
   $(vid).closest(".browser").removeClass('maxied');
-  vid.pause();
+  if (vid.paused === false) {
+    vid.pause();
+  }
 }
 
 function audioFadeIn(vid) {
@@ -301,15 +303,7 @@ function audioFadeIn(vid) {
 
 function audioFadeOut(vid) {
   
-  if(vid.volume > 0.1) {
-
-    vid.volume -= 0.05;
-
-    setTimeout(function() {
-      audioFadeOut(vid);
-    }, 50);
-
-  }
+  vid.volume = 0;
 
 }
 
