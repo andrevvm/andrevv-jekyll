@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5 {
   top: 50%;
   left: 50%;
   width: auto;
-  height: 35%;
+  height: 30%;
   min-height: 200px;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -577,7 +577,7 @@ a.button {
   background-position: 50% 50%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: auto 35%;
+  background-size: auto 30%;
 }
 /* line 424, ../sass/screen.scss */
 .mobile .cat {
