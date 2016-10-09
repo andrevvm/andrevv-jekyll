@@ -100,10 +100,15 @@ function scroll() {
   scrollTop = $(this).scrollTop();
   var scrollDif = scrollTop - scrollVal;
   var inProgress = true;
-  if(scrollDif < 0 && scrollTop > 0) {
+  var navOffset = parseInt($("nav").css('top'),10) - scrollTop;
+  if(scrollDif < 0 && scrollTop > 0 && navOffset < -45) {
     showNav();
   } else {
     hideNav();
+  }
+
+  if(navOffset > 0) {
+    stickyNav();
   }
 
   if (scrollTop <= 0 ) {
@@ -148,6 +153,20 @@ function showNav() {
       $nav.addClass('sticky');
       $nav.addClass('slideIn');
       $nav.css('top',0);
+    },50);
+  }
+}
+
+function stickyNav() {
+  if(!$nav.hasClass('sticky')) {
+    navBool = true;
+    $nav.css({
+      'top': 0,
+      'transition': 'none'
+    });
+    $nav.addClass('sticky');
+    setTimeout(function(){
+      $nav.css('transition', '');
     },50);
   }
 }
