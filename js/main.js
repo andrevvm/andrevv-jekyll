@@ -270,15 +270,7 @@ function playVideo(vid) {
 
   audioFadeIn(vid);
   
-  const p = vid.play();
-  if (p && (typeof Promise !== 'undefined') && (p instanceof Promise)) {
-      p.catch((e) => {
-          if (e.name === 'NotAllowedError') {
-              eventBus.trigger(Events.PLAYBACK_NOT_ALLOWED);
-          }
-          console.log(`Caught pending play exception - continuing (${e})`);
-      });
-  }
+  vid.play();
 
 }
 
