@@ -14,9 +14,11 @@
     {% include head %}
 
     {% if page.section == "work" %}
-      <meta property="og:url" content="http://andrevv.com/work/{{ page.slug }}/" />
+      <meta property="og:url" content="http://andrevv.com/work/{{ page.slug }}" />
       {% if page.image %}
         <meta property="og:image" content="http://andrevv.com{{ page.image }}" />
+      {% else %}
+        <meta property="og:image" content="http://andrevv.com{{ site.categories.work.first.image }}" />
       {% endif %}
       <meta property="og:title" content="Andrew McCarthy – {{ page.title }} ✍" />
       <meta property="og:description" content="{{ page.description }}" />
