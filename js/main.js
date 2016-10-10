@@ -116,6 +116,11 @@ function scroll() {
   }
 
   var docheight = $(document).height();
+
+  if(scrollTop >= docheight - window.innerHeight) {
+    showNav();
+  }
+
   if(scrollTop > docheight - section_h * 10) {
     count++;
     if(count >= 20) {
