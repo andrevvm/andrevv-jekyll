@@ -146,8 +146,9 @@ function scroll() {
   }
   scrollVal = scrollTop;
 
-  scrollVideo();
-
+  if(!md.mobile()) {
+    scrollVideo();
+  }
 }
 
 function showNav() {
