@@ -172,10 +172,26 @@ h1,h2,h3,h4,h5 {
   line-height: 1.4em;
   //width: 300px;
   .not-mobile & {
-    mix-blend-mode: difference;
-    color: white;
+    //mix-blend-mode: difference;
+    //color: white;
   }
 
+}
+
+.section {
+  &:nth-child(odd) {
+    h1, h2, h3, p {
+      background: white;
+      color: black;
+    }
+  }
+
+  &:nth-child(even) {
+    h1, h2, h3, p {
+      background: black;
+      color: white;
+    }
+  }
 }
 
 
