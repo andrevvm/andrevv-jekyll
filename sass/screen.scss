@@ -413,16 +413,16 @@ a.button {
 .section#end {
   display: none;
   background: white !important;
-  color: white;
+  color: black;
 }
 
 .section#end a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
 .section#end a:hover {
-  color: black;
+  color: white;
 }
 
 .section:nth-child(odd) .cat {

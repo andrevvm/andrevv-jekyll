@@ -542,18 +542,18 @@ a.button {
 .section#end {
   display: none;
   background: white !important;
-  color: white;
+  color: black;
 }
 
 /* line 419, ../sass/screen.scss */
 .section#end a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
 /* line 424, ../sass/screen.scss */
 .section#end a:hover {
-  color: black;
+  color: white;
 }
 
 /* line 428, ../sass/screen.scss */
