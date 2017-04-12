@@ -190,9 +190,9 @@ h1,h2,h3,h4,h5 {
     }
   }
 
-  &:nth-child(odd) {
+  &:nth-child {
     h1, h2, h3, p {
-      background: white;
+      //background: white;
       color: black;
 
       a {
@@ -209,25 +209,6 @@ h1,h2,h3,h4,h5 {
       }
     }
     
-  }
-  &:nth-child(even) {
-    h1, h2, h3, p {
-      background: black;
-      color: white;
-
-      a {
-        color: white;
-        @include box-shadow(inset 0 -1px 0 white);
-      }
-
-      .button {
-        background: black;
-        @include box-shadow(none);
-        span:before {
-          color: white !important;
-        }
-      }
-    }
   }
 }
 
