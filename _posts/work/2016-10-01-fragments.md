@@ -5,7 +5,7 @@ title: Fragments in Space
 description: "A digital exploration of modernist design, built with Three.js and Timbre.js"
 categories: work
 responsibilities: Web Development &amp; Sound Design
-background: '#bde3f4'
+background: '#CBEFFF'
 color: '#000'
 slug: fragments-in-space
 image: /work/fragments/fragments.jpg
