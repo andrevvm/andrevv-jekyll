@@ -35,7 +35,7 @@ body, html {
 
 body:after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content: url(../img/kf/kf00.png) url(../img/kf/kf01.png) url(../img/kf/kf02.png) url(../img/kf/kf03.png) url(../img/kf/kf04.png) url(../img/kf/kf05.png) url(../img/kf/kf06.png) url(../img/kf/kf07.png) url(../img/kf/kf08.png)  url(../img/kf/kf09.png) url(../img/kf/kf09.png) url(../img/kf/kf10.png) url(../img/kf/kf11.png) url(../img/kf/kf12.png) url(../img/kf/kf13.png) url(../img/kf/kf14.png) url(../img/kf/kf15.png);
+    content: url(../img/shapes/shapes00000.png) url(../img/shapes/shapes00001.png) url(../img/shapes/shapes00002.png) url(../img/shapes/shapes00003.png) url(../img/shapes/shapes00004.png) url(../img/shapes/shapes00005.png) url(../img/shapes/shapes00006.png) url(../img/shapes/shapes00007.png) url(../img/shapes/shapes00008.png)  url(../img/shapes/shapes00009.png) url(../img/shapes/shapes00009.png) url(../img/shapes/shapes00010.png) url(../img/shapes/shapes00011.png) url(../img/shapes/shapes00012.png) url(../img/shapes/shapes00013.png) url(../img/shapes/shapes00014.png) url(../img/shapes/shapes00015.png) url(../img/shapes/shapes00016.png) url(../img/shapes/shapes00002.png) url(../img/shapes/shapes00017.png) url(../img/shapes/shapes00018.png) url(../img/shapes/shapes00005.png) url(../img/shapes/shapes00019.png) url(../img/shapes/shapes00020.png) url(../img/shapes/shapes00021.png) url(../img/shapes/shapes00022.png) url(../img/shapes/shapes00010.png) url(../img/shapes/shapes00023.png) url(../img/shapes/shapes00024.png) url(../img/shapes/shapes00013.png) url(../img/shapes/shapes00025.png) url(../img/shapes/shapes00026.png) url(../img/shapes/shapes00027.png) url(../img/shapes/shapes00028.png)  url(../img/shapes/shapes00028.png) url(../img/shapes/shapes00029.png) url(../img/shapes/shapes00010.png) url(../img/shapes/shapes00030.png) url(../img/shapes/shapes00031.png) url(../img/shapes/shapes00013.png) url(../img/shapes/shapes00032.png) url(../img/shapes/shapes00033.png) url(../img/shapes/shapes00024.png) url(../img/shapes/shapes00034.png) url(../img/shapes/shapes00035.png) url(../img/shapes/shapes00026.png)url(../img/shapes/shapes00036.png) url(../img/shapes/shapes00037.png)  url(../img/shapes/shapes00028.png) url(../img/shapes/shapes00038.png) url(../img/shapes/shapes00039.png) url(../img/shapes/shapes00030.png) url(../img/shapes/shapes00040.png) url(../img/shapes/shapes00041.png) url(../img/shapes/shapes00032.png) url(../img/shapes/shapes00042.png) url(../img/shapes/shapes00043.png);
 }
 
 @media 
@@ -178,23 +178,6 @@ h1,h2,h3,h4,h5 {
 
 }
 
-.section {
-  &:nth-child(odd) {
-    h1, h2, h3, p {
-      background: white;
-      color: black;
-    }
-  }
-
-  &:nth-child(even) {
-    h1, h2, h3, p {
-      background: black;
-      color: white;
-    }
-  }
-}
-
-
 .mobile .section,
 .ie .section {
 
@@ -218,10 +201,10 @@ h1,h2,h3,h4,h5 {
       }
 
       .button {
-        background: white;
+        background: black;
         @include box-shadow(none);
         span:before {
-          color: black !important;
+          color: white !important;
         }
       }
     }
@@ -299,13 +282,13 @@ p em {
 }
 
 .cat.contact {
-  background-image: none !important;
+  //background-image: none !important;
 }
 
 .section a {
   color: black;
   text-decoration: none;
-  border-bottom: 0.02em solid black;
+  border-bottom: 0em solid black;
   padding: 0 0.05em;
   //display: inline-block;
   line-height: 1em;
@@ -314,15 +297,15 @@ p em {
   }
 
   
-  @include box-shadow(inset 0 -1px 0 black);
+  @include box-shadow(inset 0 0px 0 black);
 
   @include transition(all 300ms ease-in-out);
   
   .not-mobile & {
-    color: white;
-    border-bottom: 0.02em solid white;
-    @include box-shadow(inset 0 -1px 0 #fff);
-    mix-blend-mode: difference;
+    color: black;
+    border-bottom: 0em solid black;
+    @include box-shadow(inset 0 -1px 0 black);
+    //mix-blend-mode: difference;
   }
 }
 
@@ -333,8 +316,8 @@ p em {
   @include transition-duration(100ms);
 
   .not-mobile & {
-    color: black;
-    @include box-shadow(inset 0 -1.1em 0 white);
+    color: white;
+    @include box-shadow(inset 0 -1.1em 0 black);
   }
 
 }
@@ -466,92 +449,27 @@ a.button {
 }
 
 .section:nth-child(even) .cat {
-  background-color: #000 !important;
+  background-color: #eee !important;
 }
 
 .section .cat.end {
   background-color: white !important;
 }
 
+@for $i from 0 through 43 {
 
-.cat.f00 {
-  background-image: url(../img/kf/kf00.png);
-  background-color: #FF4D4D;
-}
+  @if $i<10 {
+    .cat.f0#{$i} {
+      background-image: url(../img/shapes/shapes0000#{$i}.png);
+    }
+  }
+  @else {
+    .cat.f#{$i} {
+      background-image: url(../img/shapes/shapes000#{$i}.png);
+    }
+  }
 
-.cat.f01 {
-  background-image: url(../img/kf/kf01.png);
-  background-color: #FF6A4D;
-}
-
-.cat.f02 {
-  background-image: url(../img/kf/kf02.png);
-  background-color: #FF894D;
-}
-
-.cat.f03 {
-  background-image: url(../img/kf/kf03.png);
-  background-color: #FFAD4D;
-}
-
-.cat.f04 {
-  background-image: url(../img/kf/kf04.png);
-  background-color: #FFD34D;
-}
-
-.cat.f05 {
-  background-image: url(../img/kf/kf05.png);
-  background-color: #FFF14D;
-}
-
-.cat.f06 {
-  background-image: url(../img/kf/kf06.png);
-  background-color: #4DFFCD;
-}
-
-.cat.f07 {
-  background-image: url(../img/kf/kf07.png);
-  background-color: #4DE9FF;
-}
-
-.cat.f08 {
-  background-image: url(../img/kf/kf08.png);
-  background-color: #4DADFF;
-}
-
-.cat.f09 {
-  background-image: url(../img/kf/kf09.png);
-  background-color: #4DADFF;
-}
-
-.cat.f10 {
-  background-image: url(../img/kf/kf10.png);
-  background-color: #4DADFF;
-}
-
-.cat.f11 {
-  background-image: url(../img/kf/kf11.png);
-  background-color: #4DADFF;
-}
-
-.cat.f12 {
-  background-image: url(../img/kf/kf12.png);
-  background-color: #4DADFF;
-}
-
-.cat.f13 {
-  background-image: url(../img/kf/kf13.png);
-  background-color: #4DADFF;
-}
-
-.cat.f14 {
-  background-image: url(../img/kf/kf14.png);
-  background-color: #4DADFF;
-}
-
-.cat.f15 {
-  background-image: url(../img/kf/kf15.png);
-  background-color: #4DADFF;
+  
 }
 
 

@@ -123,23 +123,26 @@ function scroll() {
 
   if(scrollTop > docheight - section_h * 10) {
     count++;
-    if(count >= 20) {
+    if(count >= 40) {
       if($('#begin').find('#end').length == 0) {
         $("#end").appendTo('#begin').css("display","block");
       }
       return false;
     }
     var new_sections = sections.clone();
+
+    var frame_count = 43;
+
     new_sections.each(function() {
-      if(section_count < 14) {
+      if(section_count < frame_count) {
         section_count ++;
       } else {
         section_count = 0;
       }
       var $cat = $(".cat",this);
-      $cat.removeClass("f00 f01 f02 f03 f04 f05 f06 f07 f08 f09 f10 f11 f12 f13 f14");
+      $cat.attr('class','cat');
       var new_class = zeroPad(section_count, 2);
-      $cat.prev(".image-fill").find('img').attr('src', 'img/kf/kf'+new_class+'.png');
+      $cat.prev(".image-fill").find('img').attr('src', 'img/shapes/shapes000'+new_class+'.png');
       $cat.addClass("f"+new_class);
       $("#begin").append(new_sections);
     });
@@ -203,15 +206,15 @@ function initBrowser() {
 
   $(".browser_img").each(function() {
     var $this = $(this);
-    $(this).click(function() {
-      $(this).closest(".browser").toggleClass('maxied');
-    });
+    // $(this).click(function() {
+    //   $(this).closest(".browser").toggleClass('maxied');
+    // });
     var title = $this.attr('title');
     var style = $this.attr('style');
     if(typeof title === 'undefined') {
       title = "";
     }
-    var before_html = '<div class="browser" style="'+style+'">';
+    var before_html = '<div class="browser maxied" style="'+style+'">';
         before_html +=  '<h4 class="title">';
         before_html +=    title;
         before_html +=  '</h4>';
@@ -228,19 +231,19 @@ function initBrowser() {
     $(this).appendTo($(this).prev('.browser').find('.window'));
   });
 
-  $('.ui .min').click(function(){
-    $(this).closest('.browser').removeClass('maxied').toggleClass('minied');
-  });
+  // $('.ui .min').click(function(){
+  //   $(this).closest('.browser').removeClass('maxied').toggleClass('minied');
+  // });
 
-  $('.ui .max').click(function(){
-    $(this).closest('.browser').removeClass('minied').toggleClass('maxied');
-  });
+  // $('.ui .max').click(function(){
+  //   $(this).closest('.browser').removeClass('minied').toggleClass('maxied');
+  // });
 
-  $('.ui .close').click(function() {
-    if(confirm("Are you sure you want to close this project?\n\nYou'll have to refresh the page to see it again, in addition to hurting Andrew's feelings.")) {
-      $(this).closest('.browser').removeClass('minied').removeClass('maxied').addClass('closed');
-    }
-  });
+  // $('.ui .close').click(function() {
+  //   if(confirm("Are you sure you want to close this project?\n\nYou'll have to refresh the page to see it again, in addition to hurting Andrew's feelings.")) {
+  //     $(this).closest('.browser').removeClass('minied').removeClass('maxied').addClass('closed');
+  //   }
+  // });
 }
 
 function initVideo() {
@@ -285,7 +288,7 @@ function toggleVideo($this) {
   } else {
     video.pause();
     $this.addClass('paused');
-    $this.closest(".browser").removeClass('maxied');
+    //$this.closest(".browser").removeClass('maxied');
   }
 }
 
@@ -301,7 +304,7 @@ function playVideo(vid) {
 
 function pauseVideo(vid) {
   $(vid).prev('.play').removeClass('playing');
-  $(vid).closest(".browser").removeClass('maxied');
+  //$(vid).closest(".browser").removeClass('maxied');
   audioFadeOut(vid);
   if (vid.paused === false) {
     vid.timeout = setTimeout(function() {
