@@ -18,6 +18,6 @@ image: /work/postconscious/postconscious.jpg
   </video>
 </div>
 
-Postconscious is a web experiment that pulls the latest posts from Twitter and reads them aloud, with a minimal visual interface. A search input gives you the opportunity to hear current chatter on any nearly subject you can dream of.
+Postconscious is a web experiment &amp; art project that pulls the latest posts from Twitter and reads them aloud, with a minimal visual interface. A search input gives you the opportunity to hear current chatter on any nearly subject you can dream of.
 
 <a href="http://postconscio.us/" class="button" rel="external">View project</a>
