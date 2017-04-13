@@ -4,7 +4,7 @@ section: work
 title: Postconscious
 description: "Giving voice to the internet"
 categories: work
-responsibilities: Concept, design &amp; development
+responsibilities: Concept, Design &amp; Development
 background: '#FF0000'
 color: '#FFF'
 slug: postconscious
