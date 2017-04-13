@@ -18,6 +18,6 @@ image: /work/fragments/fragments.jpg
   </video>
 </div>
 
-A digital exploration of modernist design elements, built with Three.js and Timbre.js. Concept and art direction by <a href="http://kara-z.com/">Kara Zichittella</a>
+A digital exploration of modernist design elements, built with Three.js and Timbre.js. Concept and art direction by <a href="http://zeitype.com/">Kara Zichittella</a>
 
 <a href="http://fragmentsin.space/" class="button" rel="external">View website</a>
