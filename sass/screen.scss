@@ -506,6 +506,12 @@ nav.slideIn {
   top: 0;
 }
 
+section:first-child {
+  header {
+    padding-top: 40px;
+  }
+}
+
 header {
   min-height: 50vh;
   height: auto;
