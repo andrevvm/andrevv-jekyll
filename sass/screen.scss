@@ -171,10 +171,6 @@ h1,h2,h3,h4,h5 {
   font-size: 16px;
   line-height: 1.4em;
   //width: 300px;
-  .not-mobile & {
-    //mix-blend-mode: difference;
-    //color: white;
-  }
 
 }
 
@@ -282,12 +278,10 @@ p em {
 
   @include transition(all 300ms ease-in-out);
   
-  .not-mobile & {
-    color: black;
-    border-bottom: 0em solid black;
-    @include box-shadow(inset 0 -1px 0 black);
-    //mix-blend-mode: difference;
-  }
+  color: black;
+  border-bottom: 0em solid black;
+  @include box-shadow(inset 0 -1px 0 black);
+  //mix-blend-mode: difference;
 }
 
 .section a:hover {
@@ -295,11 +289,6 @@ p em {
   color: white;
   @include box-shadow(inset 0 -1.1em 0 black);
   @include transition-duration(100ms);
-
-  .not-mobile & {
-    color: white;
-    @include box-shadow(inset 0 -1.1em 0 black);
-  }
 
 }
 
@@ -346,40 +335,21 @@ a.button {
   @include transition(none);
   font-size: $h1-size;
 
-  .not-mobile & {
-    color: black;
-    //border-bottom: 0.02em solid white;
-    //@include box-shadow(inset 0 -1px 0 #fff);
-    mix-blend-mode: difference;
-  }
-
   span {
     position: relative;
     display: inline-block;
     top: 1px;
   }
 
-  .not-mobile & {
-    color: black;
-  }
 }
 
 .button:hover, a.button:hover {
   background: #0000FF;
-  color: black;
+  color: white;
   text-decoration: none;
   @include box-shadow(none);
   //border: 0;
   span:before {
-    color: black;
-  }
-
-  .not-mobile & {
-    @include box-shadow(none);
-    //border: 0;
-    span:before {
-      color: white;
-    }
     color: white;
   }
 }
