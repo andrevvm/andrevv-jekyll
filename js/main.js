@@ -150,7 +150,7 @@ function scroll() {
   scrollVal = scrollTop;
 
   if(!md.mobile()) {
-    scrollVideo();
+    //scrollVideo();
   }
 }
 
