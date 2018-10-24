@@ -342,7 +342,7 @@ p em {
 
 /* line 238, ../sass/screen.scss */
 .section.work h1 {
-  font-size: 3.09vmin;
+  font-size: 3.15vmin;
   margin-bottom: 10px;
   top: auto;
 }
@@ -353,7 +353,7 @@ p em {
   text-transform: none;
   font-style: italic;
   font-weight: 400;
-  font-size: 2.15vmin;
+  font-size: 2.5vmin;
   top: auto;
 }
 
@@ -455,7 +455,7 @@ a.button {
   -o-transition: none;
   -webkit-transition: none;
   transition: none;
-  font-size: 3.09vmin;
+  font-size: 3.15vmin;
 }
 /* line 338, ../sass/screen.scss */
 .section .button span {
@@ -935,7 +935,7 @@ section article h2, section article h3, section article h4 {
 
 /* line 582, ../sass/screen.scss */
 section article h2 {
-  font-size: 2.15vmin;
+  font-size: 2.5vmin;
   margin: 40px auto 15px;
 }
 
@@ -1376,7 +1376,7 @@ footer.Work {
   /* line 980, ../sass/screen.scss */
   header h1, .section h1, .section h2, .section h3, .section p {
     width: auto;
-    font-size: 3.09vmin;
+    font-size: 3.15vmin;
     top: 49.5%;
     -webkit-transform: translate(0, -50%);
     -moz-transform: translate(0, -50%);
@@ -1387,7 +1387,7 @@ footer.Work {
 
   /* line 991, ../sass/screen.scss */
   .section h1, .section h2, .section h3, .section p {
-    font-size: 3.09vmin;
+    font-size: 3.15vmin;
   }
 
   /* line 995, ../sass/screen.scss */
@@ -1397,7 +1397,7 @@ footer.Work {
 
   /* line 999, ../sass/screen.scss */
   header h2 {
-    font-size: 2.15vmin;
+    font-size: 2.5vmin;
   }
 
   /* line 1003, ../sass/screen.scss */
@@ -1417,12 +1417,12 @@ footer.Work {
 
   /* line 1016, ../sass/screen.scss */
   .section.work h1 {
-    font-size: 3.09vmin;
+    font-size: 3.15vmin;
   }
 
   /* line 1020, ../sass/screen.scss */
   .section.work h2 {
-    font-size: 2.15vmin;
+    font-size: 2.5vmin;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 640px) {
