@@ -12,7 +12,7 @@ image: /work/andreas/andreasgreiner.jpg
 ---
 
 <div>
-  <video id="joanna" class="browser_img" title="Andreas Greiner"
+  <video muted playsinline id="joanna" class="browser_img" title="Andreas Greiner"
     preload="none" width="640" height="400" poster="{{ site.root }}{{ page.image }}" data-setup="{}">
     <source src="{{ site.root }}/work/andreas/andreasgreiner.mp4" type='video/mp4'>
   </video>

@@ -12,7 +12,7 @@ image: /work/fragments/fragments.jpg
 ---
 
 <div>
-  <video id="fragments" class="browser_img" title="Fragments in Space"
+  <video muted playsinline id="fragments" class="browser_img" title="Fragments in Space"
     preload="auto" width="640" height="400" poster="{{ site.root }}{{ page.image }}" data-setup="{}">
     <source src="{{ site.root }}/work/fragments/fragments.mp4" type='video/mp4'>
   </video>
