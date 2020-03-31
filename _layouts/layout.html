@@ -40,12 +40,26 @@
       ga('send', 'pageview');
 
     </script>
+    <style>
+      nav .impressum-link {
+        position: absolute;
+        right: 0;
+        color: #666;
+      }
+
+      @media only screen and (max-width: 481px) {
+        nav {
+          text-align: left;
+        }
+      }
+    </style>
   </head>
   <body>
 
     <nav>
       <a href="{{ site.url }}" {% if page.section == "about" %}class="selected"{% endif %}>About</a>
       <a href="{{ site.root }}/work/" {% if page.section == "work" %}class="selected"{% endif %}>Work</a>
+      <a href="{{ site.root }}/impressum/" class="impressum-link">Impressum</a>
     </nav>
     <div id="content">
       {{ content }}
