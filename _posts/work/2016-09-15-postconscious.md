@@ -20,4 +20,8 @@ image: /work/postconscious/postconscious.jpg
 
 Postconscious is a web experiment &amp; art project that pulls the latest posts from Twitter and reads them aloud. A search input gives you the opportunity to hear current chatter on nearly any subject you can dream of. Read more about the project on <a href="http://www.theverge.com/2016/11/3/13497582/twitter-postconscious-art-project-voices-speech-cloud" rel="external">The Verge</a>.
 
+<ul class="tags">
+  <li>Javascript</li>
+</ul>
+
 <a href="http://postconscio.us/" class="button" rel="external">View project</a>

@@ -20,4 +20,8 @@ image: /work/andreas/andreasgreiner.jpg
 
 The design by Sin-U Ko is as dynamic and unconventional as Andreas Greiner's work. Free movement and micro/macro views show the depth and range of this artist's work. The site was built as a WordPress theme to allow for full customization. 
 
+<ul class="tags">
+  <li>Wordpress</li>
+</ul>
+
 <a href="http://andreasgreiner.com" class="button" rel="external">View website</a>
