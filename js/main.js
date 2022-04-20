@@ -350,7 +350,7 @@ function scrollVideo() {
 
   var options = {
     rootMargin: '0px',
-    threshold: 1.0
+    threshold: 0.33
   }
   var observer = new IntersectionObserver(videoInView, options);
 
