@@ -1039,6 +1039,12 @@ footer {
   }
 }
 
+@media only screen and (min-width: 900px) {
+  header h1, .section h1, .section h2, .section h3, .section p {
+    font-size: 24px;
+  }
+}
+
 @media only screen and (min-width : 321px) and (max-width: 640px) {
 
 
