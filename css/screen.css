@@ -1448,9 +1448,14 @@ footer.Work {
   header h1, .section h1, .section h2, .section h3, .section p {
     font-size: 24px;
   }
+
+  /* line 1046, ../sass/screen.scss */
+  .section.work h2 {
+    font-size: 20px;
+  }
 }
 @media only screen and (min-width: 321px) and (max-width: 640px) {
-  /* line 1051, ../sass/screen.scss */
+  /* line 1054, ../sass/screen.scss */
   .section h1, .section h2, .section h3, .section p {
     top: 50%;
     font-size: 16px;
@@ -1461,56 +1466,56 @@ footer.Work {
     transform: translate(0, -50%);
   }
 
-  /* line 1061, ../sass/screen.scss */
+  /* line 1064, ../sass/screen.scss */
   .cat img {
     top: 90px;
   }
 
-  /* line 1065, ../sass/screen.scss */
+  /* line 1068, ../sass/screen.scss */
   .browser {
     width: 320px;
     height: auto;
   }
 
-  /* line 1070, ../sass/screen.scss */
+  /* line 1073, ../sass/screen.scss */
   .browser .window {
     height: auto;
   }
 
-  /* line 1074, ../sass/screen.scss */
+  /* line 1077, ../sass/screen.scss */
   .browser.maxied {
     width: 480px;
     height: auto;
   }
 
-  /* line 1079, ../sass/screen.scss */
+  /* line 1082, ../sass/screen.scss */
   .browser.maxied .window {
     height: auto;
   }
 
-  /* line 1083, ../sass/screen.scss */
+  /* line 1086, ../sass/screen.scss */
   .browser video {
     height: auto;
     width: 320px;
   }
 
-  /* line 1088, ../sass/screen.scss */
+  /* line 1091, ../sass/screen.scss */
   .browser.maxied video {
     height: auto;
     width: 480px;
   }
 
-  /* line 1093, ../sass/screen.scss */
+  /* line 1096, ../sass/screen.scss */
   .browser .title {
     opacity: 0;
   }
 
-  /* line 1097, ../sass/screen.scss */
+  /* line 1100, ../sass/screen.scss */
   section article h2, section article h3, section article h4 {
     width: 460px;
   }
 
-  /* line 1101, ../sass/screen.scss */
+  /* line 1104, ../sass/screen.scss */
   section article p,
   section article blockquote {
     font-size: 16px;
@@ -1518,24 +1523,24 @@ footer.Work {
     max-width: 460px;
   }
 
-  /* line 1108, ../sass/screen.scss */
+  /* line 1111, ../sass/screen.scss */
   section article img {
     max-width: 460px;
     height: auto;
   }
 
-  /* line 1113, ../sass/screen.scss */
+  /* line 1116, ../sass/screen.scss */
   section article hr {
     width: 460px;
   }
 
-  /* line 1117, ../sass/screen.scss */
+  /* line 1120, ../sass/screen.scss */
   .video_container {
     width: 480px;
     height: 270px;
   }
 
-  /* line 1122, ../sass/screen.scss */
+  /* line 1125, ../sass/screen.scss */
   .video_container video {
     width: 480px;
     height: auto;
@@ -1543,7 +1548,7 @@ footer.Work {
 }
 /* all iPhone */
 @media screen and (max-device-width: 760px), screen and (max-device-width: 320px) {
-  /* line 1131, ../sass/screen.scss */
+  /* line 1134, ../sass/screen.scss */
   .cat {
     background-attachment: scroll;
     background-size: contain;
@@ -1551,7 +1556,7 @@ footer.Work {
     background-repeat: repeat-x;
   }
 
-  /* line 1138, ../sass/screen.scss */
+  /* line 1141, ../sass/screen.scss */
   .cat p,
   .cat h3,
   .cat h2 {
@@ -1559,66 +1564,66 @@ footer.Work {
     padding: 0 0.5em;
   }
 
-  /* line 1146, ../sass/screen.scss */
+  /* line 1149, ../sass/screen.scss */
   nav {
     position: fixed !important;
     top: 0 !important;
   }
 
-  /* line 1151, ../sass/screen.scss */
+  /* line 1154, ../sass/screen.scss */
   .browser {
     padding: 0;
   }
 
-  /* line 1155, ../sass/screen.scss */
+  /* line 1158, ../sass/screen.scss */
   .browser .ui, .browser .title {
     display: none;
   }
 
-  /* line 1159, ../sass/screen.scss */
+  /* line 1162, ../sass/screen.scss */
   .play {
     display: none !important;
   }
 
-  /* line 1163, ../sass/screen.scss */
+  /* line 1166, ../sass/screen.scss */
   .section .button {
     font-size: 16px;
   }
 
-  /* line 1167, ../sass/screen.scss */
+  /* line 1170, ../sass/screen.scss */
   footer {
     font-size: 56px;
     line-height: 20px;
     text-align: center;
   }
 
-  /* line 1173, ../sass/screen.scss */
+  /* line 1176, ../sass/screen.scss */
   footer em {
     display: none;
   }
 
-  /* line 1177, ../sass/screen.scss */
+  /* line 1180, ../sass/screen.scss */
   .section {
     height: 100%;
   }
 
-  /* line 1181, ../sass/screen.scss */
+  /* line 1184, ../sass/screen.scss */
   .section.work .position {
     top: 40%;
   }
 
-  /* line 1185, ../sass/screen.scss */
+  /* line 1188, ../sass/screen.scss */
   header h1,
   header h2 {
     top: 48%;
   }
 
-  /* line 1190, ../sass/screen.scss */
+  /* line 1193, ../sass/screen.scss */
   footer .button {
     margin: 20px 10px 20px;
   }
 
-  /* line 1194, ../sass/screen.scss */
+  /* line 1197, ../sass/screen.scss */
   .video_container.iphone {
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -1628,48 +1633,48 @@ footer.Work {
 }
 /* iPhone portrait */
 @media screen and (max-device-width: 320px) {
-  /* line 1203, ../sass/screen.scss */
+  /* line 1206, ../sass/screen.scss */
   .browser, .browser.maxied, .browser.minied {
     width: 300px;
     height: auto;
     padding: 0;
   }
 
-  /* line 1209, ../sass/screen.scss */
+  /* line 1212, ../sass/screen.scss */
   .browser .window {
     width: 300px;
     height: auto;
   }
 
-  /* line 1214, ../sass/screen.scss */
+  /* line 1217, ../sass/screen.scss */
   .browser .window video {
     width: 300px;
     height: auto;
   }
 
-  /* line 1219, ../sass/screen.scss */
+  /* line 1222, ../sass/screen.scss */
   .video_container {
     width: 300px;
     height: 169px;
   }
 
-  /* line 1224, ../sass/screen.scss */
+  /* line 1227, ../sass/screen.scss */
   .video_container video {
     width: 300px;
     height: auto;
   }
 
-  /* line 1229, ../sass/screen.scss */
+  /* line 1232, ../sass/screen.scss */
   section article p, section article h2, section article h3, section article hr, section article blockquote {
     width: 280px;
   }
 
-  /* line 1233, ../sass/screen.scss */
+  /* line 1236, ../sass/screen.scss */
   section article p img {
     max-width: 280px;
   }
 
-  /* line 1237, ../sass/screen.scss */
+  /* line 1240, ../sass/screen.scss */
   section article p,
   section article blockquote {
     font-size: 16px;
