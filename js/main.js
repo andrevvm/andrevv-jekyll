@@ -294,54 +294,27 @@ function toggleVideo($this) {
   $this.toggleClass('playing');
   var video = $this.next("video").get(0);
   if(video.paused === true) {
-    $this.closest(".browser").addClass('maxied');
-    $this.removeClass('paused');
-    video.play().then().catch(function(err) {
-      console.log(err);
-    });
-    audioFadeIn(video);
+    playVideo(video);
   } else {
-    video.pause();
-    $this.addClass('paused');
-    //$this.closest(".browser").removeClass('maxied');
+    pauseVideo(video);
   }
 }
 
 function playVideo(vid) {
 
-  if(vid.paused) {
-    vid.play().then().catch(function(err) {
-      console.log(err);
-    });
-  }
-
-  if(!vid.paused) {
-       
-    if(!md.mobile()) {
-      vid.muted = false;
-      audioFadeIn(vid);
-    }
-
-    if(!vid.paused) {
-      $(vid).prev('.play').addClass('playing');
-      $(vid).closest(".browser").addClass('maxied');
-    }
-    
-
-  }
+  vid.play().then(function() {
+    $(vid).prev('.play').addClass('playing');
+    $(vid).closest(".browser").addClass('maxied');
+  }).catch(function(err) {
+    console.log(err);
+  });
 
 }
 
 function pauseVideo(vid) {
   $(vid).prev('.play').removeClass('playing');
   //$(vid).closest(".browser").removeClass('maxied');
-  audioFadeOut(vid);
-  if (vid.paused === false) {
-    vid.timeout = setTimeout(function() {
-      vid.pause();
-      vid.timeout = null;
-    }, 1000);
-  }
+  vid.pause();
 }
 
 function audioFadeIn(vid) {
