@@ -357,7 +357,6 @@ function scrollVideo() {
   $.each( videos, function( key, video ) {
 
     observer.observe(video.vid);
-    console.log(video.vid);
 
   });
 
@@ -365,7 +364,6 @@ function scrollVideo() {
 
 function videoInView(entries) {
   for(var i=0; i<entries.length; i++) {
-    console.log(entry);
     var entry = entries[i];
     if(entry.isIntersecting) {
       if(entry.target.paused === true)
