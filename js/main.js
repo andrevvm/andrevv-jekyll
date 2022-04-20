@@ -298,7 +298,9 @@ function toggleVideo($this) {
   if(video.paused === true) {
     $this.closest(".browser").addClass('maxied');
     $this.removeClass('paused');
-    video.play();
+    video.play().then().catch(function(err) {
+      console.log(err);
+    });
     audioFadeIn(video);
   } else {
     video.pause();
@@ -310,7 +312,9 @@ function toggleVideo($this) {
 function playVideo(vid) {
 
   if(vid.paused) {
-    vid.play();
+    vid.play().then().catch(function(err) {
+      console.log(err);
+    });
   }
 
   if(!vid.paused) {
