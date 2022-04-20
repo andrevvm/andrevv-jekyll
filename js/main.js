@@ -23,7 +23,7 @@ function favicon() {
     fN = 0;
   }
 }
-setInterval(favicon, 100);
+setInterval(favicon, 500);
 
 function msieversion() {
 
