@@ -17,7 +17,7 @@ var md = new MobileDetect(window.navigator.userAgent);
 var fN = 0;
 var fav = document.getElementById('favicon');
 function favicon() {
-  fav.href = `/img/shapes/shapes${String(fN).padStart(5, '0');}.png`
+  fav.href = `/img/shapes/shapes${String(fN).padStart(5, '0')}.png`
   fN++;
   if(fN > 43) {
     fN = 0;
