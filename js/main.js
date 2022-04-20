@@ -163,10 +163,6 @@ function scroll() {
     });
   }
   scrollVal = scrollTop;
-
-  //if(!md.mobile()) {
-  scrollVideo();
-  //}
 }
 
 function showNav() {
@@ -290,6 +286,8 @@ function initVideo() {
   $(".play").click(function() {
     toggleVideo($(this));
   });
+
+  scrollVideo();
 }
 
 function toggleVideo($this) {
