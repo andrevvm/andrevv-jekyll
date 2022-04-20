@@ -377,23 +377,30 @@ function audioFadeOut(vid) {
 
 function scrollVideo() {
 
+  var options = {
+    rootMargin: '0px',
+    threshold: 1.0
+  }
+  var observer = new IntersectionObserver(videoInView, options);
+
   $.each( videos, function( key, video ) {
 
-    $this = video.el.prev('.play');
-
-    if(isElementInViewport(video.vid)) {
-      if(video.vid.paused === true && !$this.hasClass('paused')) {
-        playVideo(video.vid);
-      }
-    } else {
-      if(video.vid.paused === false && video.timeout === null) {
-        pauseVideo(video.vid);
-      }
-      
-    }
+    observer.observe(video.vid);
 
   });
 
+}
+
+function videoInView(entries) {
+  for(var i=0; i<entries.length; i++) {
+    var entry = entries[i];
+    if(entry.isIntersecting) {
+      if(entry.target.paused === true)
+        playVideo(entry.target);
+    } else {
+      pauseVideo(entry.target);
+    }
+  }
 }
 
 
