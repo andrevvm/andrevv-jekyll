@@ -1043,7 +1043,8 @@ footer {
   header h1, .section h1, .section h2, .section h3, .section p {
     font-size: 24px;
   }
-  .section.work h2 {
+  .section.work h2,
+  header h2 {
     font-size: 20px;
   }
 }
