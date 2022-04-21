@@ -59,8 +59,8 @@ $(function() {
   count = 0;
   scrollVal = 0;
   $nav = $("nav");
-  $("#content").hide();
-  $("#content").fadeIn(600);
+  // $("#content").hide();
+  // $("#content").fadeIn(600);
 
   if(md.mobile()) {
     $('body').addClass('mobile');
