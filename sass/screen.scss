@@ -511,6 +511,8 @@ header {
   background: #00FFBF;
   text-align: center;
   margin-bottom: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
   @include display-flex;
   .PostHeader {
     margin: auto auto;

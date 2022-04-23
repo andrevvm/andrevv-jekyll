@@ -855,25 +855,27 @@ header {
   background: #00FFBF;
   text-align: center;
   margin-bottom: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: -webkit-flex;
   display: flex;
 }
-/* line 515, ../sass/screen.scss */
+/* line 517, ../sass/screen.scss */
 header .PostHeader {
   margin: auto auto;
 }
-/* line 517, ../sass/screen.scss */
+/* line 519, ../sass/screen.scss */
 header .PostHeader h2 {
   padding: 0px;
   margin: 15px;
 }
-/* line 523, ../sass/screen.scss */
+/* line 525, ../sass/screen.scss */
 header a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 529, ../sass/screen.scss */
+/* line 531, ../sass/screen.scss */
 header img {
   width: auto;
   height: 80px;
@@ -881,13 +883,13 @@ header img {
   display: block;
 }
 
-/* line 536, ../sass/screen.scss */
+/* line 538, ../sass/screen.scss */
 header h1 {
   font-size: 20px;
   margin: 0 0 10px;
 }
 
-/* line 541, ../sass/screen.scss */
+/* line 543, ../sass/screen.scss */
 header h2 {
   font-family: "GT Sectra Fine", "GT Sectra", "Hoefler Text", "Times New Roman", serif;
   font-size: 16px;
@@ -899,7 +901,7 @@ header h2 {
   margin: 0 0 20px;
 }
 
-/* line 552, ../sass/screen.scss */
+/* line 554, ../sass/screen.scss */
 header h1,
 header h2 {
   position: relative;
@@ -911,7 +913,7 @@ header h2 {
   transform: translate(0, -50%);
 }
 
-/* line 563, ../sass/screen.scss */
+/* line 565, ../sass/screen.scss */
 section article {
   font-family: "GT Sectra Fine", "GT Sectra", "Hoefler Text", "Times New Roman", serif;
   font-weight: normal;
@@ -921,7 +923,7 @@ section article {
   margin-bottom: 120px;
 }
 
-/* line 572, ../sass/screen.scss */
+/* line 574, ../sass/screen.scss */
 section article p,
 section article blockquote {
   font-size: 18px;
@@ -931,7 +933,7 @@ section article blockquote {
   max-width: 640px;
 }
 
-/* line 581, ../sass/screen.scss */
+/* line 583, ../sass/screen.scss */
 section article blockquote {
   font-style: italic;
   color: #555;
@@ -942,14 +944,14 @@ section article blockquote {
   margin-bottom: 100px;
 }
 
-/* line 591, ../sass/screen.scss */
+/* line 593, ../sass/screen.scss */
 section article blockquote aside {
   position: absolute;
   right: 60px;
   margin-top: 10px;
 }
 
-/* line 598, ../sass/screen.scss */
+/* line 600, ../sass/screen.scss */
 section article h2, section article h3, section article h4 {
   margin: 1em auto;
   width: 640px;
@@ -957,13 +959,13 @@ section article h2, section article h3, section article h4 {
   font-weight: 400;
 }
 
-/* line 605, ../sass/screen.scss */
+/* line 607, ../sass/screen.scss */
 section article h2 {
   font-size: 2.5vmin;
   margin: 40px auto 15px;
 }
 
-/* line 610, ../sass/screen.scss */
+/* line 612, ../sass/screen.scss */
 section article h3 {
   font-size: 16px;
   font-style: italic;
@@ -973,13 +975,13 @@ section article h3 {
   margin: 5px auto 80px;
 }
 
-/* line 619, ../sass/screen.scss */
+/* line 621, ../sass/screen.scss */
 section article a {
   color: black;
   text-decoration: underline;
 }
 
-/* line 624, ../sass/screen.scss */
+/* line 626, ../sass/screen.scss */
 section article hr {
   width: 640px;
   margin: 80px auto;
@@ -991,29 +993,29 @@ section article hr {
   display: block;
 }
 
-/* line 635, ../sass/screen.scss */
+/* line 637, ../sass/screen.scss */
 section footer p {
   margin: 15px 0 30px;
 }
 
-/* line 639, ../sass/screen.scss */
+/* line 641, ../sass/screen.scss */
 section footer a {
   background: black;
 }
 
-/* line 643, ../sass/screen.scss */
+/* line 645, ../sass/screen.scss */
 footer a {
   text-decoration: none;
 }
 
-/* line 647, ../sass/screen.scss */
+/* line 649, ../sass/screen.scss */
 footer em {
   font-style: normal;
   position: relative;
   top: -1px;
 }
 
-/* line 653, ../sass/screen.scss */
+/* line 655, ../sass/screen.scss */
 section article p a.button {
   background: none;
   color: black;
@@ -1024,13 +1026,13 @@ section article p a.button {
   margin: 40px auto;
 }
 
-/* line 663, ../sass/screen.scss */
+/* line 665, ../sass/screen.scss */
 section article p a.button:hover {
   background: black;
   color: white;
 }
 
-/* line 669, ../sass/screen.scss */
+/* line 671, ../sass/screen.scss */
 section article p a.button:active {
   background: #555;
   border-color: #555;
@@ -1050,7 +1052,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-/* line 692, ../sass/screen.scss */
+/* line 694, ../sass/screen.scss */
 .fonticon:before {
   font-family: 'icomoon';
   speak: none;
@@ -1066,28 +1068,28 @@ you can use the generic selector below, but it's slower:
   font-size: 0.95em;
 }
 
-/* line 707, ../sass/screen.scss */
+/* line 709, ../sass/screen.scss */
 #about a:hover .fonticon:before {
   color: #59F3CD;
 }
 
-/* line 711, ../sass/screen.scss */
+/* line 713, ../sass/screen.scss */
 .icon-cv:before {
   content: "\e000";
   top: 1px;
 }
 
-/* line 715, ../sass/screen.scss */
+/* line 717, ../sass/screen.scss */
 .icon-mail:before {
   content: "\e001";
 }
 
-/* line 718, ../sass/screen.scss */
+/* line 720, ../sass/screen.scss */
 .icon-twitter:before {
   content: "\e002";
 }
 
-/* line 722, ../sass/screen.scss */
+/* line 724, ../sass/screen.scss */
 iframe {
   margin: 0 auto 8vmin;
   display: block;
@@ -1095,7 +1097,7 @@ iframe {
   height: 47.81vw;
 }
 
-/* line 730, ../sass/screen.scss */
+/* line 732, ../sass/screen.scss */
 .browser {
   padding: 0;
   margin: 40px auto;
@@ -1112,32 +1114,32 @@ iframe {
   transition: width 800ms, height 800ms, padding 100ms;
 }
 
-/* line 746, ../sass/screen.scss */
+/* line 748, ../sass/screen.scss */
 .browser.minied {
   height: 0;
   padding-bottom: 0;
 }
 
-/* line 751, ../sass/screen.scss */
+/* line 753, ../sass/screen.scss */
 .browser.closed {
   display: none;
 }
 
-/* line 755, ../sass/screen.scss */
+/* line 757, ../sass/screen.scss */
 .browser.maxied {
   width: 950px;
   height: auto;
   max-width: 90%;
 }
 
-/* line 761, ../sass/screen.scss */
+/* line 763, ../sass/screen.scss */
 .browser.maxied video {
   height: auto;
   width: 960px;
   max-width: 100%;
 }
 
-/* line 767, ../sass/screen.scss */
+/* line 769, ../sass/screen.scss */
 .browser .title {
   position: absolute;
   width: 100%;
@@ -1153,7 +1155,7 @@ iframe {
   margin: 0;
 }
 
-/* line 782, ../sass/screen.scss */
+/* line 784, ../sass/screen.scss */
 .browser .ui {
   position: absolute;
   top: 7px;
@@ -1162,7 +1164,7 @@ iframe {
   padding: 0;
 }
 
-/* line 790, ../sass/screen.scss */
+/* line 792, ../sass/screen.scss */
 .browser .ui li {
   display: inline-block;
   width: 11px;
@@ -1176,22 +1178,22 @@ iframe {
   position: relative;
 }
 
-/* line 803, ../sass/screen.scss */
+/* line 805, ../sass/screen.scss */
 .browser .ui .close {
   background: #FF5011;
 }
 
-/* line 807, ../sass/screen.scss */
+/* line 809, ../sass/screen.scss */
 .browser .ui .close:active {
   background: #CC3300;
 }
 
-/* line 811, ../sass/screen.scss */
+/* line 813, ../sass/screen.scss */
 .browser .ui .min {
   background: #ffc000;
 }
 
-/* line 815, ../sass/screen.scss */
+/* line 817, ../sass/screen.scss */
 .browser .ui li:hover:after {
   content: "";
   width: 7px;
@@ -1204,17 +1206,17 @@ iframe {
   left: 2px;
 }
 
-/* line 827, ../sass/screen.scss */
+/* line 829, ../sass/screen.scss */
 .browser .ui .max {
   background: #4EE949;
 }
 
-/* line 831, ../sass/screen.scss */
+/* line 833, ../sass/screen.scss */
 .browser .ui .max:active {
   background: #3EBA3A;
 }
 
-/* line 836, ../sass/screen.scss */
+/* line 838, ../sass/screen.scss */
 .browser .window {
   position: relative;
   height: auto;
@@ -1228,12 +1230,12 @@ iframe {
   transition: height 800ms;
 }
 
-/* line 849, ../sass/screen.scss */
+/* line 851, ../sass/screen.scss */
 .browser img {
   display: block;
 }
 
-/* line 853, ../sass/screen.scss */
+/* line 855, ../sass/screen.scss */
 video {
   position: relative;
   -webkit-transition: height 800ms, width 800ms;
@@ -1243,7 +1245,7 @@ video {
   transition: height 800ms, width 800ms;
 }
 
-/* line 862, ../sass/screen.scss */
+/* line 864, ../sass/screen.scss */
 .play {
   width: 100%;
   height: 100%;
@@ -1253,12 +1255,12 @@ video {
   cursor: pointer;
 }
 
-/* line 871, ../sass/screen.scss */
+/* line 873, ../sass/screen.scss */
 .play.playing {
   background-image: none;
 }
 
-/* line 875, ../sass/screen.scss */
+/* line 877, ../sass/screen.scss */
 .browser video {
   background: #000;
   height: auto;
@@ -1271,18 +1273,18 @@ video {
   transition: height 800ms, width 800ms;
 }
 
-/* line 887, ../sass/screen.scss */
+/* line 889, ../sass/screen.scss */
 .browser.maxied .window {
   height: auto;
 }
 
-/* line 891, ../sass/screen.scss */
+/* line 893, ../sass/screen.scss */
 .browser img {
   width: 100%;
   height: auto;
 }
 
-/* line 897, ../sass/screen.scss */
+/* line 899, ../sass/screen.scss */
 footer section {
   position: absolute;
   width: 50%;
@@ -1290,13 +1292,13 @@ footer section {
   text-align: left;
 }
 
-/* line 904, ../sass/screen.scss */
+/* line 906, ../sass/screen.scss */
 footer section.next {
   right: 0;
   text-align: right;
 }
 
-/* line 909, ../sass/screen.scss */
+/* line 911, ../sass/screen.scss */
 footer section a, footer section span {
   display: block;
   padding: 40px;
@@ -1308,31 +1310,31 @@ footer section a, footer section span {
   box-sizing: border-box;
 }
 
-/* line 920, ../sass/screen.scss */
+/* line 922, ../sass/screen.scss */
 footer section a:hover {
   background: black !important;
   color: white !important;
 }
 
-/* line 925, ../sass/screen.scss */
+/* line 927, ../sass/screen.scss */
 footer section span {
   background: #999;
   color: #fff;
 }
 
-/* line 930, ../sass/screen.scss */
+/* line 932, ../sass/screen.scss */
 footer {
   background: #f3f3f3;
   text-align: center;
   padding: 15px 0 90px;
   position: relative;
 }
-/* line 936, ../sass/screen.scss */
+/* line 938, ../sass/screen.scss */
 footer.Work {
   padding: 50px 0 50px;
 }
 
-/* line 941, ../sass/screen.scss */
+/* line 943, ../sass/screen.scss */
 .video_container {
   width: 1024px;
   height: 576px;
@@ -1346,13 +1348,13 @@ footer.Work {
   transition: height 800ms, width 800ms;
 }
 
-/* line 954, ../sass/screen.scss */
+/* line 956, ../sass/screen.scss */
 .video_container video {
   height: auto;
   width: 1024px;
 }
 
-/* line 959, ../sass/screen.scss */
+/* line 961, ../sass/screen.scss */
 .video_container.iphone {
   width: 320px !important;
   height: 660px !important;
@@ -1366,7 +1368,7 @@ footer.Work {
   -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
-/* line 973, ../sass/screen.scss */
+/* line 975, ../sass/screen.scss */
 .video_container.iphone video {
   width: 91.5% !important;
   height: auto !important;
@@ -1374,21 +1376,21 @@ footer.Work {
   left: 4.5%;
   border: 1px solid #BCB7B7;
 }
-/* line 981, ../sass/screen.scss */
+/* line 983, ../sass/screen.scss */
 .video_container.iphone .play {
   background-image: url(../img/play_btn.png);
 }
-/* line 985, ../sass/screen.scss */
+/* line 987, ../sass/screen.scss */
 .video_container.iphone .play.playing {
   background-image: none;
 }
 
-/* line 990, ../sass/screen.scss */
+/* line 992, ../sass/screen.scss */
 .IntroImg {
   text-align: center;
   margin-bottom: 60px;
 }
-/* line 993, ../sass/screen.scss */
+/* line 995, ../sass/screen.scss */
 .IntroImg img {
   max-width: 95%;
   width: auto;
@@ -1397,7 +1399,7 @@ footer.Work {
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 1003, ../sass/screen.scss */
+  /* line 1005, ../sass/screen.scss */
   header h1, .section h1, .section h2, .section h3, .section p {
     width: auto;
     font-size: 3.15vmin;
@@ -1409,27 +1411,27 @@ footer.Work {
     transform: translate(0, -50%);
   }
 
-  /* line 1014, ../sass/screen.scss */
+  /* line 1016, ../sass/screen.scss */
   .section h1, .section h2, .section h3, .section p {
     font-size: 3.15vmin;
   }
 
-  /* line 1018, ../sass/screen.scss */
+  /* line 1020, ../sass/screen.scss */
   header .PostHeader {
     margin: auto;
   }
 
-  /* line 1022, ../sass/screen.scss */
+  /* line 1024, ../sass/screen.scss */
   header h2 {
     font-size: 2.5vmin;
   }
 
-  /* line 1026, ../sass/screen.scss */
+  /* line 1028, ../sass/screen.scss */
   .cat img {
     top: 38%;
   }
 
-  /* line 1030, ../sass/screen.scss */
+  /* line 1032, ../sass/screen.scss */
   .section.work .position {
     top: 46%;
     -webkit-transform: translate(0, -50%);
@@ -1439,30 +1441,30 @@ footer.Work {
     transform: translate(0, -50%);
   }
 
-  /* line 1039, ../sass/screen.scss */
+  /* line 1041, ../sass/screen.scss */
   .section.work h1 {
     font-size: 3.15vmin;
   }
 
-  /* line 1043, ../sass/screen.scss */
+  /* line 1045, ../sass/screen.scss */
   .section.work h2 {
     font-size: 2.5vmin;
   }
 }
 @media only screen and (min-width: 900px) {
-  /* line 1049, ../sass/screen.scss */
+  /* line 1051, ../sass/screen.scss */
   header h1, .section h1, .section h2, .section h3, .section p {
     font-size: 24px;
   }
 
-  /* line 1052, ../sass/screen.scss */
+  /* line 1054, ../sass/screen.scss */
   .section.work h2,
   header h2 {
     font-size: 20px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 640px) {
-  /* line 1061, ../sass/screen.scss */
+  /* line 1063, ../sass/screen.scss */
   .section h1, .section h2, .section h3, .section p {
     top: 50%;
     font-size: 16px;
@@ -1473,56 +1475,56 @@ footer.Work {
     transform: translate(0, -50%);
   }
 
-  /* line 1071, ../sass/screen.scss */
+  /* line 1073, ../sass/screen.scss */
   .cat img {
     top: 90px;
   }
 
-  /* line 1075, ../sass/screen.scss */
+  /* line 1077, ../sass/screen.scss */
   .browser {
     width: 320px;
     height: auto;
   }
 
-  /* line 1080, ../sass/screen.scss */
+  /* line 1082, ../sass/screen.scss */
   .browser .window {
     height: auto;
   }
 
-  /* line 1084, ../sass/screen.scss */
+  /* line 1086, ../sass/screen.scss */
   .browser.maxied {
     width: 480px;
     height: auto;
   }
 
-  /* line 1089, ../sass/screen.scss */
+  /* line 1091, ../sass/screen.scss */
   .browser.maxied .window {
     height: auto;
   }
 
-  /* line 1093, ../sass/screen.scss */
+  /* line 1095, ../sass/screen.scss */
   .browser video {
     height: auto;
     width: 320px;
   }
 
-  /* line 1098, ../sass/screen.scss */
+  /* line 1100, ../sass/screen.scss */
   .browser.maxied video {
     height: auto;
     width: 480px;
   }
 
-  /* line 1103, ../sass/screen.scss */
+  /* line 1105, ../sass/screen.scss */
   .browser .title {
     opacity: 0;
   }
 
-  /* line 1107, ../sass/screen.scss */
+  /* line 1109, ../sass/screen.scss */
   section article h2, section article h3, section article h4 {
     width: 460px;
   }
 
-  /* line 1111, ../sass/screen.scss */
+  /* line 1113, ../sass/screen.scss */
   section article p,
   section article blockquote {
     font-size: 16px;
@@ -1530,24 +1532,24 @@ footer.Work {
     max-width: 460px;
   }
 
-  /* line 1118, ../sass/screen.scss */
+  /* line 1120, ../sass/screen.scss */
   section article img {
     max-width: 460px;
     height: auto;
   }
 
-  /* line 1123, ../sass/screen.scss */
+  /* line 1125, ../sass/screen.scss */
   section article hr {
     width: 460px;
   }
 
-  /* line 1127, ../sass/screen.scss */
+  /* line 1129, ../sass/screen.scss */
   .video_container {
     width: 480px;
     height: 270px;
   }
 
-  /* line 1132, ../sass/screen.scss */
+  /* line 1134, ../sass/screen.scss */
   .video_container video {
     width: 480px;
     height: auto;
@@ -1555,7 +1557,7 @@ footer.Work {
 }
 /* all iPhone */
 @media screen and (max-device-width: 760px), screen and (max-device-width: 320px) {
-  /* line 1141, ../sass/screen.scss */
+  /* line 1143, ../sass/screen.scss */
   .cat {
     background-attachment: scroll;
     background-size: contain;
@@ -1563,7 +1565,7 @@ footer.Work {
     background-repeat: repeat-x;
   }
 
-  /* line 1148, ../sass/screen.scss */
+  /* line 1150, ../sass/screen.scss */
   .cat p,
   .cat h3,
   .cat h2 {
@@ -1571,61 +1573,61 @@ footer.Work {
     padding: 0 0.5em;
   }
 
-  /* line 1156, ../sass/screen.scss */
+  /* line 1158, ../sass/screen.scss */
   nav {
     position: fixed !important;
     top: 0 !important;
   }
 
-  /* line 1161, ../sass/screen.scss */
+  /* line 1163, ../sass/screen.scss */
   .browser {
     padding: 0;
   }
 
-  /* line 1165, ../sass/screen.scss */
+  /* line 1167, ../sass/screen.scss */
   .browser .ui, .browser .title {
     display: none;
   }
 
-  /* line 1169, ../sass/screen.scss */
+  /* line 1171, ../sass/screen.scss */
   .play {
     display: none !important;
   }
 
-  /* line 1173, ../sass/screen.scss */
+  /* line 1175, ../sass/screen.scss */
   .section .button {
     font-size: 16px;
   }
 
-  /* line 1177, ../sass/screen.scss */
+  /* line 1179, ../sass/screen.scss */
   footer {
     font-size: 56px;
     line-height: 20px;
     text-align: center;
   }
 
-  /* line 1183, ../sass/screen.scss */
+  /* line 1185, ../sass/screen.scss */
   footer em {
     display: none;
   }
 
-  /* line 1187, ../sass/screen.scss */
+  /* line 1189, ../sass/screen.scss */
   .section.work .position {
     top: 40%;
   }
 
-  /* line 1191, ../sass/screen.scss */
+  /* line 1193, ../sass/screen.scss */
   header h1,
   header h2 {
     top: 48%;
   }
 
-  /* line 1196, ../sass/screen.scss */
+  /* line 1198, ../sass/screen.scss */
   footer .button {
     margin: 20px 10px 20px;
   }
 
-  /* line 1200, ../sass/screen.scss */
+  /* line 1202, ../sass/screen.scss */
   .video_container.iphone {
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -1635,48 +1637,48 @@ footer.Work {
 }
 /* iPhone portrait */
 @media screen and (max-device-width: 320px) {
-  /* line 1209, ../sass/screen.scss */
+  /* line 1211, ../sass/screen.scss */
   .browser, .browser.maxied, .browser.minied {
     width: 300px;
     height: auto;
     padding: 0;
   }
 
-  /* line 1215, ../sass/screen.scss */
+  /* line 1217, ../sass/screen.scss */
   .browser .window {
     width: 300px;
     height: auto;
   }
 
-  /* line 1220, ../sass/screen.scss */
+  /* line 1222, ../sass/screen.scss */
   .browser .window video {
     width: 300px;
     height: auto;
   }
 
-  /* line 1225, ../sass/screen.scss */
+  /* line 1227, ../sass/screen.scss */
   .video_container {
     width: 300px;
     height: 169px;
   }
 
-  /* line 1230, ../sass/screen.scss */
+  /* line 1232, ../sass/screen.scss */
   .video_container video {
     width: 300px;
     height: auto;
   }
 
-  /* line 1235, ../sass/screen.scss */
+  /* line 1237, ../sass/screen.scss */
   section article p, section article h2, section article h3, section article hr, section article blockquote {
     width: 280px;
   }
 
-  /* line 1239, ../sass/screen.scss */
+  /* line 1241, ../sass/screen.scss */
   section article p img {
     max-width: 280px;
   }
 
-  /* line 1243, ../sass/screen.scss */
+  /* line 1245, ../sass/screen.scss */
   section article p,
   section article blockquote {
     font-size: 16px;
