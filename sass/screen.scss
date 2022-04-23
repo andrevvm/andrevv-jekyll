@@ -560,6 +560,11 @@ header h2 {
   -o-transform: translate(0,-50%);
   -ms-transform: translate(0,-50%);
   transform: translate(0,-50%);
+
+  .mobile & {
+    top: 0;
+    transform: none !important;
+  }
 }
 
 section article {
