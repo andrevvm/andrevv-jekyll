@@ -40,21 +40,8 @@
       ga('send', 'pageview');
 
     </script>
-    <style>
-      nav .impressum-link {
-        position: absolute;
-        right: 0;
-        color: #666;
-      }
-
-      @media only screen and (max-width: 481px) {
-        nav {
-          text-align: left;
-        }
-      }
-    </style>
   </head>
-  <body>
+  <body data-section="{{ page.section }}">
 
     <nav>
       <a href="{{ site.url }}" {% if page.section == "about" %}class="selected"{% endif %}>About</a>

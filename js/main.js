@@ -62,6 +62,12 @@ $(function() {
   // $("#content").hide();
   // $("#content").fadeIn(600);
 
+  $doc.click(function(e) {
+    $('html, body').animate({
+      scrollTop: window.scrollY + window.innerHeight
+   }, 500, 'swing');
+  })
+
   if(md.mobile()) {
     $('body').addClass('mobile');
   } else {

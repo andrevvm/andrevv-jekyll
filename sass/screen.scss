@@ -33,6 +33,10 @@ body, html {
   background: white;
 }
 
+body {
+  cursor: pointer;
+}
+
 body:after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
     content: url(../img/shapes/shapes00000.png) url(../img/shapes/shapes00001.png) url(../img/shapes/shapes00002.png) url(../img/shapes/shapes00003.png) url(../img/shapes/shapes00004.png) url(../img/shapes/shapes00005.png) url(../img/shapes/shapes00006.png) url(../img/shapes/shapes00007.png) url(../img/shapes/shapes00008.png)  url(../img/shapes/shapes00009.png) url(../img/shapes/shapes00009.png) url(../img/shapes/shapes00010.png) url(../img/shapes/shapes00011.png) url(../img/shapes/shapes00012.png) url(../img/shapes/shapes00013.png) url(../img/shapes/shapes00014.png) url(../img/shapes/shapes00015.png) url(../img/shapes/shapes00016.png) url(../img/shapes/shapes00002.png) url(../img/shapes/shapes00017.png) url(../img/shapes/shapes00018.png) url(../img/shapes/shapes00005.png) url(../img/shapes/shapes00019.png) url(../img/shapes/shapes00020.png) url(../img/shapes/shapes00021.png) url(../img/shapes/shapes00022.png) url(../img/shapes/shapes00010.png) url(../img/shapes/shapes00023.png) url(../img/shapes/shapes00024.png) url(../img/shapes/shapes00013.png) url(../img/shapes/shapes00025.png) url(../img/shapes/shapes00026.png) url(../img/shapes/shapes00027.png) url(../img/shapes/shapes00028.png)  url(../img/shapes/shapes00028.png) url(../img/shapes/shapes00029.png) url(../img/shapes/shapes00010.png) url(../img/shapes/shapes00030.png) url(../img/shapes/shapes00031.png) url(../img/shapes/shapes00013.png) url(../img/shapes/shapes00032.png) url(../img/shapes/shapes00033.png) url(../img/shapes/shapes00024.png) url(../img/shapes/shapes00034.png) url(../img/shapes/shapes00035.png) url(../img/shapes/shapes00026.png)url(../img/shapes/shapes00036.png) url(../img/shapes/shapes00037.png)  url(../img/shapes/shapes00028.png) url(../img/shapes/shapes00038.png) url(../img/shapes/shapes00039.png) url(../img/shapes/shapes00030.png) url(../img/shapes/shapes00040.png) url(../img/shapes/shapes00041.png) url(../img/shapes/shapes00032.png) url(../img/shapes/shapes00042.png) url(../img/shapes/shapes00043.png);
@@ -113,6 +117,10 @@ ul.tags li {
   //padding-top: 30px;
 }
 
+body[data-section=about] {
+  cursor: pointer;
+}
+
 #type_holder {
   position: fixed;
   bottom: 50%;
@@ -127,7 +135,7 @@ ul.tags li {
 .section {
   display: block;
   box-sizing: border-box;
-  height: 50%;
+  height: 50vh;
   width: 100%;
   min-height: 260px;
   position: relative;
@@ -139,6 +147,7 @@ ul.tags li {
   
   height: 100%;
   width: 100%;
+  clip-path: inset(0 0 0 0);
 
   .mobile & {
     position: relative;
@@ -149,33 +158,26 @@ ul.tags li {
 }
 
 .image-fill {
-  display: none;
-  pointer-events: none;
+  // display: none;
+  // pointer-events: none;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
 
   .mobile & {
-    height: 100%;
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: hidden;
+    height: 100vh;
   }
 }
 
 .image-fill img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   width: auto;
-  height: $background-size;
-  min-height: 200px;
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  max-width: 60%; 
+  max-height: 300px;
+  margin: auto;
 }
 
 .section h1, .section h2, .section h3, .section p {
@@ -268,10 +270,15 @@ p em {
 
 .cat img {
   position: relative;
+  display: none;
   top: 32%;
   height: 80px;
   width: auto;
   z-index: 11;
+}
+
+.cat {
+  background: none !important;
 }
 
 .cat.contact {
@@ -506,7 +513,7 @@ header {
   margin-bottom: 80px;
   @include display-flex;
   .PostHeader {
-    margin: 35% auto auto;
+    margin: auto auto;
     h2 {
       padding: 0px;
       margin: 15px;
@@ -721,7 +728,7 @@ iframe {
 }
 
 .browser {
-  padding: 35px 1px 1px;
+  padding: 0;
   margin: 40px auto;
   width: 640px;
   height: auto;
@@ -748,7 +755,7 @@ iframe {
 .browser.maxied {
   width: 950px;
   height: auto;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .browser.maxied video {
@@ -1175,10 +1182,6 @@ footer {
 
   footer em {
     display: none;
-  }
-
-  .section {
-    height: 100%;
   }
 
   .section.work .position {
