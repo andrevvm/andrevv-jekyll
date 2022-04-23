@@ -63,6 +63,9 @@ $(function() {
   // $("#content").fadeIn(600);
 
   $doc.click(function(e) {
+    if(document.body.dataset.section != 'about')
+      return true;
+
     $('html, body').animate({
       scrollTop: window.scrollY + window.innerHeight
    }, 500, 'swing');
@@ -355,8 +358,8 @@ function audioFadeOut(vid) {
 function scrollVideo() {
 
   var options = {
-    rootMargin: '0px',
-    threshold: 0.33
+    rootMargin: '500px',
+    threshold: 0.00
   }
   var observer = new IntersectionObserver(videoInView, options);
 

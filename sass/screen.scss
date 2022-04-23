@@ -33,7 +33,7 @@ body, html {
   background: white;
 }
 
-body {
+body[data-section=about] {
   cursor: pointer;
 }
 

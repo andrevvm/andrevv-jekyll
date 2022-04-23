@@ -104,7 +104,7 @@ body, html {
 }
 
 /* line 36, ../sass/screen.scss */
-body {
+body[data-section=about] {
   cursor: pointer;
 }
 
