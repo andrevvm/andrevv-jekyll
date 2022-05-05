@@ -11,8 +11,8 @@
 @font-face{font-family:'GT Sectra Fine';src:url('../type/GT-Sectra-Fine-Book-Italic.eot?') format('eot'),url('../type/GT-Sectra-Fine-Book-Italic.woff') format('woff'),url('../type/GT-Sectra-Fine-Book-Italic.ttf') format('truetype'),url('../type/GT-Sectra-Fine-Book-Italic.svg#webfontlZlKz9CF') format('svg');font-weight:400;font-style:italic;}
 
 
-$h1-size: 3.15vmin;
-$h2-size: 2.5vmin;
+$h1-size: 20px;
+$h2-size: 16px;
 
 $background-size: 30%;
 
@@ -166,6 +166,7 @@ body[data-section=about] {
   left: 0;
   right: 0;
   bottom: 0;
+  user-select: none;
 
 
   .mobile & {
@@ -510,9 +511,12 @@ header {
   height: auto;
   background: #00FFBF;
   text-align: center;
-  margin-bottom: 80px;
   padding-left: 15px;
   padding-right: 15px;
+  position: sticky;
+  top: 0;
+
+
   @include display-flex;
   .PostHeader {
     margin: auto auto;
@@ -573,7 +577,10 @@ section article {
   margin: 0 auto;
   line-height: 1.6em;
   text-transform: none;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
+  padding-top: 10%;
+  position: relative;
+  background: white;
 }
 
 section article p,
@@ -581,7 +588,7 @@ section article blockquote {
   font-size: 18px;
   line-height: 1.6em;
   margin: 1em auto;
-  width: 80%;
+  width: 90%;
   max-width: 640px;
 }
 
@@ -765,10 +772,18 @@ iframe {
   max-width: 90%;
 }
 
-.browser.maxied video {
+article > div {
+  display: flex;
+  position: relative;
+}
+
+video {
   height: auto;
+  margin: auto;
   width: 960px;
-  max-width: 100%;
+  max-width: 90%;
+  border: 1px solid rgba(0,0,0,0.25);
+  margin-bottom: 1.25em;
 }
 
 .browser .title {
@@ -871,6 +886,7 @@ video {
   height: 100%;
   position: absolute;
   background: url(../img/play_btn.png) no-repeat center center;
+  background-size: 50px;
   z-index: 50;
   cursor: pointer;
 }
@@ -925,8 +941,14 @@ footer section a, footer section span {
 }
 
 footer section a:hover {
-  background: black !important;
-  color: white !important;
+  // background: black !important;
+  // color: white !important;
+  filter: invert(1);
+}
+
+::selection {
+  color: #fff;
+  background: #111;
 }
 
 footer section span {
@@ -998,7 +1020,7 @@ footer {
   text-align: center;
   margin-bottom: 60px;
   img {
-    max-width: 95%;
+    max-width: 90%;
     width: auto;
     height: auto;
     margin: 0 auto;
@@ -1058,7 +1080,7 @@ footer {
   }
   .section.work h2,
   header h2 {
-    font-size: 20px;
+    font-size: $h2-size;
   }
 }
 
@@ -1067,7 +1089,7 @@ footer {
 
   .section h1, .section h2, .section h3, .section p {
     top: 50%;
-    font-size: 16px;
+    font-size: 20px;
     -webkit-transform: translate(0,-50%);
     -moz-transform: translate(0,-50%);
     -o-transform: translate(0,-50%);
@@ -1118,7 +1140,7 @@ footer {
   section article p,
   section article blockquote {
     font-size: 16px;
-    width: 80%;
+    width: 90%;
     max-width: 460px;
   }
 
@@ -1161,8 +1183,8 @@ footer {
   }
 
   nav {
-    position: fixed !important;
-    top: 0 !important;
+    // position: fixed !important;
+    // top: 0 !important;
   }
 
   .browser {

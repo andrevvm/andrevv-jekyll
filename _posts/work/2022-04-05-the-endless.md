@@ -18,11 +18,15 @@ slug: the-endless
 </div>
 
 <p>
-  Denim Tears is the clothing and culture brand of Tremaine Emory, creative director at Supreme. Site created with <a href="https://no-plans.com/" target="_blank">No Plans</a> studio.
+  An immersive website for experiential production studio, each page transitions seamlessly to the next, keeping smooth performance with media heavy content.
 </p>
+<p>
+  In collaboration with <em>No Plans</em>.
+</p>
+
 
 <ul class="tags">
   <li>Wordpress</li>
 </ul>
 
-<a href="https://marfajournal.com/" class="button" rel="external">View website</a>
+<a href="https://theendless.co/" class="button" rel="external">View website</a>

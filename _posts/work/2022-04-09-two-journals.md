@@ -5,7 +5,7 @@ title: Two Journals
 description: "Presentation website for personal journals of Albaian civil war survivor"
 categories: work
 responsibilities: Web Development
-background: '#eee'
+background: '#F8F2E1'
 color: '#000'
 slug: two-journals
 ---
@@ -18,11 +18,18 @@ slug: two-journals
 </div>
 
 <p>
-  Denim Tears is the clothing and culture brand of Tremaine Emory, creative director at Supreme. Site created with <a href="https://no-plans.com/" target="_blank">No Plans</a> studio.
+  <em>Two Journals</em> archives the Kosovo war through the personal diaries of Vjosa Shala.
+</p>
+<p>
+  Annotations are added intuitively by collaborators via the content management system, and all content is translated in Albanian and English.
+</p>
+<p>
+  In collaboration with <em>No Plans</em>.
 </p>
 
 <ul class="tags">
   <li>Kirby</li>
+  <li>Multilanguage</li>
 </ul>
 
-<a href="https://napopeople.com/" class="button" rel="external">View website</a>
+<a href="https://twojournals.com/" class="button" rel="external">View website</a>

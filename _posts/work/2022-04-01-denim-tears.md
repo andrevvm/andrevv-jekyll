@@ -18,11 +18,14 @@ slug: denim-tears
 </div>
 
 <p>
-  Denim Tears is the clothing and culture brand of Tremaine Emory, creative director at Supreme. Site created with <a href="https://no-plans.com/" target="_blank">No Plans</a> studio.
+  Clothing and culture brand of Tremaine Emory, creative director at <em>Supreme</em>. Built as a Shopify theme, this custom webshop handles a large volume of sales.
+</p>
+<p>
+  In collaboration with <em>No Plans</em>.
 </p>
 
 <ul class="tags">
   <li>Shopify</li>
 </ul>
 
-<a href="https://denim-tears.com/" class="button" rel="external">View website</a>
+<a href="https://denimtears.com/" class="button" rel="external">View website</a>

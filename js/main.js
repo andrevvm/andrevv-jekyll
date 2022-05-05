@@ -63,6 +63,9 @@ $(function() {
   // $("#content").fadeIn(600);
 
   $doc.click(function(e) {
+    if(e.target.localName === 'a')
+      return true;
+
     if(document.body.dataset.section != 'about')
       return true;
 
@@ -224,32 +227,32 @@ function zeroPad(num, places) {
 
 function initBrowser() {
 
-  $(".browser_img").each(function() {
-    var $this = $(this);
-    // $(this).click(function() {
-    //   $(this).closest(".browser").toggleClass('maxied');
-    // });
-    var title = $this.attr('title');
-    var style = $this.attr('style');
-    if(typeof title === 'undefined') {
-      title = "";
-    }
-    var before_html = '<div class="browser maxied" style="'+style+'">';
-        before_html +=  '<h4 class="title">';
-        before_html +=    title;
-        before_html +=  '</h4>';
-        before_html +=  '<ul class="ui">';
-        before_html +=    '<li class="close"></li>';
-        before_html +=    '<li class="min"></li>';
-        before_html +=    '<li class="max"></li>';
-        before_html +=  '</ul>';
-        before_html +=  '<div class="window" style="'+style+'"></div></div>';
+  // $(".browser_img").each(function() {
+  //   var $this = $(this);
+  //   // $(this).click(function() {
+  //   //   $(this).closest(".browser").toggleClass('maxied');
+  //   // });
+  //   var title = $this.attr('title');
+  //   var style = $this.attr('style');
+  //   if(typeof title === 'undefined') {
+  //     title = "";
+  //   }
+  //   var before_html = '<div class="browser maxied" style="'+style+'">';
+  //       before_html +=  '<h4 class="title">';
+  //       before_html +=    title;
+  //       before_html +=  '</h4>';
+  //       before_html +=  '<ul class="ui">';
+  //       before_html +=    '<li class="close"></li>';
+  //       before_html +=    '<li class="min"></li>';
+  //       before_html +=    '<li class="max"></li>';
+  //       before_html +=  '</ul>';
+  //       before_html +=  '<div class="window" style="'+style+'"></div></div>';
 
-    var after_html = "</div></div>";
+  //   var after_html = "</div></div>";
 
-    $(this).before(before_html);
-    $(this).appendTo($(this).prev('.browser').find('.window'));
-  });
+  //   $(this).before(before_html);
+  //   $(this).appendTo($(this).prev('.browser').find('.window'));
+  // });
 
   // $('.ui .min').click(function(){
   //   $(this).closest('.browser').removeClass('maxied').toggleClass('minied');

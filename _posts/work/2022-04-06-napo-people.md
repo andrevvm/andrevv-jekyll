@@ -5,7 +5,7 @@ title: NAPO PEOPLE
 description: "Portoflio for Paris &amp; Berlin based creative studio"
 categories: work
 responsibilities: Web Development
-background: '#eee'
+background: '#f9f9f9'
 color: '#000'
 slug: napo-people
 ---
@@ -18,8 +18,12 @@ slug: napo-people
 </div>
 
 <p>
-  Denim Tears is the clothing and culture brand of Tremaine Emory, creative director at Supreme. Site created with <a href="https://no-plans.com/" target="_blank">No Plans</a> studio.
+  Paris &amp; Berlin based creative studio showcases an endless flow of work, with a simple but effective modular layout.
 </p>
+<p>
+  In collaboration with <em>No Plans</em>.
+</p>
+
 
 <ul class="tags">
   <li>Wordpress</li>

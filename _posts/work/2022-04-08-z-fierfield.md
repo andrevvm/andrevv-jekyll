@@ -5,7 +5,7 @@ title: Fierfield
 description: "Website for botanical Irish Whiskey brand"
 categories: work
 responsibilities: Web Design &amp; Development
-background: '#111'
+background: '#081905'
 color: '#fff'
 slug: fierfield
 ---
@@ -18,11 +18,14 @@ slug: fierfield
 </div>
 
 <p>
-  Denim Tears is the clothing and culture brand of Tremaine Emory, creative director at Supreme. Site created with <a href="https://no-plans.com/" target="_blank">No Plans</a> studio.
+  A marketing website for the newly launched UK whiskey brand. Each page is made of few but varied modules which are easily editable by the client.
+</p>
+<p>
+In collaboration with <em>No Plans</em>.
 </p>
 
 <ul class="tags">
-  <li>Shopify</li>
+  <li>Kirby CMS</li>
 </ul>
 
-<a href="https://napopeople.com/" class="button" rel="external">View website</a>
+<a href="https://fierfield.com/" class="button" rel="external">View website</a>

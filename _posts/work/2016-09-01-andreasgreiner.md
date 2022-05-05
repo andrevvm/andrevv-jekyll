@@ -4,7 +4,7 @@ section: work
 title: Andreas Greiner
 description: "Website for Berlin based artist"
 categories: work
-responsibilities: Web Development &amp; WordPress
+responsibilities: Web Development
 background: '#FFFF00'
 color: '#000'
 slug: andreas
@@ -12,7 +12,7 @@ image: /work/andreas/andreasgreiner.jpg
 ---
 
 <div>
-  <video muted playsinline id="joanna" class="browser_img" title="Andreas Greiner"
+  <video loop muted playsinline id="joanna" class="browser_img" title="Andreas Greiner"
     preload="none" width="640" height="400" poster="{{ site.root }}{{ page.image }}" data-setup="{}">
     <source src="{{ site.root }}/work/andreas/andreasgreiner.mp4" type='video/mp4'>
   </video>

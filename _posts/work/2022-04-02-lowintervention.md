@@ -18,11 +18,14 @@ slug: low-intervention
 </div>
 
 <p>
-  Denim Tears is the clothing and culture brand of Tremaine Emory, creative director at Supreme. Site created with <a href="https://no-plans.com/" target="_blank">No Plans</a> studio.
+  A full-featured webshop for currated UK natural wine subscription service. Bold interactions and playful animations bring the site to life.
+</p>
+<p>
+  In collaboration with <em>No Plans</em>.
 </p>
 
 <ul class="tags">
   <li>Shopify</li>
 </ul>
 
-<a href="https://denim-tears.com/" class="button" rel="external">View website</a>
+<a href="https://lowintervention.com/" class="button" rel="external">View website</a>

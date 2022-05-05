@@ -18,11 +18,11 @@ slug: john-moods
 </div>
 
 <p>
-  Denim Tears is the clothing and culture brand of Tremaine Emory, creative director at Supreme. Site created with <a href="https://no-plans.com/" target="_blank">No Plans</a> studio.
+  A minisite for musical artist <em>John Moods</em> inspired by <a href="https://www.youtube.com/watch?v=0fKBhvDjuy0" target="_blank"><em>Powers of Ten</em></a>, zooms into an infinite loop of psychadelic color.
 </p>
 
 <ul class="tags">
-  <li>Wordpress</li>
+  <li>Netlify CMS</li>
 </ul>
 
-<a href="https://napopeople.com/" class="button" rel="external">View website</a>
+<a href="https://johnmoods.com/" class="button" rel="external">View website</a>

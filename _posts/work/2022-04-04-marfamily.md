@@ -18,7 +18,7 @@ slug: marfa-journal
 </div>
 
 <p>
-  Denim Tears is the clothing and culture brand of Tremaine Emory, creative director at Supreme. Site created with <a href="https://no-plans.com/" target="_blank">No Plans</a> studio.
+  Webshop and archive site for art, fashion &amp; culture magazine, featuring 3d spinning books and draggable layout which is fully editable via content management system.
 </p>
 
 <ul class="tags">
