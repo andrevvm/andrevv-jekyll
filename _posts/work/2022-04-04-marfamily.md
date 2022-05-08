@@ -11,7 +11,7 @@ slug: marfa-journal
 ---
 
 <div>
-  <video loop muted playsinline id="{{ page.slug }}" class="browser_img" title="{{ page.title }}"
+  <video loop muted playsinline id="{{ page.slug }}" class="browser_img" title="{{ page.title }}" poster="{{ site.root }}/work/videos/marfamily.jpg"
     preload="auto" width="640" height="400" data-setup="{}">
     <source src="{{ site.root }}/work/videos/marfamily.mp4#t=0.1" type='video/mp4'>
   </video>
