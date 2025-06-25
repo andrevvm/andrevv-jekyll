@@ -4,7 +4,7 @@ section: work
 title: CH Projects
 description: 'Maximalist San Diego hospitality group'
 categories: work
-responsibilities: Concept, Web Design,Web Development
+responsibilities: Concept, Web Design, Web Development
 background: '#000'
 color: '#fff'
 slug: ch-projects
