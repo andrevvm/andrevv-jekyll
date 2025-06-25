@@ -3,19 +3,87 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, ../../../../.rvm/gems/ruby-3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -30,7 +98,8 @@ html {
 }
 
 /* line 24, ../../../../.rvm/gems/ruby-3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -41,19 +110,25 @@ table {
 }
 
 /* line 28, ../../../../.rvm/gems/ruby-3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
+caption,
+th,
+td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
 /* line 30, ../../../../.rvm/gems/ruby-3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
+q,
+blockquote {
   quotes: none;
 }
 /* line 103, ../../../../.rvm/gems/ruby-3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: '';
   content: none;
 }
 
@@ -63,48 +138,70 @@ a img {
 }
 
 /* line 116, ../../../../.rvm/gems/ruby-3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block;
 }
 
 @font-face {
   font-family: 'Orator';
-  src: url("../type/oratorstd-webfont.eot?") format("eot"), url("../type/oratorstd-webfont.woff") format("woff"), url("../type/oratorstd-webfont.ttf") format("truetype"), url("../type/oratorstd-webfont.svg#webfontlZlKz9CF") format("svg");
+  src: url('../type/oratorstd-webfont.eot?') format('eot'),
+    url('../type/oratorstd-webfont.woff') format('woff'),
+    url('../type/oratorstd-webfont.ttf') format('truetype'),
+    url('../type/oratorstd-webfont.svg#webfontlZlKz9CF') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'GT Sectra Fine';
-  src: url("../type/GT-Sectra-Fine-Book.eot?") format("eot"), url("../type/GT-Sectra-Fine-Book.woff") format("woff"), url("../type/GT-Sectra-Fine-Book.ttf") format("truetype"), url("../type/GT-Sectra-Fine-Book.svg#webfontlZlKz9CF") format("svg");
+  src: url('../type/GT-Sectra-Fine-Book.eot?') format('eot'),
+    url('../type/GT-Sectra-Fine-Book.woff') format('woff'),
+    url('../type/GT-Sectra-Fine-Book.ttf') format('truetype'),
+    url('../type/GT-Sectra-Fine-Book.svg#webfontlZlKz9CF') format('svg');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'GT Sectra Fine';
-  src: url("../type/GT-Sectra-Fine-Book-Italic.eot?") format("eot"), url("../type/GT-Sectra-Fine-Book-Italic.woff") format("woff"), url("../type/GT-Sectra-Fine-Book-Italic.ttf") format("truetype"), url("../type/GT-Sectra-Fine-Book-Italic.svg#webfontlZlKz9CF") format("svg");
+  src: url('../type/GT-Sectra-Fine-Book-Italic.eot?') format('eot'),
+    url('../type/GT-Sectra-Fine-Book-Italic.woff') format('woff'),
+    url('../type/GT-Sectra-Fine-Book-Italic.ttf') format('truetype'),
+    url('../type/GT-Sectra-Fine-Book-Italic.svg#webfontlZlKz9CF') format('svg');
   font-weight: 400;
   font-style: italic;
 }
 /* line 19, ../sass/screen.scss */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   position: relative;
   font-family: 'Orator', monospace;
   font-weight: 400;
   text-transform: lowercase;
-  -webkit-transition: font-size .2s;
-  -o-transition: font-size .2s;
-  -moz-transition: font-size .2s;
-  -ms-transition: font-size .2s;
-  transition: font-size .2s;
+  -webkit-transition: font-size 0.2s;
+  -o-transition: font-size 0.2s;
+  -moz-transition: font-size 0.2s;
+  -ms-transition: font-size 0.2s;
+  transition: font-size 0.2s;
   color: #000;
   height: 100%;
   background: white;
 }
 
 /* line 36, ../sass/screen.scss */
-body[data-section=about] {
+body[data-section='about'] {
   cursor: pointer;
 }
 
@@ -115,7 +212,35 @@ body:after {
   height: 0;
   overflow: hidden;
   z-index: -1;
-  content: url(../img/shapes/shapes00000.png) url(../img/shapes/shapes00001.png) url(../img/shapes/shapes00002.png) url(../img/shapes/shapes00003.png) url(../img/shapes/shapes00004.png) url(../img/shapes/shapes00005.png) url(../img/shapes/shapes00006.png) url(../img/shapes/shapes00007.png) url(../img/shapes/shapes00008.png) url(../img/shapes/shapes00009.png) url(../img/shapes/shapes00009.png) url(../img/shapes/shapes00010.png) url(../img/shapes/shapes00011.png) url(../img/shapes/shapes00012.png) url(../img/shapes/shapes00013.png) url(../img/shapes/shapes00014.png) url(../img/shapes/shapes00015.png) url(../img/shapes/shapes00016.png) url(../img/shapes/shapes00002.png) url(../img/shapes/shapes00017.png) url(../img/shapes/shapes00018.png) url(../img/shapes/shapes00005.png) url(../img/shapes/shapes00019.png) url(../img/shapes/shapes00020.png) url(../img/shapes/shapes00021.png) url(../img/shapes/shapes00022.png) url(../img/shapes/shapes00010.png) url(../img/shapes/shapes00023.png) url(../img/shapes/shapes00024.png) url(../img/shapes/shapes00013.png) url(../img/shapes/shapes00025.png) url(../img/shapes/shapes00026.png) url(../img/shapes/shapes00027.png) url(../img/shapes/shapes00028.png) url(../img/shapes/shapes00028.png) url(../img/shapes/shapes00029.png) url(../img/shapes/shapes00010.png) url(../img/shapes/shapes00030.png) url(../img/shapes/shapes00031.png) url(../img/shapes/shapes00013.png) url(../img/shapes/shapes00032.png) url(../img/shapes/shapes00033.png) url(../img/shapes/shapes00024.png) url(../img/shapes/shapes00034.png) url(../img/shapes/shapes00035.png) url(../img/shapes/shapes00026.png) url(../img/shapes/shapes00036.png) url(../img/shapes/shapes00037.png) url(../img/shapes/shapes00028.png) url(../img/shapes/shapes00038.png) url(../img/shapes/shapes00039.png) url(../img/shapes/shapes00030.png) url(../img/shapes/shapes00040.png) url(../img/shapes/shapes00041.png) url(../img/shapes/shapes00032.png) url(../img/shapes/shapes00042.png) url(../img/shapes/shapes00043.png);
+  content: url(../img/shapes/shapes00000.png) url(../img/shapes/shapes00001.png)
+    url(../img/shapes/shapes00002.png) url(../img/shapes/shapes00003.png)
+    url(../img/shapes/shapes00004.png) url(../img/shapes/shapes00005.png)
+    url(../img/shapes/shapes00006.png) url(../img/shapes/shapes00007.png)
+    url(../img/shapes/shapes00008.png) url(../img/shapes/shapes00009.png)
+    url(../img/shapes/shapes00009.png) url(../img/shapes/shapes00010.png)
+    url(../img/shapes/shapes00011.png) url(../img/shapes/shapes00012.png)
+    url(../img/shapes/shapes00013.png) url(../img/shapes/shapes00014.png)
+    url(../img/shapes/shapes00015.png) url(../img/shapes/shapes00016.png)
+    url(../img/shapes/shapes00002.png) url(../img/shapes/shapes00017.png)
+    url(../img/shapes/shapes00018.png) url(../img/shapes/shapes00005.png)
+    url(../img/shapes/shapes00019.png) url(../img/shapes/shapes00020.png)
+    url(../img/shapes/shapes00021.png) url(../img/shapes/shapes00022.png)
+    url(../img/shapes/shapes00010.png) url(../img/shapes/shapes00023.png)
+    url(../img/shapes/shapes00024.png) url(../img/shapes/shapes00013.png)
+    url(../img/shapes/shapes00025.png) url(../img/shapes/shapes00026.png)
+    url(../img/shapes/shapes00027.png) url(../img/shapes/shapes00028.png)
+    url(../img/shapes/shapes00028.png) url(../img/shapes/shapes00029.png)
+    url(../img/shapes/shapes00010.png) url(../img/shapes/shapes00030.png)
+    url(../img/shapes/shapes00031.png) url(../img/shapes/shapes00013.png)
+    url(../img/shapes/shapes00032.png) url(../img/shapes/shapes00033.png)
+    url(../img/shapes/shapes00024.png) url(../img/shapes/shapes00034.png)
+    url(../img/shapes/shapes00035.png) url(../img/shapes/shapes00026.png)
+    url(../img/shapes/shapes00036.png) url(../img/shapes/shapes00037.png)
+    url(../img/shapes/shapes00028.png) url(../img/shapes/shapes00038.png)
+    url(../img/shapes/shapes00039.png) url(../img/shapes/shapes00030.png)
+    url(../img/shapes/shapes00040.png) url(../img/shapes/shapes00041.png)
+    url(../img/shapes/shapes00032.png) url(../img/shapes/shapes00042.png)
+    url(../img/shapes/shapes00043.png);
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -125,7 +250,11 @@ body:after {
   }
 }
 /* line 53, ../sass/screen.scss */
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Orator';
   font-weight: 400;
   text-transform: lowercase;
@@ -196,7 +325,7 @@ ul.tags li {
 }
 
 /* line 120, ../sass/screen.scss */
-body[data-section=about] {
+body[data-section='about'] {
   cursor: pointer;
 }
 
@@ -221,7 +350,7 @@ body[data-section=about] {
   min-height: 260px;
   position: relative;
   text-align: center;
-  background: #FFF;
+  background: #fff;
 }
 
 /* line 146, ../sass/screen.scss */
@@ -262,17 +391,23 @@ body[data-section=about] {
 }
 
 /* line 184, ../sass/screen.scss */
-.section h1, .section h2, .section h3, .section p {
+.section h1,
+.section h2,
+.section h3,
+.section p {
   display: inline-block;
   top: 48%;
   margin: 0px auto;
   position: relative;
   font-size: 16px;
-  line-height: 1.4em;
+  line-height: 1.2em;
 }
 
 /* line 198, ../sass/screen.scss */
-.mobile .section h1, .mobile .section h2, .mobile .section h3, .mobile .section p,
+.mobile .section h1,
+.mobile .section h2,
+.mobile .section h3,
+.mobile .section p,
 .ie .section h1,
 .ie .section h2,
 .ie .section h3,
@@ -280,7 +415,10 @@ body[data-section=about] {
   padding: 0 0.5em;
 }
 /* line 201, ../sass/screen.scss */
-.mobile .section h1 .button, .mobile .section h2 .button, .mobile .section h3 .button, .mobile .section p .button,
+.mobile .section h1 .button,
+.mobile .section h2 .button,
+.mobile .section h3 .button,
+.mobile .section p .button,
 .ie .section h1 .button,
 .ie .section h2 .button,
 .ie .section h3 .button,
@@ -289,7 +427,10 @@ body[data-section=about] {
   line-height: 2.4em;
 }
 /* line 208, ../sass/screen.scss */
-.mobile .section:nth-child h1, .mobile .section:nth-child h2, .mobile .section:nth-child h3, .mobile .section:nth-child p,
+.mobile .section:nth-child h1,
+.mobile .section:nth-child h2,
+.mobile .section:nth-child h3,
+.mobile .section:nth-child p,
 .ie .section:nth-child h1,
 .ie .section:nth-child h2,
 .ie .section:nth-child h3,
@@ -297,7 +438,10 @@ body[data-section=about] {
   color: black;
 }
 /* line 212, ../sass/screen.scss */
-.mobile .section:nth-child h1 a, .mobile .section:nth-child h2 a, .mobile .section:nth-child h3 a, .mobile .section:nth-child p a,
+.mobile .section:nth-child h1 a,
+.mobile .section:nth-child h2 a,
+.mobile .section:nth-child h3 a,
+.mobile .section:nth-child p a,
 .ie .section:nth-child h1 a,
 .ie .section:nth-child h2 a,
 .ie .section:nth-child h3 a,
@@ -308,7 +452,10 @@ body[data-section=about] {
   box-shadow: inset 0 -1px 0 black;
 }
 /* line 217, ../sass/screen.scss */
-.mobile .section:nth-child h1 .button, .mobile .section:nth-child h2 .button, .mobile .section:nth-child h3 .button, .mobile .section:nth-child p .button,
+.mobile .section:nth-child h1 .button,
+.mobile .section:nth-child h2 .button,
+.mobile .section:nth-child h3 .button,
+.mobile .section:nth-child p .button,
 .ie .section:nth-child h1 .button,
 .ie .section:nth-child h2 .button,
 .ie .section:nth-child h3 .button,
@@ -319,7 +466,10 @@ body[data-section=about] {
   box-shadow: none;
 }
 /* line 220, ../sass/screen.scss */
-.mobile .section:nth-child h1 .button span:before, .mobile .section:nth-child h2 .button span:before, .mobile .section:nth-child h3 .button span:before, .mobile .section:nth-child p .button span:before,
+.mobile .section:nth-child h1 .button span:before,
+.mobile .section:nth-child h2 .button span:before,
+.mobile .section:nth-child h3 .button span:before,
+.mobile .section:nth-child p .button span:before,
 .ie .section:nth-child h1 .button span:before,
 .ie .section:nth-child h2 .button span:before,
 .ie .section:nth-child h3 .button span:before,
@@ -368,7 +518,8 @@ p em {
 
 /* line 262, ../sass/screen.scss */
 .section.work h2 {
-  font-family: "GT Sectra Fine", "GT Sectra", "Hoefler Text", "Times New Roman", serif;
+  font-family: 'GT Sectra Fine', 'GT Sectra', 'Hoefler Text', 'Times New Roman',
+    serif;
   text-transform: none;
   font-style: italic;
   font-weight: 400;
@@ -437,9 +588,9 @@ pre a:hover {
 a.button {
   color: black;
   background: white;
-  padding: .7em 1.2em;
+  padding: 0.7em 1.2em;
   text-decoration: none;
-  font-family: "Orator";
+  font-family: 'Orator';
   text-transform: lowercase;
   font-size: 16px;
   display: inline-block;
@@ -459,7 +610,7 @@ a.button {
   margin-left: 0.15em;
   width: 0.119em;
   height: 1.05em;
-  background: #0099FF;
+  background: #0099ff;
 }
 
 /* line 348, ../sass/screen.scss */
@@ -490,8 +641,9 @@ a.button {
 }
 
 /* line 370, ../sass/screen.scss */
-.button:hover, a.button:hover {
-  background: #0000FF;
+.button:hover,
+a.button:hover {
+  background: #0000ff;
   color: white;
   text-decoration: none;
   -moz-box-shadow: none;
@@ -499,17 +651,20 @@ a.button {
   box-shadow: none;
 }
 /* line 376, ../sass/screen.scss */
-.button:hover span:before, a.button:hover span:before {
+.button:hover span:before,
+a.button:hover span:before {
   color: white;
 }
 
 /* line 381, ../sass/screen.scss */
-.button:active, a.button:active {
-  background: #0000FF;
+.button:active,
+a.button:active {
+  background: #0000ff;
   color: white;
 }
 /* line 384, ../sass/screen.scss */
-.button:active span:before, a.button:active span:before {
+.button:active span:before,
+a.button:active span:before {
   color: black;
 }
 
@@ -853,7 +1008,7 @@ section:first-child header {
 header {
   min-height: 50vh;
   height: auto;
-  background: #00FFBF;
+  background: #00ffbf;
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
@@ -893,7 +1048,8 @@ header h1 {
 
 /* line 547, ../sass/screen.scss */
 header h2 {
-  font-family: "GT Sectra Fine", "GT Sectra", "Hoefler Text", "Times New Roman", serif;
+  font-family: 'GT Sectra Fine', 'GT Sectra', 'Hoefler Text', 'Times New Roman',
+    serif;
   font-size: 16px;
   line-height: 1.2em;
   font-style: italic;
@@ -915,15 +1071,16 @@ header h2 {
   transform: translate(0, -50%);
 }
 /* line 568, ../sass/screen.scss */
-.mobile header h1, .mobile
-header h2 {
+.mobile header h1,
+.mobile header h2 {
   top: 0;
   transform: none !important;
 }
 
 /* line 574, ../sass/screen.scss */
 section article {
-  font-family: "GT Sectra Fine", "GT Sectra", "Hoefler Text", "Times New Roman", serif;
+  font-family: 'GT Sectra Fine', 'GT Sectra', 'Hoefler Text', 'Times New Roman',
+    serif;
   font-weight: normal;
   margin: 0 auto;
   line-height: 1.6em;
@@ -963,7 +1120,9 @@ section article blockquote aside {
 }
 
 /* line 612, ../sass/screen.scss */
-section article h2, section article h3, section article h4 {
+section article h2,
+section article h3,
+section article h4 {
   margin: 1em auto;
   width: 640px;
   text-align: center;
@@ -981,7 +1140,8 @@ section article h3 {
   font-size: 16px;
   font-style: italic;
   opacity: 0.5;
-  font-family: "GT Sectra Fine", "GT Sectra", "Hoefler Text", "Times New Roman", serif;
+  font-family: 'GT Sectra Fine', 'GT Sectra', 'Hoefler Text', 'Times New Roman',
+    serif;
   text-transform: none;
   margin: 5px auto 80px;
 }
@@ -1052,8 +1212,11 @@ section article p a.button:active {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../icons/icomoon.eot");
-  src: url("../icons/icomoon.eot?#iefix") format("embedded-opentype"), url("../icons/icomoon.woff") format("woff"), url("../icons/icomoon.ttf") format("truetype"), url("../icons/icomoon.svg#icomoon") format("svg");
+  src: url('../icons/icomoon.eot');
+  src: url('../icons/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../icons/icomoon.woff') format('woff'),
+    url('../icons/icomoon.ttf') format('truetype'),
+    url('../icons/icomoon.svg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1081,23 +1244,23 @@ you can use the generic selector below, but it's slower:
 
 /* line 721, ../sass/screen.scss */
 #about a:hover .fonticon:before {
-  color: #59F3CD;
+  color: #59f3cd;
 }
 
 /* line 725, ../sass/screen.scss */
 .icon-cv:before {
-  content: "\e000";
+  content: '\e000';
   top: 1px;
 }
 
 /* line 729, ../sass/screen.scss */
 .icon-mail:before {
-  content: "\e001";
+  content: '\e001';
 }
 
 /* line 732, ../sass/screen.scss */
 .icon-twitter:before {
-  content: "\e002";
+  content: '\e002';
 }
 
 /* line 736, ../sass/screen.scss */
@@ -1200,12 +1363,12 @@ video {
 
 /* line 825, ../sass/screen.scss */
 .browser .ui .close {
-  background: #FF5011;
+  background: #ff5011;
 }
 
 /* line 829, ../sass/screen.scss */
 .browser .ui .close:active {
-  background: #CC3300;
+  background: #cc3300;
 }
 
 /* line 833, ../sass/screen.scss */
@@ -1215,7 +1378,7 @@ video {
 
 /* line 837, ../sass/screen.scss */
 .browser .ui li:hover:after {
-  content: "";
+  content: '';
   width: 7px;
   height: 7px;
   border-radius: 4px;
@@ -1228,12 +1391,12 @@ video {
 
 /* line 849, ../sass/screen.scss */
 .browser .ui .max {
-  background: #4EE949;
+  background: #4ee949;
 }
 
 /* line 853, ../sass/screen.scss */
 .browser .ui .max:active {
-  background: #3EBA3A;
+  background: #3eba3a;
 }
 
 /* line 858, ../sass/screen.scss */
@@ -1320,7 +1483,8 @@ footer section.next {
 }
 
 /* line 932, ../sass/screen.scss */
-footer section a, footer section span {
+footer section a,
+footer section span {
   display: block;
   padding: 40px;
   height: 90px;
@@ -1400,7 +1564,7 @@ footer.Work {
   height: auto !important;
   top: 10.8%;
   left: 4.5%;
-  border: 1px solid #BCB7B7;
+  border: 1px solid #bcb7b7;
 }
 /* line 1010, ../sass/screen.scss */
 .video_container.iphone .play {
@@ -1426,7 +1590,11 @@ footer.Work {
 
 @media only screen and (min-width: 480px) {
   /* line 1032, ../sass/screen.scss */
-  header h1, .section h1, .section h2, .section h3, .section p {
+  header h1,
+  .section h1,
+  .section h2,
+  .section h3,
+  .section p {
     width: auto;
     font-size: 20px;
     top: 49.5%;
@@ -1438,7 +1606,10 @@ footer.Work {
   }
 
   /* line 1043, ../sass/screen.scss */
-  .section h1, .section h2, .section h3, .section p {
+  .section h1,
+  .section h2,
+  .section h3,
+  .section p {
     font-size: 20px;
   }
 
@@ -1479,7 +1650,11 @@ footer.Work {
 }
 @media only screen and (min-width: 900px) {
   /* line 1078, ../sass/screen.scss */
-  header h1, .section h1, .section h2, .section h3, .section p {
+  header h1,
+  .section h1,
+  .section h2,
+  .section h3,
+  .section p {
     font-size: 24px;
   }
 
@@ -1491,7 +1666,10 @@ footer.Work {
 }
 @media only screen and (min-width: 321px) and (max-width: 640px) {
   /* line 1090, ../sass/screen.scss */
-  .section h1, .section h2, .section h3, .section p {
+  .section h1,
+  .section h2,
+  .section h3,
+  .section p {
     top: 50%;
     font-size: 20px;
     -webkit-transform: translate(0, -50%);
@@ -1546,7 +1724,9 @@ footer.Work {
   }
 
   /* line 1136, ../sass/screen.scss */
-  section article h2, section article h3, section article h4 {
+  section article h2,
+  section article h3,
+  section article h4 {
     width: 460px;
   }
 
@@ -1582,7 +1762,8 @@ footer.Work {
   }
 }
 /* all iPhone */
-@media screen and (max-device-width: 760px), screen and (max-device-width: 320px) {
+@media screen and (max-device-width: 760px),
+  screen and (max-device-width: 320px) {
   /* line 1170, ../sass/screen.scss */
   .cat {
     background-attachment: scroll;
@@ -1605,7 +1786,8 @@ footer.Work {
   }
 
   /* line 1194, ../sass/screen.scss */
-  .browser .ui, .browser .title {
+  .browser .ui,
+  .browser .title {
     display: none;
   }
 
@@ -1658,7 +1840,9 @@ footer.Work {
 /* iPhone portrait */
 @media screen and (max-device-width: 320px) {
   /* line 1238, ../sass/screen.scss */
-  .browser, .browser.maxied, .browser.minied {
+  .browser,
+  .browser.maxied,
+  .browser.minied {
     width: 300px;
     height: auto;
     padding: 0;
@@ -1689,7 +1873,11 @@ footer.Work {
   }
 
   /* line 1264, ../sass/screen.scss */
-  section article p, section article h2, section article h3, section article hr, section article blockquote {
+  section article p,
+  section article h2,
+  section article h3,
+  section article hr,
+  section article blockquote {
     width: 280px;
   }
 
