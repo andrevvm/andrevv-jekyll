@@ -27,5 +27,3 @@ slug: denim-tears
 <ul class="tags">
   <li>Shopify</li>
 </ul>
-
-<a href="https://denimtears.com/" class="button" rel="external">View website</a>

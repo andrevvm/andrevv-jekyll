@@ -2,7 +2,7 @@
 layout: work
 section: work
 title: Fierfield
-description: "Website for botanical Irish Whiskey brand"
+description: 'Website for botanical Irish Whiskey brand'
 categories: work
 responsibilities: Web Design &amp; Development
 background: '#0b2707'
@@ -27,5 +27,3 @@ In collaboration with <em>No Plans</em>.
 <ul class="tags">
   <li>Kirby CMS</li>
 </ul>
-
-<a href="https://fierfield.com/" class="button" rel="external">View website</a>

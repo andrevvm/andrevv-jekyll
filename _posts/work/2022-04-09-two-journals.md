@@ -2,7 +2,7 @@
 layout: work
 section: work
 title: Two Journals
-description: "Presentation website for personal journals of Albaian civil war survivor"
+description: 'Presentation website for personal journals of Albaian civil war survivor'
 categories: work
 responsibilities: Web Development
 background: '#F8F2E1'
@@ -31,5 +31,3 @@ slug: two-journals
   <li>Kirby</li>
   <li>Multilanguage</li>
 </ul>
-
-<a href="https://twojournals.com/" class="button" rel="external">View website</a>

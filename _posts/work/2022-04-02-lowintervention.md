@@ -2,7 +2,7 @@
 layout: work
 section: work
 title: Low Intervention
-description: "Webshop for UK-based natural wine brand"
+description: 'Webshop for UK-based natural wine brand'
 categories: work
 responsibilities: Web Development
 background: '#cb6016'
@@ -27,5 +27,3 @@ slug: low-intervention
 <ul class="tags">
   <li>Shopify</li>
 </ul>
-
-<a href="https://lowintervention.com/" class="button" rel="external">View website</a>

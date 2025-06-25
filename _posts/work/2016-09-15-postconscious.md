@@ -2,7 +2,7 @@
 layout: work
 section: work
 title: Postconscious
-description: "Giving voice to the internet"
+description: 'Giving voice to the internet'
 categories: work
 responsibilities: Concept, Design &amp; Development
 background: '#FF0000'
@@ -23,5 +23,3 @@ Postconscious is a web experiment &amp; art project that pulls the latest posts 
 <ul class="tags">
   <li>Javascript</li>
 </ul>
-
-<a href="http://postconscio.us/" class="button" rel="external">View project</a>
