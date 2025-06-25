@@ -288,6 +288,7 @@ h5 {
 /* line 80, ../sass/screen.scss */
 ul.tags {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   font-family: 'Orator', monospace;
   max-width: 640px;
