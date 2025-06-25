@@ -1083,7 +1083,7 @@ section article {
     serif;
   font-weight: normal;
   margin: 0 auto;
-  line-height: 1.6em;
+  line-height: 1.25em;
   text-transform: none;
   padding-bottom: 120px;
   padding-top: 10%;
@@ -1095,7 +1095,7 @@ section article {
 section article p,
 section article blockquote {
   font-size: 18px;
-  line-height: 1.6em;
+  line-height: 1.25em;
   margin: 1em auto;
   width: 90%;
   max-width: 640px;

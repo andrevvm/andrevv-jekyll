@@ -21,7 +21,7 @@ slug: ch-projects
   CH Projects wanted an immersive experience to bring users into their world, while "bending time and space". 
 </p>
 <p>
-  A 360 video concept was implemented to seamlessly transport visitors through their properties, while maintaining a functional experience.
+  A 360 video concept was implemented to transport visitors through their properties, while maintaining a functional experience.
 </p>
 <p>
   An integrated Shopify Hydrogen storefront allows for seamless cart and checkout.
