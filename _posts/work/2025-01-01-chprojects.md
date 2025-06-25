@@ -24,7 +24,7 @@ slug: ch-projects
   A 360 video concept was implemented to seamlessly transport visitors through their properties, while maintaining a functional experience.
 </p>
 <p>
-  An integrated Shopify Hydrogen storefront allows for seamless cart and checkout experience.
+  An integrated Shopify Hydrogen storefront allows for seamless cart and checkout.
 </p>
 
 <p>
