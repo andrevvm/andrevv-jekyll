@@ -2,7 +2,7 @@
 layout: work
 section: work
 title: The Endless Co.
-description: "Showcase portfolio for new media production company"
+description: 'Showcase portfolio for new media production company'
 categories: work
 responsibilities: Web Development
 background: '#111'
@@ -21,9 +21,8 @@ slug: the-endless
   An immersive website for experiential production studio, each page transitions seamlessly to the next, keeping smooth performance with media heavy content.
 </p>
 <p>
-  In collaboration with <em>No Plans</em>.
+  In partnership with <em>No Plans</em>.
 </p>
-
 
 <ul class="tags">
   <li>Wordpress</li>

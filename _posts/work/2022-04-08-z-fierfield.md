@@ -21,7 +21,7 @@ slug: fierfield
   A marketing website for the newly launched UK whiskey brand. Each page is made of few but varied modules which are easily editable by the client.
 </p>
 <p>
-In collaboration with <em>No Plans</em>.
+In partnership with <em>No Plans</em>.
 </p>
 
 <ul class="tags">

@@ -21,7 +21,7 @@ slug: denim-tears
   Clothing and culture brand of Tremaine Emory, creative director at <em>Supreme</em>. Built as a Shopify theme, this custom webshop handles a large volume of sales.
 </p>
 <p>
-  In collaboration with <em>No Plans</em>.
+  In partnership with <em>No Plans</em>.
 </p>
 
 <ul class="tags">

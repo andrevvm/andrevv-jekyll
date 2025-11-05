@@ -21,7 +21,7 @@ slug: low-intervention
   A full-featured webshop for currated UK natural wine subscription service. Bold interactions and playful animations bring the site to life.
 </p>
 <p>
-  In collaboration with <em>No Plans</em>.
+  In partnership with <em>No Plans</em>.
 </p>
 
 <ul class="tags">

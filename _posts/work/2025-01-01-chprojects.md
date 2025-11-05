@@ -28,7 +28,7 @@ slug: ch-projects
 </p>
 
 <p>
-  In collaboration with <em>No Plans</em>.
+  In partnership with <em>No Plans</em>.
 </p>
 
 <ul class="tags">

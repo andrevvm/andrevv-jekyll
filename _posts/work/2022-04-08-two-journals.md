@@ -24,7 +24,7 @@ slug: two-journals
   Annotations are added intuitively by collaborators via the content management system, and all content is translated in Albanian and English.
 </p>
 <p>
-  In collaboration with <em>No Plans</em>.
+  In partnership with <em>No Plans</em>.
 </p>
 
 <ul class="tags">
