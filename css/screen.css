@@ -519,7 +519,7 @@ p em {
 
 /* line 262, ../sass/screen.scss */
 .section.work h2 {
-  font-family: 'GT Sectra Fine', 'GT Sectra', 'Hoefler Text', 'Times New Roman',
+  font-family: "Spectral", "Times New Roman", serif;,
     serif;
   text-transform: none;
   font-style: italic;
@@ -1049,14 +1049,14 @@ header h1 {
 
 /* line 547, ../sass/screen.scss */
 header h2 {
-  font-family: 'GT Sectra Fine', 'GT Sectra', 'Hoefler Text', 'Times New Roman',
+  font-family: "Spectral", "Times New Roman", serif;,
     serif;
   font-size: 16px;
   line-height: 1.2em;
   font-style: italic;
   font-weight: 400;
   text-transform: none;
-  letter-spacing: 0.05em;
+  letter-spacing: 0em;
   margin: 0 0 20px;
 }
 
@@ -1080,7 +1080,7 @@ header h2 {
 
 /* line 574, ../sass/screen.scss */
 section article {
-  font-family: 'GT Sectra Fine', 'GT Sectra', 'Hoefler Text', 'Times New Roman',
+  font-family: "Spectral", "Times New Roman", serif;,
     serif;
   font-weight: normal;
   margin: 0 auto;
@@ -1141,7 +1141,7 @@ section article h3 {
   font-size: 16px;
   font-style: italic;
   opacity: 0.5;
-  font-family: 'GT Sectra Fine', 'GT Sectra', 'Hoefler Text', 'Times New Roman',
+  font-family: "Spectral", "Times New Roman", serif;,
     serif;
   text-transform: none;
   margin: 5px auto 80px;

@@ -29,7 +29,7 @@ slug: lafour
 
 <ul class="tags">
   <li>Sanity CMS</li>
-  <li>Svelte</li>
+  <li>Sveltekit</li>
 </ul>
 
 <a href="https://lafour.com/" class="button" rel="external">View website</a>

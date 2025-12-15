@@ -33,7 +33,7 @@ slug: ch-projects
 
 <ul class="tags">
   <li>Craft CMS</li>
-  <li>ThreeJS</li>
+  <li>Three.js</li>
   <li>React</li>
   <li>Shopify Hydrogen</li>
 </ul>

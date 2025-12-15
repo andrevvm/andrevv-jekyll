@@ -4,7 +4,7 @@ section: work
 title: Miller McCormick
 description: 'Los Angeles based illustrator and designer'
 categories: work
-responsibilities: Concept, Interaction Design, Web Development
+responsibilities: Concept, Animation, Interaction Design, Web Development
 background: '#f9f9f9'
 color: '#000'
 slug: miller-mccormick
@@ -21,6 +21,9 @@ slug: miller-mccormick
   Miller McCormick is a multitalented designer and illustrator who needed a formal home to showcase his output. The result is a clean, minimal and functional portfolio for his graphic design work, with an array of playful touches inspired by his illustrations.
 </p>
 <p>
+  An integrated shop mirrors the portfolio and enables limited edition sales of his work.
+</p>
+<p>
   Endlessly scrolling grids seamlessly transition into zooming slideshows, all while maintaining a smooth and responsive experience.
 </p>
 <p>
@@ -29,7 +32,8 @@ slug: miller-mccormick
 
 <ul class="tags">
   <li>Craft CMS</li>
-  <li>Svelte</li>
+  <li>Sveltekit</li>
+  <li>Headless Shopify</li>
 </ul>
 
 <a href="https://millermccormick.com/" class="button" rel="external">View website</a>
