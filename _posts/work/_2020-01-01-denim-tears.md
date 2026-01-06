@@ -2,13 +2,13 @@
 layout: work
 section: work
 title: Denim Tears
-description: ""
+description: ''
 categories: work
 responsibilities: Web Development
 background: '#f3f3f3'
 color: '#000'
 slug: denimtears
-image: 
+image:
 ---
 
 <div>
@@ -23,9 +23,6 @@ image:
   We have emphasized the dualism between creation and storytelling in his new website.
 </p>
 
-
 <ul class="tags">
   <li>Shopify</li>
 </ul>
-
-<a href="http://denimtears.com/" class="button" rel="external">View website</a>
