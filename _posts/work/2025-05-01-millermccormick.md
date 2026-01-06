@@ -8,10 +8,11 @@ responsibilities: Concept, Animation, Interaction Design, Web Development
 background: '#f9f9f9'
 color: '#000'
 slug: miller-mccormick
+image: /work/videos/millermccormick.jpg
 ---
 
 <div>
-  <video loop muted playsinline id="{{ page.slug }}" class="browser_img" title="{{ page.title }}"
+  <video loop muted playsinline id="{{ page.slug }}" class="browser_img" title="{{ page.title }}" poster="{{ site.root }}{{ page.image }}"
     preload="auto" width="640" height="400" data-setup="{}">
     <source src="https://assets.andrevv.com/miller-mccormick.mp4" type='video/mp4'>
   </video>

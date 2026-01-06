@@ -2,7 +2,7 @@
 layout: work
 section: work
 title: Fragments in Space
-description: "A digital exploration of modernist design, built with Three.js and Timbre.js"
+description: 'A digital exploration of modernist design, built with Three.js and Timbre.js'
 categories: work
 responsibilities: Web Development &amp; Sound Design
 background: '#CBEFFF'
@@ -12,7 +12,7 @@ image: /work/fragments/fragments.jpg
 ---
 
 <div>
-  <video loop muted playsinline id="fragments" class="browser_img" title="Fragments in Space"
+  <video loop playsinline id="fragments" class="browser_img" title="Fragments in Space"
     preload="auto" width="640" height="400" poster="{{ site.root }}{{ page.image }}" data-setup="{}">
     <source src="{{ site.root }}/work/fragments/fragments.mp4" type='video/mp4'>
   </video>

@@ -8,10 +8,11 @@ responsibilities: Web Development
 background: '#D0E5F2'
 color: '#000'
 slug: lafour
+image: /work/videos/lafour.jpg
 ---
 
 <div>
-  <video loop muted playsinline id="{{ page.slug }}" class="browser_img" title="{{ page.title }}"
+  <video loop muted playsinline id="{{ page.slug }}" class="browser_img" title="{{ page.title }}" poster="{{ site.root }}{{ page.image }}"
     preload="auto" width="640" height="400" data-setup="{}">
     <source src="https://assets.andrevv.com/lafour-studios.mp4" type='video/mp4'>
   </video>

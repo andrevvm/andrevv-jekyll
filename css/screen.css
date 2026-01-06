@@ -1432,7 +1432,7 @@ video {
 /* line 884, ../sass/screen.scss */
 .play {
   width: 100%;
-  height: 100%;
+  height: 90%;
   position: absolute;
   background: url(../img/play_btn.png) no-repeat center center;
   background-size: 50px;
@@ -1794,7 +1794,7 @@ footer.Work {
 
   /* line 1198, ../sass/screen.scss */
   .play {
-    display: none !important;
+    /* display: none !important; */
   }
 
   /* line 1202, ../sass/screen.scss */

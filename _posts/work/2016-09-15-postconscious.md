@@ -12,7 +12,7 @@ image: /work/postconscious/postconscious.jpg
 ---
 
 <div>
-  <video loop muted playsinline id="joanna" class="browser_img" title="POSTCONSCIOUS"
+  <video loop playsinline id="postconscious" class="browser_img" title="POSTCONSCIOUS"
     preload="none" width="640" height="400" poster="{{ site.root }}{{ page.image }}" data-setup="{}">
     <source src="{{ site.root }}/work/postconscious/postconscious.mp4" type='video/mp4'>
   </video>

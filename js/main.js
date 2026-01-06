@@ -1,104 +1,104 @@
 var $nav,
-    $section,
-    $window,
-    $doc,
-    doc_h,
-    window_h,
-    html,
-    sections,
-    section_count,
-    count,
-    scrollVal,
-    scrollTop,
-    navBool;
+  $section,
+  $window,
+  $doc,
+  doc_h,
+  window_h,
+  html,
+  sections,
+  section_count,
+  count,
+  scrollVal,
+  scrollTop,
+  navBool
 
-var md = new MobileDetect(window.navigator.userAgent);
+var md = new MobileDetect(window.navigator.userAgent)
 
-var fN = 0;
-var fav = document.getElementById('favicon');
+var fN = 0
+var fav = document.getElementById('favicon')
 function favicon() {
   fav.href = `/img/shapes/shapes${String(fN).padStart(5, '0')}.png`
-  fN++;
-  if(fN > 43) {
-    fN = 0;
+  fN++
+  if (fN > 43) {
+    fN = 0
   }
 }
 //setInterval(favicon, 500);
 
 function msieversion() {
+  var ua = window.navigator.userAgent
+  var msie = ua.indexOf('MSIE ')
 
-    var ua = window.navigator.userAgent;
-    var msie = ua.indexOf("MSIE ");
+  if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+    // If Internet Explorer, return version number
+    return true
+  } // If another browser, return 0
+  else {
+    return false
+  }
 
-    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
-    {
-        return true;
-    }
-    else  // If another browser, return 0
-    {
-        return false;
-    }
-
-    return false;
+  return false
 }
 
-var ie = msieversion();
+var ie = msieversion()
 
-var videos = [];
+var videos = []
 
-$(function() {
-  navBool = false;
-  $section = $('.section').eq(0);
-  $window = $(window);
-  $doc = $(document);
-  window_h = $window.height();
-  doc_h = $doc.height() - window_h;
-  html = $("#begin").html();
-  sections = $("#begin .section");
-  section_count = sections.length - 1;
-  count = 0;
-  scrollVal = 0;
-  $nav = $("nav");
+$(function () {
+  navBool = false
+  $section = $('.section').eq(0)
+  $window = $(window)
+  $doc = $(document)
+  window_h = $window.height()
+  doc_h = $doc.height() - window_h
+  html = $('#begin').html()
+  sections = $('#begin .section')
+  section_count = sections.length - 1
+  count = 0
+  scrollVal = 0
+  $nav = $('nav')
   // $("#content").hide();
   // $("#content").fadeIn(600);
 
-  $doc.click(function(e) {
-    if(e.target.localName === 'a')
-      return true;
+  $doc.click(function (e) {
+    if (e.target.localName === 'a') return true
 
-    if(document.body.dataset.section != 'about')
-      return true;
+    if (document.body.dataset.section != 'about') return true
 
-    $('html, body').animate({
-      scrollTop: window.scrollY + window.innerHeight
-   }, 500, 'swing');
+    $('html, body').animate(
+      {
+        scrollTop: window.scrollY + window.innerHeight,
+      },
+      500,
+      'swing'
+    )
   })
 
-  if(md.mobile()) {
-    $('body').addClass('mobile');
+  if (md.mobile()) {
+    $('body').addClass('mobile')
   } else {
-    $('body').addClass('not-mobile');
+    $('body').addClass('not-mobile')
   }
 
-  if(ie) {
-    $('body').addClass('ie');
+  if (ie) {
+    $('body').addClass('ie')
   }
-  
-  $(window).scroll(scrollAnimation);
 
-  $("#top").click(function(e){
-    $nav.css("top",'');
-    e.preventDefault();
-    scrollTo($('#begin'));
-  });
+  $(window).scroll(scrollAnimation)
 
-  initBrowser();
-  initVideo();
+  $('#top').click(function (e) {
+    $nav.css('top', '')
+    e.preventDefault()
+    scrollTo($('#begin'))
+  })
 
-  $("a[rel=external]").attr("target","_blank");
+  initBrowser()
+  initVideo()
 
-  var frame = 1;
-  var up = true;
+  $('a[rel=external]').attr('target', '_blank')
+
+  var frame = 1
+  var up = true
   // setInterval(function(){
   //   if(frame < 8 && up == true) {
   //     frame ++;
@@ -115,118 +115,126 @@ $(function() {
 
   //   $('#favicon').attr('href','/img/humans/0'+frame+'.png');
   // },100);
-
-});
+})
 
 function scrollAnimation() {
-  window.requestAnimationFrame(scroll);
+  window.requestAnimationFrame(scroll)
 }
 
 function scroll() {
-  var section_h = $section.height();
-  scrollTop = $(this).scrollTop();
-  var scrollDif = scrollTop - scrollVal;
-  var inProgress = true;
-  var navOffset = parseInt($("nav").css('top'),10) - scrollTop;
-  if(scrollDif < 0 && scrollTop > 0 && navOffset < -45) {
-    showNav();
+  var section_h = $section.height()
+  scrollTop = $(this).scrollTop()
+  var scrollDif = scrollTop - scrollVal
+  var inProgress = true
+  var navOffset = parseInt($('nav').css('top'), 10) - scrollTop
+  if (scrollDif < 0 && scrollTop > 0 && navOffset < -45) {
+    showNav()
   } else {
-    hideNav();
+    hideNav()
   }
 
-  if(navOffset > 0) {
-    stickyNav();
+  if (navOffset > 0) {
+    stickyNav()
   }
 
-  if (scrollTop <= 0 ) {
-    $nav.css('top',0);
+  if (scrollTop <= 0) {
+    $nav.css('top', 0)
   }
 
-  var docheight = $(document).height();
+  var docheight = $(document).height()
 
-  if(scrollTop >= docheight - window.innerHeight) {
-    showNav();
+  if (scrollTop >= docheight - window.innerHeight) {
+    showNav()
   }
 
-  if(scrollTop > docheight - section_h * 10) {
-    count++;
-    if(count >= 40) {
-      if($('#begin').find('#end').length == 0) {
-        $("#end").appendTo('#begin').css("display","block");
+  if (scrollTop > docheight - section_h * 10) {
+    count++
+    if (count >= 40) {
+      if ($('#begin').find('#end').length == 0) {
+        $('#end').appendTo('#begin').css('display', 'block')
       }
-      return false;
+      return false
     }
-    var new_sections = sections.clone();
+    var new_sections = sections.clone()
 
-    var frame_count = 43;
+    var frame_count = 43
 
-    new_sections.each(function() {
-      if(section_count < frame_count) {
-        section_count ++;
+    new_sections.each(function () {
+      if (section_count < frame_count) {
+        section_count++
       } else {
-        section_count = 0;
+        section_count = 0
       }
-      var $cat = $(".cat",this);
-      $cat.attr('class','cat');
-      var new_class = zeroPad(section_count, 2);
-      $cat.prev(".image-fill").find('img').attr('src', 'img/shapes/shapes000'+new_class+'.png');
-      $cat.addClass("f"+new_class);
-      $("#begin").append(new_sections);
-    });
+      var $cat = $('.cat', this)
+      $cat.attr('class', 'cat')
+      var new_class = zeroPad(section_count, 2)
+      $cat
+        .prev('.image-fill')
+        .find('img')
+        .attr('src', 'img/shapes/shapes000' + new_class + '.png')
+      $cat.addClass('f' + new_class)
+      $('#begin').append(new_sections)
+    })
   }
-  scrollVal = scrollTop;
+  scrollVal = scrollTop
 }
 
 function showNav() {
-  if(!$nav.hasClass('sticky')) {
-    navBool = true;
-    $nav.css('top', -50);
-    setTimeout(function(){
-      $nav.addClass('sticky');
-      $nav.addClass('slideIn');
-      $nav.css('top',0);
-    },50);
+  if (!$nav.hasClass('sticky')) {
+    navBool = true
+    $nav.css('top', -50)
+    setTimeout(function () {
+      $nav.addClass('sticky')
+      $nav.addClass('slideIn')
+      $nav.css('top', 0)
+    }, 50)
   }
 }
 
 function stickyNav() {
-  if(!$nav.hasClass('sticky')) {
-    navBool = true;
+  if (!$nav.hasClass('sticky')) {
+    navBool = true
     $nav.css({
-      'top': 0,
-      'transition': 'none'
-    });
-    $nav.addClass('sticky');
-    setTimeout(function(){
-      $nav.css('transition', '');
-    },50);
+      top: 0,
+      transition: 'none',
+    })
+    $nav.addClass('sticky')
+    setTimeout(function () {
+      $nav.css('transition', '')
+    }, 50)
   }
 }
 
 function hideNav() {
-  if($nav.hasClass('sticky')) {
-    navBool = false;
-    var currentPos = $nav.offset().top;
-    $nav.removeClass('sticky');
-    $nav.css("top",currentPos);
+  if ($nav.hasClass('sticky')) {
+    navBool = false
+    var currentPos = $nav.offset().top
+    $nav.removeClass('sticky')
+    $nav.css('top', currentPos)
   }
 }
 
 function scrollTo(section, callback) {
-  var offset = section.offset().top;
-  if(offset < 0) { offset = 0;}
-  $('body,html').animate({
-    scrollTop: offset
-  }, 6000, 'easeInOutQuad', callback);
+  var offset = section.offset().top
+  if (offset < 0) {
+    offset = 0
+  }
+  $('body,html').animate(
+    {
+      scrollTop: offset,
+    },
+    6000,
+    'easeInOutQuad',
+    callback
+  )
 }
 
 function zeroPad(num, places) {
-  var zero = places - num.toString().length + 1;
-  return Array(+(zero > 0 && zero)).join("0") + num;
+  var zero = places - num.toString().length + 1
+  return Array(+(zero > 0 && zero)).join('0') + num
 }
 
 function initBrowser() {
-
   // $(".browser_img").each(function() {
   //   var $this = $(this);
   //   // $(this).click(function() {
@@ -247,21 +255,16 @@ function initBrowser() {
   //       before_html +=    '<li class="max"></li>';
   //       before_html +=  '</ul>';
   //       before_html +=  '<div class="window" style="'+style+'"></div></div>';
-
   //   var after_html = "</div></div>";
-
   //   $(this).before(before_html);
   //   $(this).appendTo($(this).prev('.browser').find('.window'));
   // });
-
   // $('.ui .min').click(function(){
   //   $(this).closest('.browser').removeClass('maxied').toggleClass('minied');
   // });
-
   // $('.ui .max').click(function(){
   //   $(this).closest('.browser').removeClass('minied').toggleClass('maxied');
   // });
-
   // $('.ui .close').click(function() {
   //   if(confirm("Are you sure you want to close this project?\n\nYou'll have to refresh the page to see it again, in addition to hurting Andrew's feelings.")) {
   //     $(this).closest('.browser').removeClass('minied').removeClass('maxied').addClass('closed');
@@ -270,130 +273,108 @@ function initBrowser() {
 }
 
 function initVideo() {
-
-  $("video").each(function(){
-    var $this = $(this);
-    var video = $this.get(0);
-    video.volume = 0;
+  $('video').each(function () {
+    var $this = $(this)
+    var video = $this.get(0)
+    //video.volume = 0
 
     var video = {
-
       el: $this,
       vid: $this.get(0),
-      timeout: null
-
+      timeout: null,
     }
-    
-    $this.bind('ended', function() {
-      video.vid.currentTime = 0;
-      video.el.prev('.play').addClass('paused');
-      pauseVideo(video.vid);
-    });
 
-    videos.push(video);
-  });
+    $this.bind('ended', function () {
+      video.vid.currentTime = 0
+      video.el.prev('.play').addClass('paused')
+      pauseVideo(video.vid)
+    })
 
-  $("video").before("<span class='play'></span>");
+    videos.push(video)
+  })
 
-  $(".play").click(function() {
-    toggleVideo($(this));
-  });
+  $('video').before("<span class='play'></span>")
 
-  scrollVideo();
+  $('.play').click(function () {
+    toggleVideo($(this))
+  })
+
+  scrollVideo()
 }
 
 function toggleVideo($this) {
-  $this.toggleClass('playing');
-  var video = $this.next("video").get(0);
-  if(video.paused === true) {
-    playVideo(video);
+  $this.toggleClass('playing')
+  var video = $this.next('video').get(0)
+  if (video.paused === true) {
+    playVideo(video)
   } else {
-    pauseVideo(video);
+    pauseVideo(video)
   }
 }
 
 function playVideo(vid) {
-
-  vid.play().then(function() {
-    $(vid).prev('.play').addClass('playing');
-    $(vid).closest(".browser").addClass('maxied');
-  }).catch(function(err) {
-    console.log(err);
-  });
-
+  vid
+    .play()
+    .then(function () {
+      $(vid).prev('.play').addClass('playing')
+      $(vid).closest('.browser').addClass('maxied')
+    })
+    .catch(function (err) {
+      console.log(err)
+    })
 }
 
 function pauseVideo(vid) {
-  $(vid).prev('.play').removeClass('playing');
+  $(vid).prev('.play').removeClass('playing')
   //$(vid).closest(".browser").removeClass('maxied');
-  vid.pause();
+  vid.pause()
 }
 
 function audioFadeIn(vid) {
-  
-  if(vid.volume < 0.9) {
+  if (vid.volume < 0.9) {
+    vid.volume += 0.01
 
-    vid.volume += 0.01;
-
-    setTimeout(function() {
-      audioFadeIn(vid);
-    }, 50);
-
+    setTimeout(function () {
+      audioFadeIn(vid)
+    }, 50)
   }
-
 }
 
 function audioFadeOut(vid) {
-  
-  if(vid.volume > 0.01) {
+  if (vid.volume > 0.01) {
+    vid.volume -= 0.01
 
-    vid.volume -= 0.01;
-
-    setTimeout(function() {
-      audioFadeOut(vid);
-    }, 50);
-
+    setTimeout(function () {
+      audioFadeOut(vid)
+    }, 50)
   }
-
 }
 
-
 function scrollVideo() {
-
   var options = {
     rootMargin: '500px',
-    threshold: 0.00
+    threshold: 0.0,
   }
-  var observer = new IntersectionObserver(videoInView, options);
+  var observer = new IntersectionObserver(videoInView, options)
 
-  $.each( videos, function( key, video ) {
-
-    observer.observe(video.vid);
-
-  });
-
+  $.each(videos, function (key, video) {
+    observer.observe(video.vid)
+  })
 }
 
 function videoInView(entries) {
-  for(var i=0; i<entries.length; i++) {
-    var entry = entries[i];
-    if(entry.isIntersecting) {
-      if(entry.target.paused === true)
-        playVideo(entry.target);
+  for (var i = 0; i < entries.length; i++) {
+    var entry = entries[i]
+    if (entry.isIntersecting) {
+      if (entry.target.paused === true) playVideo(entry.target)
     } else {
-      pauseVideo(entry.target);
+      pauseVideo(entry.target)
     }
   }
 }
 
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect()
 
-
-function isElementInViewport (el) {
-
-    var rect = el.getBoundingClientRect();
-
-    return (
-        rect.top >= -window.innerHeight / 2 &&
-        rect.top <= ($(el).height() * 2)
-    );
+  return rect.top >= -window.innerHeight / 2 && rect.top <= $(el).height() * 2
 }
