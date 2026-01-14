@@ -1563,9 +1563,10 @@ footer.Work {
 .video_container.iphone video {
   width: 91.5% !important;
   height: auto !important;
-  top: 10.8%;
-  left: 4.5%;
-  border: 1px solid #bcb7b7;
+  top: 5px;
+  left: 16px;
+  border: 0;
+  margin: 0;
 }
 /* line 1010, ../sass/screen.scss */
 .video_container.iphone .play {
